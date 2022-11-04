@@ -1,0 +1,31 @@
+[
+  {
+    "type": "banner",
+    "title": "TRACK3R",
+    "description": "احرص على بناء هذا الروبوت متعدد الأغراض وبرمجته للتعرف على EV3",
+    "link": {
+      "path": "/content/start/",
+      "title": "بدء"
+    },
+    "background": "#f5f5f5",
+    "image": {
+      "image": "/images/lobby-banner-primary.png",
+      "color": "#f5f5f5"
+    }
+  },
+  {
+    "type": "recentprojects"
+  },
+  {
+    "type": "cards",
+    "cards": [
+      {
+        "title": "ابنِ روبوتات EV3",
+        "description": "ابنِ خمسة روبوتات رائعة: TRACK3R وR3PTAR وSPIK3R وGRIPP3R وEV3RSTORM. يمكنك برمجة R3PTAR لينزلق مثل الثعبان وSPIK3R ليُمسِك بحشرة وGRIPP3R ليمسك بجسم معين وEV3RSTORM ليبحث ويدمر، بالإضافة إجراء أكثر من ذلك بكثير.",
+        "image": "/images/lobby-banner-secondary.png",
+        "background": "#fff",
+        "link": "/content/core-models/"
+      }
+    ]
+  }
+]

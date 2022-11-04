@@ -1,0 +1,105 @@
+{
+  "id": "mission4",
+  "title": "К вашим услугам!",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorSetStopAction",
+    "control_forever",
+    "control_if_else",
+    "ev3sensors_isEV3InfraredBeaconButtonPressed",
+    "ev3motor_motorStart",
+    "ev3motor_motorStop",
+    "control_if",
+    "ev3sensors_isEV3TouchSensorPressed",
+    "ev3motor_motorTurnFor",
+    "ev3sensors_waitEV3TouchSensorTouch",
+    "control_wait_until",
+    "operator_not"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Вот ваша задача.",
+      "description": "<p>В этой миссии вы будете использовать Удалённый инфракрасный маяк для управления GRIPP3R, который будет перемещать предметы.<br><br>Соберите GRIPP3R 04.</p>",
+      "image": "/images/missions/5-4-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model5/31313_5_4.mp4",
+                "video_hd_download": "/buildinginstructions/model5/31313_5_4.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Давайте устроим испытания!",
+      "description": "<p>Установите GRIPP3R и башню из шин на гладкую поверхность, затем загрузите и запустите программу.</p>",
+      "image": "/images/missions/5-4-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Этот блок устанавливает скорость движения.",
+      "hints": [
+        {
+          "Text": "<h3>Загрузка и запуск через Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Нажмите на значок подключения и следуйте инструкциям на экране.<br />2. Загрузите и запустите программу."
+        },
+        {
+          "Text": "<h3>Загрузка и запуск через USB</h3>"
+        },
+        {
+          "Image": "/images/missions/5-4-2-hint-usb-connect.png",
+          "Text": "1. Подключите Модуль EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Загрузите программу на Модуль EV3."
+        },
+        {
+          "Image": "/images/missions/5-4-2-hint-run.png",
+          "Text": "3. Запустите программу, загруженную на Модуль EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"]y*xA6k+oHf3+7DTESmH\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"jb:M;Sy!Eb%QvKluh0uA\"><comment id=\"kHX_q`z)A?,DepsqvO#,\" pinned=\"true\" h=\"200\" w=\"200\" x=\"800\" y=\"180\" minimized=\"false\">Этот блок устанавливает скорость движения.</comment><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"C9eh$|8%h3%ysMRTrli7\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"hhLCJ_5C_l(NIC%RG+El\"><field name=\"NUM\">50</field></shadow></value><next><block type=\"ev3motor_motorSetStopAction\" id=\"3J~dp/0m4W|0AHB_uYa.\"><field name=\"OPTION\">0</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"zO}bozO.($|v5aShJ%Rl\"><field name=\"outputPort\">2</field></shadow></value><next><block type=\"ev3motor_motorSetStopAction\" id=\"+:Vy6~U_pH*QUGU5PD.O\"><field name=\"OPTION\">0</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Q#hWj-sy=omrqN/hl0G~\"><field name=\"outputPort\">3</field></shadow></value><next><block type=\"control_forever\" id=\"vSnYfWFS|Sh1lMNW6P,5\"><statement name=\"SUBSTACK\"><block type=\"control_if_else\" id=\"3utnos.~~]bf,HNjC){5\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"X4_S`+-S9DL!OcH?J,#M\"><field name=\"BUTTON\">1,5,6,10</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"~@jew@k:*YHKQ?FPCo~:\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"PCzjTHO|Pv#p[K@MAY,B\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"Kq)P?r);ODZijpzzz}^0\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"WKKW`H%UyV)s`RNfEANu\"><field name=\"outputPort\">2</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"control_if_else\" id=\"A+]%iXw#L3^(zF6uz3z)\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"i:TZ2+d[c~9;WIb|wO;?\"><field name=\"BUTTON\">2,7,8,10</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"wam==|mQY^:Ry=TA[2tS\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"BA28`F4grF8.O]5]^,)(\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"a6yun(|+6gZ^yAC1zAt:\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"hbULk.R+$sk$|W}V2wz8\"><field name=\"outputPort\">2</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3motor_motorStop\" id=\"Tlh;+wbU^ZNP9,jjhB6E\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"~Zfpx%K{D7}K?Zm_7U(v\"><field name=\"outputPort\">2</field></shadow></value></block></statement></block></statement><next><block type=\"control_if_else\" id=\"%RV*17sGFeC,-u1+pwTP\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"bv9`}-!Tfrsq/rL[)Q80\"><field name=\"BUTTON\">3,5,7,11</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\".i[(QJT5R_ulJ0u|`+Ow\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"[WpUNt,(]n`]5wLp5/GZ\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"DZZ^kdERCvFdBToiS/e/\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"2-1l.xHp-UFz28}6EM2R\"><field name=\"outputPort\">3</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"control_if_else\" id=\"I?opv-=|zm4|B!0A^T?S\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"z@F}?qf^ZP`TgC=$J[!J\"><field name=\"BUTTON\">4,6,8,11</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"]t1CDx@a6z0M6T3rgQV.\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"RFGAW(YMpLqT4ZzWsz~s\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"kIzYvCX7ko)_?`xpicPG\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"l{ZgBPk%^v8mPl@2ps2g\"><field name=\"outputPort\">3</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3motor_motorStop\" id=\"uE2~)lyo64atq,DGb*jr\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"j/[0q@$;5fSPV;iN^;FQ\"><field name=\"outputPort\">3</field></shadow></value></block></statement></block></statement><next><block type=\"control_if\" id=\"V(fLBe6pnTdV.rai)o|+\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"Cx-|/CQx30fcX[u%V{0L\"><field name=\"BUTTON\">9</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"=z*LWuf2[%7fEN}/52N~\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"IiC`~|d-[LVrzVym]~N0\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"control_if_else\" id=\"~p`N@RzBsyu]#}xsQ#V%\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3TouchSensorPressed\" id=\"D;^[jx;GXB@l:~SsdmiD\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"`T4ar4tI{u~[6hT4wLT|\"><field name=\"inputPort\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorTurnFor\" id=\"pD)4]Q:)rLu8N=xR8CE-\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"0(4L^`pzqufLm#xpz_Cw\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"PFDo5FXH9LL5[%54SXlq\"><field name=\"NUM\">1</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3motor_motorStart\" id=\"a~zhonqX*Q+fyfL7T|e6\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Xhzur=2ZF0:px,+UDrS%\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3sensors_waitEV3TouchSensorTouch\" id=\"Q$!L_X*VaPtX;Fz84;CP\"><field name=\"EVENT\">1</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\".(Tx0o^He=rZ(VH)?Kk=\"><field name=\"inputPort\">1</field></shadow></value><next><block type=\"ev3motor_motorStop\" id=\"OR`M$hKy`c$O8`O{o*R[\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"8fRx8ij?{F^.eJdqU0Tt\"><field name=\"outputPort\">1</field></shadow></value></block></next></block></next></block></statement><next><block type=\"control_wait_until\" id=\"(Bz:uKL%jT?AvIA$}MOp\"><value name=\"CONDITION\"><block type=\"operator_not\" id=\"|rjlE5|1@),q*Je/1qF?\"><value name=\"OPERAND\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"9,lpn6).k5^@wFt_jcaE\"><field name=\"BUTTON\">9</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"?:I9J@2[W8~!ILYt,:g.\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"{:$t(To8vhV+5T4*xpPL\"><field name=\"irChannel\">1</field></shadow></value></block></value></block></value></block></next></block></statement></block></next></block></next></block></statement></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Миссия выполнена!",
+      "description": "<p>После запуска программы GRIPP3R должен выполнять действия, показанные в видео.<br><br>Используйте Удалённый инфракрасный маяк, настроенный на «Канал 1», для управления GRIPP3R (управление Мощными захватами производится с помощью кнопки «Режим маяка»).<br><br><strong>Вы выполнили все миссии GRIPP3R!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/5-4.mp4"
+        }
+      },
+      "hints": [
+        {
+          "Image": "/images/missions/0-0-3-hint-channel.png",
+          "Text": "Если GRIPP3R не реагирует на Удалённый инфракрасный маяк, убедитесь, что переключатель каналов установлен на «Канал 1»."
+        }
+      ]
+    }
+  ]
+}

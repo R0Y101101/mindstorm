@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "Problemlösande flerfunktionsbot med spårfunktion",
+      "description": "TRACK3R är enkel att skapa och styra och har en massa verktyg. Använd den dubbelbladiga blandaren, den kraftfulla bazookan, gripklon och den tunga hammaren för att slutföra olika uppdrag på uppdragsplattan.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "Blanda med precision",
+          "description": "I det här uppdraget ska du använda den dubbelbladiga blandaren för att ta bort ett däck från uppdragsplattan.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "Skjut",
+          "description": "I det här uppdraget ska du skjuta bort däcken med den kraftfulla bazookan.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "Plocka bort dem",
+          "description": "I det här uppdraget ska du flytta två däck med gripklon och placera dem i fyrkanterna på uppdragsplattan.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "Taktiskt försvarssystem",
+          "description": "I det här uppdraget ska du med hjälp av den tunga hammaren skapa ett taktiskt försvarssystem för att skydda TRACK3R från anfall bakifrån.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "Tidsutmaning",
+          "description": "I det här uppdraget ska du styra TRACK3R med fjärrkontroll-IR-sändaren och passera alla kontrollpunkterna på uppdragsplattan innan tiden är slut!",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "Snabb, smidig och supersmart skorpionbot",
+      "description": "SPIK3R är en komplex robot som kryper och vänder när den söker efter sina måltavlor. Den kan anfalla med sina krossande klor eller sticka med sin blixtsvans.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "Blixtsvans",
+          "description": "I det här uppdraget ska du skjuta iväg en boll med blixtsvansen.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "Krypmanöver",
+          "description": "I det här uppdraget ska du göra en krypmanöver och utföra en attack på avstånd.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "Krossa det!",
+          "description": "I det här uppdraget ska du lägga till de krossande klorna och utföra en attack på nära håll.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "Vänta …",
+          "description": "I det här uppdraget ska du få SPIK3R att krypa runt på en plats och vänta tills den upptäcker något att anfalla.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "Fånga krypet",
+          "description": "I det här uppdraget ska du jaga krypet och skjuta det med ett långskott innan du avslutar jobbet med de krossande klorna.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "Intelligent människoliknande robot",
+      "description": "EV3RSTORM förflyttar sig på larvband och kan anfalla med sin snurrande trebladiga klinga eller kraftfulla bazooka. Han kan känna av objekt, följa fjärrkontroll-IR-sändaren och ta emot kommandon från distans.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "Köra och svänga",
+          "description": "I det här uppdraget ska du köra och svänga EV3RSTORM.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "Aktivera!",
+          "description": "I det här uppdraget ska du trycka på trycksensorn för att aktivera EV3RSTORM eller få honom att somna in igen.",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "Akta dig för mörkret",
+          "description": "I det här uppdraget ska du på ett smart sätt använda färgsensorn så att EV3RSTORM håller sig borta från mörkret och anfaller med den snurrande, trebladiga klingan med hjälp av trycksensorn.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "Närstrid",
+          "description": "I det här uppdraget ska du anfalla med den roterande, trebladiga klingan när något kommer för nära.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "Styra och spränga",
+          "description": "I det här uppdraget ska du fjärrstyra EV3RSTORM med fjärrkontroll-IR-sändaren och avfyra den kraftfulla bazookan med hjälp av trycksensorn och färgsensorn.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "Sök och förgör",
+          "description": "I det här uppdraget ska du söka efter Wheeler med hjälp av IR-sensorn och sikta och skjuta med den kraftfulla bazookan.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "Supersnabb ormbot",
+      "description": "R3PTAR är en hög, lång och kraftfull robot. Den rör sig som en riktig orm och kan hugga med sina skräckinjagande huggtänder när den känner av något.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "Slingra som en orm",
+          "description": "I det här uppdraget ska du skapa en slingrande rörelse som en riktig orm.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "Skallrande R3PTAR",
+          "description": "I det här uppdraget ska du få R3PTAR att skallra och avvakta tills den upptäcker något att hugga med sin skräckinjagande huggtänder.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "Jakt",
+          "description": "I det här uppdraget ska du få R3PTAR att slingra runt på egen hand och hugga med sina skräckinjagande huggtänder när den upptäcker något.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "Ta kontroll",
+          "description": "I det här uppdraget ska du använda fjärrkontroll-IR-sändaren för att fjärrstyra R3PTAR.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "Superstark terrängrobot",
+      "description": "GRIPP3R är en stark robot som kan lyfta och bära tunga saker med sina kraftfulla gripklor. Fjärrstyr den och få den att hämta saker åt dig!",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "Greppa",
+          "description": "I det här uppdraget ska du öva på att använda de kraftfulla gripklorna.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "Flytta däcktraven",
+          "description": "I det här uppdraget ska du köra fram, plocka upp däcktraven, vända och sätta ner den igen.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "Plocka upp det där!",
+          "description": "I det här uppdraget ska du använda IR-sensorn för att visa GRIPP3R vilka objekt du vill att den ska plocka upp eller sätta ner.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "Till er tjänst!",
+          "description": "I det här uppdraget ska du använda fjärrkontroll-IR-sändaren för att fjärrstyra GRIPP3R att bära runt saker enligt dina önskemål.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

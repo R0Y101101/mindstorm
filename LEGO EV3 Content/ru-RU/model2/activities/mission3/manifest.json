@@ -1,0 +1,105 @@
+{
+  "id": "mission3",
+  "title": "Раздробите!",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "control_repeat",
+    "ev3sound_playSoundUntilDone",
+    "ev3motor_motorStartSpeed",
+    "ev3sound_playSound",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Вот ваша задача.",
+      "description": "<p>В этой миссии вы установите на робота клешни-дробилки и будете атаковать с ближней дистанции.<br><br>Соберите SPIK3R 03.</p>",
+      "image": "/images/missions/2-3-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model2/31313_2_3.mp4",
+                "video_hd_download": "/buildinginstructions/model2/31313_2_3.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Давайте устроим испытания!",
+      "description": "<p>Установите SPIK3R на гладкую поверхность, затем загрузите и запустите программу.</p>",
+      "image": "/images/missions/2-3-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Этот блок определяет частоту перемещений SPIK3R и движений клешней-дробилки.",
+      "hints": [
+        {
+          "Text": "<h3>Загрузка и запуск через Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Нажмите на значок подключения и следуйте инструкциям на экране.<br />2. Загрузите и запустите программу."
+        },
+        {
+          "Text": "<h3>Загрузка и запуск через USB</h3>"
+        },
+        {
+          "Image": "/images/missions/2-3-2-hint-usb-connect.png",
+          "Text": "1. Подключите Модуль EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Загрузите программу на Модуль EV3."
+        },
+        {
+          "Image": "/images/missions/2-3-2-hint-run.png",
+          "Text": "3. Запустите программу, загруженную на Модуль EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"OBS5)HF)NlRJ]VUhxuYi\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"Rw][CiWTxaUXvLH(H5k#\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"VLpR}xI([k=kX!J,E;UT\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"Usfw_?V=*.GULS(|TS9l\"><field name=\"NUM\">50</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"G_}papswSx{:`o0SdQG]\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"f!qEc0h+;e0@%G)G,qBF\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"?]DrQVM5N6Add_lQd#B3\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"8)BM|RP!#@yu8O3m{v!:\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"[lDy@hpP90!jgujydbTO\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"KzYKJ^23w0H|YnK,n4vw\"><field name=\"NUM\">0.3</field></shadow></value><next><block type=\"ev3motor_motorSetSpeed\" id=\"P8`M9-/$1BeNR~n1X2$D\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"(YU42UAn!JK1zt.=nUM`\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\")EkNswqQ;yoV.r/zt.T0\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"ev3motor_motorSetSpeed\" id=\"[f[wC{zsb7Vo*1^vy+ib\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"b_P#1!}HL7y%=Sj~T[TQ\"><field name=\"outputPort\">2</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"tJxd*2?/VI,Z(pcdNVcD\"><field name=\"NUM\">100</field></shadow></value><next><block type=\"control_repeat\" id=\",iZmeVA|WLu3)Btlic|R\"><comment id=\"e2$/CCuGNO17qsQJk1];\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"456\" minimized=\"false\">Этот блок определяет частоту перемещений SPIK3R и движений клешней-дробилки.</comment><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"qG[]ITRgD,?RJu|temaf\"><field name=\"NUM\">2</field></shadow></value><statement name=\"SUBSTACK\"><block type=\"control_repeat\" id=\"(3]i3gk0+b1x(%|=G0fQ\"><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"yFIT,|)#Z9A8@}C[l{:N\"><field name=\"NUM\">3</field></shadow></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorTurnFor\" id=\"^b6N)_7B-WWH@O/+1lZK\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"zw35H=QuBkIv~xkaWl~4\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"rq,N/{}#[Q.FzR]5tB8I\"><field name=\"NUM\">0.2</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"}huK7(Vu:/VPc+`:ej3$\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"]g:pUn7Y6p^QCLj)6_%b\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"xE*U_+@%-gN0]:0Le]o=\"><field name=\"NUM\">0.2</field></shadow></value></block></next></block></statement><next><block type=\"ev3motor_motorTurnFor\" id=\"Blw;:_j_oz)*C0Qx6}tm\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"#6kPnu6G^5Z$`Mw)X6cU\"><field name=\"outputPort\">2</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"pIBa6KI/3c-xGeU`SeFA\"><field name=\"NUM\">3</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"~,vM,HpC31}..eAVgxaJ\"><field name=\"SOUND\">Blip 2</field><next><block type=\"ev3motor_motorTurnFor\" id=\"0]JuhXx0rT%Ju]Nt[zvp\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"=txJa?C6)1CpR;h+b:?7\"><field name=\"outputPort\">2</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"{GCs,/vNW7(2=D,3*TXy\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"L+e#+k_evQm|4.B|Iu)H\"><field name=\"SOUND\">Blip 4</field><next><block type=\"ev3motor_motorStartSpeed\" id=\"g%ZXt-Z:(pE4PZfAk0xs\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"z7q(9kF[|@of@ws^jBdo\"><field name=\"outputPort\">2</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"~o%Ygb?aqdd+stjsy?~d\"><field name=\"NUM\">25</field></shadow></value><next><block type=\"ev3sound_playSound\" id=\"1zWf:Ov`43bDrG46!IV.\"><field name=\"SOUND\">Blip 1</field></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><next><block type=\"ev3control_stop\" id=\"%@N33L@L+svAsqs;_V2L\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Миссия выполнена!",
+      "description": "<p>После запуска программы SPIK3R должен выполнять действия, показанные в видео.<br><br><strong>Вы завершили эту миссию!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/2-3.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Начать следующую миссию"
+      },
+      "doneAction": {
+        "startNext": "mission4",
+        "startTitle": "SPIK3R 04"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

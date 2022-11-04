@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "أداة Trackerbot متعددة الأغراض لحل المشكلات",
+      "description": "يُعد TRACK3R سهل التجميع والتحكم ويضم الكثير من الأدوات. استخدم الخلاط مزدوج الشفرة والبازوكا المتفجرة والمخلب المطبق والمطرقة الثقيلة لإكمال مختلف المهام على لوحة المهام.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "أنجزِ المهمة بدقة",
+          "description": "في هذه المهمة، ستستخدم خلاط مزدوج الشفرة لإزالة إطار من لوحة المهام.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "فجِّر هدفك",
+          "description": "في هذه المهمة، ستنفجر الإطارات باستخدام البازوكا المتفجرة.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "انقل هدفك",
+          "description": "في هذه المهمة، ستنقل إطارين باستخدام المخلب المطبق وتضعهما داخل المربعات على لوحة المهام.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "نظام الدفاع التكتيكي",
+          "description": "في هذه المهمة، ستنشئ نظام دفاع تكتيكي باستخدام مطرقة ثقيلة لحماية TRACK3R من الكمائن التي يمكن أن تصيبه من الخلف.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "تجربة محددة بوقت",
+          "description": "في هذه المهمة، ستطلب من TRACK3R، باستخدام جهاز توجيه الأشعة تحت الحمراء عن بعد، المرور من خلال جميع نقاط الفحص الموضحة على لوحة المهام قبل نفاد الوقت المحدد!",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "روبوت على شكل عقرب يتمتع بالسرعة والرشاقة والذكاء الشديد",
+      "description": "SPIK3R عبارة عن روبوت معقد يزحف ويبحث عن الأهداف. يمكنه الهجوم باستخدام مخالبه الساحقة أو الإطلاق باستخدام ذيله البارق.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "الذيل البارق",
+          "description": "في هذه المهمة، ستطلق كرة باستخدام الذيل البارق.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "مناورات الزحف",
+          "description": "في هذه المهمة، ستُجري مناورة زحف وتشن هجومًا بعيد المدى.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "حطِّم هدفك!",
+          "description": "في هذه المهمة، ستضيف المخالب الساحقة وتشن هجومًا قريب المدى.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "انتظروني...",
+          "description": "في هذه المهمة، ستجعل SPIK3R يزحف في المكان وينتظر حتى يكتشف شيئًا ليهاجمه.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "أمسِك تلك الحشرة",
+          "description": "في هذه المهمة، ستطارد حشرة وتسحقها بضربة بعيدة المدى قبل إنهاء المهمة باستخدام المخالب الساحقة.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "Intelligent Humanoid Smartbot",
+      "description": "يتحرّك EV3RSTORM على زلاجات مجنزرة ويمكنه الهجوم بشفرته الثلاثية الدوارة أو البازوكا المتفجرة. كما يمكنه اكتشاف الأجسام ومتابعة جهاز توجيه الأشعة تحت الحمراء عن بعد وتلقي الأوامر عن بعد.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "القيادة والانعطاف",
+          "description": "في هذه المهمة، ستقود EV3RSTORM وتجعله ينعطف.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "تنشيط!",
+          "description": "في هذه المهمة، ستضغط على مستشعر اللمس لتنشيط EV3RSTORM أو إعادته إلى وضع السكون",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "ابتعد عن الأماكن المظلمة",
+          "description": "في هذه المهمة، ستستخدم مستشعر الألوان بذكاء حتى يظل EV3RSTORM بعيدًا عن الأماكن المظلمة ويهاجم بالشفرة الثلاثية الدوارة باستخدام مستشعر اللمس.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "هاجم الهدف الموجود أمامك",
+          "description": "في هذه المهمة، ستهاجم باستخدام الشفرة الثلاثية الدوارة عندما يقترب منك شيء ما بشدة.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "قُد وفجِّر",
+          "description": "في هذه المهمة، ستتحكم في EV3RSTORM عن بعد باستخدام جهاز توجيه الأشعة تحت الحمراء عن بعد وإطلاق البازوكا المتفجرة باستخدام مستشعر اللمس ومستشعر الألوان.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "ابحث ودمِّر",
+          "description": "في هذه المهمة، ستبحث عن عجلة باستخدام مستشعر الأشعة تحت الحمراء للتصويب والإطلاق باستخدام البازوكا المتفجرة.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "روبوت على شكل ثعبان فائق السرعة",
+      "description": "R3PTAR عبارة عن روبوت طويل وقوي. يتحرك كثعبان حقيقي ويمكنه الضرب بأنيابه المخيفة عندما يكتشف شيئًا ما.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "انزلق مثل الثعبان",
+          "description": "في هذه المهمة، ستتحرك حركة انزلاقية مثل ثعبان حقيقي.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "خشخشة R3PTAR",
+          "description": "في هذه المهمة، ستتحكم في R3PTAR كي يُصدر خشخشة وينتظر حتى يكتشف شيئًا ما ليضربه بأنيابه المخيفة.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "المطاردة",
+          "description": "في هذه المهمة، ستمكِّن R3PTAR من الانزلاق بنفسه والضرب باستخدام أنيابه المخيفة عندما يكتشف شيئًا ما.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "تحكَّم",
+          "description": "في هذه المهمة، ستستخدم جهاز توجيه الأشعة تحت الحمراء عن بعد للتحكم في R3PTAR عن بعد.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "روبوت فائق القوة يناسب جميع التضاريس",
+      "description": "GRIPP3R عبارة عن روبوت قوي يمكنه رفع الأشياء الثقيلة وحملها بقبضته المطبقة. يمكنك التحكم به عن بعد كي يلتقط ما تريد!",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "أمسِك بهدفك",
+          "description": "في هذه المهمة، ستتدرب على استخدام القبضة المطبقة.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "التحرك حول كومة الإطارات",
+          "description": "في هذه المهمة، ستقود روبوتك ليلتقط كومة الإطارات ثم يستدير ويضعها مرة أخرى.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "التقط هدفك!",
+          "description": "في هذه المهمة، ستستخدم مستشعر الأشعة تحت الحمراء لتوضح لـ GRIPP3R الأجسام التي تريد التقاطها أو وضعها.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "في خدمتك!",
+          "description": "في هذه المهمة، ستستخدم جهاز توجيه الأشعة تحت الحمراء عن بعد للتحكم في GRIPP3R عن بُعد حتى تتمكن من حمل الأشياء كما تشاء.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

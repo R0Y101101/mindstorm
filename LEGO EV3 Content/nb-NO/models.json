@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "Problemløsing for den universale sporingsroboten",
+      "description": "TRACK3R er enkel å skape og styre og har mange verktøy. Bruk blenderen med to kniver, den kraftige bazookaen, gripetengene og den tunge hammeren for å fullføre ulike oppdrag på oppdragsrampen.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "Gå i ett med omgivelsene med presisjon",
+          "description": "I dette oppdraget skal du bruke en blender med to kniver til å skifte et dekk fra oppdragsrampen.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "Skyt i vei",
+          "description": "I dette oppdraget skal du skyte dekk med en kraftig bazooka.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "Fjern dem",
+          "description": "I dette oppdraget skal du flytte to dekk med gripekloen og plassere dem inni firkantene på oppdragsrampen.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "Taktisk forsvarssystem",
+          "description": "I dette oppdraget skal du opprette et taktisk forsvarssystem ved bruk av den tunge hammeren for å beskytte TRACK3R fra bakholdsangrep.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "Tidsløpet",
+          "description": "I dette oppdraget skal du kommandere TRACK3R med den eksterne infrarøde signalet for å passere gjennom alle kontrollpunktene på oppdragsrampen, før tiden løper ut.",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "Rask, smidig og veldig smart skorpionrobot",
+      "description": "SPIK3R er en omfattende robot som krabber og snur seg for å søke etter mål. Den kan angripe med sine knusende klør eller skyte med sin lynhale.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "Lynhale",
+          "description": "I dette oppdraget skal du skyte en ball med lynhalen.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "Krabbemanøvre",
+          "description": "I dette oppdraget skal du utføre krabbemanøvre og utføre et angrep fra langt hold.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "Knus den!",
+          "description": "I dette oppdraget skal du legge til de knusende klørne og utføre et angrep på nært hold.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "Vent litt ...",
+          "description": "I dette oppdraget skal du få SPIK3R til å krabbe i ring og vente på noe å angripe.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "Fang det insektet",
+          "description": "I dette oppdraget skal du jage insektet og skyte det, før du avslutter jobben med de knusende klørne.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "Intelligent menneskelig smartrobot",
+      "description": "EV3RSTORM er beltedrevet og kan angripe med sin roterende trippelklingen eller den kraftige bazookaen. Den kan oppdage objekter, følge det eksterne infrarøde signalet og motta kommandoer eksternt.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "Kjøre og svinge",
+          "description": "I dette oppdraget skal du kjøre og svinge EV3RSTORM.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "Aktiver!",
+          "description": "I dette oppdraget skal du trykke på trykksensoren for å aktivere EV3RSTORM eller sette ham over i dvalemodus.",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "Ikke vær ute i mørket",
+          "description": "I dette oppdraget kan du bruke fargesensoren slik at EV3RSTORM holder seg unna mørket og angriper med den roterende trippelklingen ved bruk av trykksensoren.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "Angrip ved nærhet",
+          "description": "I dette oppdraget skal du angripe med den roterende trippelklingen når noe kommer for nært.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "Kommander og skyt",
+          "description": "I dette oppdraget skal du styre EV3RSTORM med det eksterne infrarøde signalet og skyte med den kraftige bazookaen ved bruk av trykksensoren og fargesensoren.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "Søk og ødelegg",
+          "description": "I dette oppdraget skal du søke etter Wheeler ved bruk av den infrarøde sensoren for å sikte inn og skyte med den kraftige bazookaen.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "Superrask slangerobot",
+      "description": "R3PTAR er en høy, lang og kraftig robot. Den beveger seg som en slange og kan bite med de fryktelige hoggtennene når den oppdager noe.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "Gli som en slange",
+          "description": "I dette oppdraget skal du utføre en glidende bevegelse, akkurat som en ekte slange.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "Klaprende R3PTAR",
+          "description": "I dette oppdraget skal du få R3PTAR til å klapre og vente til den oppdager noe som den kan bite med de fryktelige hoggtennene.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "Jakt",
+          "description": "I dette oppdraget skal du få R3PTAR til å gli rundt av seg selv og bite med de fryktelige hoggtennene når den oppdager noe.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "Ta kontrollen",
+          "description": "I dette oppdraget skal du bruke det eksterne infrarøde signalet til å styre R3PTAR eksternt.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "Supersterk terrengrobot",
+      "description": "GRIPP3R er en sterk robot som kan løfte og bære tunge ting med gripetengene. Styr den eksternt for å få den til å løfte det du ønsker.",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "Gripe det",
+          "description": "I dette oppdraget skal du øve deg på å bruke gripetengene.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "Kjøre rundt dekkstabelen",
+          "description": "I dette oppdraget skal du kjøre, hente dekkstabelen, snu rundt og sette den ned igjen.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "Plukk opp dette!",
+          "description": "I dette oppdraget skal du bruke den infrarøde sensoren til å vise GRIPP3R hvilke objekter du ønsker at den skal løfte og sette ned.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "Klar til tjeneste!",
+          "description": "I dette oppdraget skal du bruke det eksterne infrarøde signalet til å styre GRIPP3R eksternt, slik at du kan bære ting rundt omkring.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

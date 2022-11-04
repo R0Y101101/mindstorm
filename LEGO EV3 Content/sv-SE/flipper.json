@@ -1,0 +1,31 @@
+[
+  {
+    "type": "banner",
+    "title": "TRACK3R",
+    "description": "Bekanta dig med EV3 genom att bygga och programmera den här multifunktionsroboten.",
+    "link": {
+      "path": "/content/start/",
+      "title": "Starta"
+    },
+    "background": "#f5f5f5",
+    "image": {
+      "image": "/images/lobby-banner-primary.png",
+      "color": "#f5f5f5"
+    }
+  },
+  {
+    "type": "recentprojects"
+  },
+  {
+    "type": "cards",
+    "cards": [
+      {
+        "title": "Bygg EV3-robotar",
+        "description": "Bygg fem coola robotar: TRACK3R, R3PTAR, SPIK3R, GRIPP3R och EV3RSTORM. Du kan programmera R3PTAR att slingra som en orm, SPIK3R att fånga ett kryp, GRIPP3R att greppa ett föremål, EV3RSTORM att söka och förgöra och en massa mer.",
+        "image": "/images/lobby-banner-secondary.png",
+        "background": "#fff",
+        "link": "/content/core-models/"
+      }
+    ]
+  }
+]

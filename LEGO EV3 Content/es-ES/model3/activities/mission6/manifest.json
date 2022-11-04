@@ -1,0 +1,108 @@
+{
+  "id": "mission6",
+  "title": "Buscar y destruir",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "control_forever",
+    "ev3display_setStatusLight",
+    "control_if_else",
+    "ev3sensors_isEV3InfraredBeaconActive",
+    "operator_subtract",
+    "ev3sensors_getEV3InfraredBeaconHeading",
+    "ev3sensors_getEV3InfraredBeaconProximity",
+    "operator_and",
+    "operator_equals",
+    "ev3move_stopMove",
+    "ev3motor_motorTurnForSpeed",
+    "ev3sound_playSoundUntilDone",
+    "ev3move_startDualSpeed",
+    "operator_add",
+    "operator_multiply",
+    "variables"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Este es tu objetivo.",
+      "description": "<p> En esta misión, buscarás a Wheeler mediante el sensor de infrarrojos para apuntar y disparar con la potente bazuca.<br><br>Crea EV3RSTORM 06.</p>",
+      "image": "/images/missions/3-6-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model3/31313_3_6.mp4",
+                "video_hd_download": "/buildinginstructions/model3/31313_3_6.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "¡Pruébalo!",
+      "description": "<p>Coloca EV3RSTORM y el Wheeler sobre una superficie lisa. Pulsa el botón del modo baliza en la baliza de infrarrojos remota.<br><br>Descarga y ejecuta el programa.</p>",
+      "image": "/images/missions/3-6-2.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Este bloque especifica con qué orientación EV3RSTORM disparará al Wheeler.",
+      "hints": [
+        {
+          "Text": "<h3>Descarga y ejecución mediante Bluetooth.</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Pulsa en el icono de conexión y sigue las instrucciones en pantalla.<br />2. Descarga y ejecuta el programa."
+        },
+        {
+          "Text": "<h3>Descarga y ejecución mediante USB.</h3>"
+        },
+        {
+          "Image": "/images/missions/3-6-2-hint-usb-connect.png",
+          "Text": "1. Conecta tu ladrillo EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Descarga el programa a tu ladrillo EV3."
+        },
+        {
+          "Image": "/images/missions/3-6-2-hint-run.png",
+          "Text": "3. Ejecuta el programa desde tu ladrillo EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables><variable type=\"\" id=\"#H.NURlS?!]}Z#=vaX*F\" islocal=\"true\" iscloud=\"false\">heading difference</variable><variable type=\"\" id=\"eM/48Ssum:a6p4bz,NG,\" islocal=\"true\" iscloud=\"false\">proximity difference</variable></variables><block type=\"ev3events_whenProgramStarts\" id=\"dmrSBIWI6FsQHht2hMJR\" x=\"-130\" y=\"120\"><next><block type=\"control_forever\" id=\"[l]7[)}C;uiyqi5RjYEt\"><statement name=\"SUBSTACK\"><block type=\"ev3display_setStatusLight\" id=\"1dyJ27~YtLoMI(ByX9%t\"><field name=\"OPTION\">6</field><next><block type=\"control_if_else\" id=\"Zl$%!o)G}FS`?PO5tTHg\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconActive\" id=\"5o1`.^V]iII9Hai5R4rw\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"/U8m_wc}yrYm{kDyl6yu\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"/%~eN$$4Ur`)W#@xjsv1\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"data_setvariableto\" id=\"n7fY_?u9F/.][Pf=bW%E\"><field name=\"VARIABLE\" id=\"#H.NURlS?!]}Z#=vaX*F\" variabletype=\"\">heading difference</field><value name=\"VALUE\"><shadow id=\"Z8(u}5[P80g4gn)j=4-8\" type=\"text\"><field name=\"TEXT\">0</field></shadow><block type=\"operator_subtract\" id=\"$j)fTrT$Fv`Sh;fTc`g4\"><comment id=\"!-e[tg}O*cW%[R%=AzZq\" pinned=\"true\" h=\"200\" w=\"200\" x=\"800\" y=\"342\" minimized=\"false\">Este bloque especifica con qué orientación EV3RSTORM disparará al Wheeler.</comment><value name=\"NUM1\"><shadow id=\"aS|.L-7|-N869F%(0?tA\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconHeading\" id=\"(uqZNyB/s9L:v(2oJSK]\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"J)WLxR}1YpvU1x/YXa7S\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"sXl-A7@^`%eB?u)dwFhq\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"1HqAgl@oVtt#N][a)CW|\"><field name=\"NUM\">-3</field></shadow></value></block></value><next><block type=\"data_setvariableto\" id=\"?eOMSA?{[[tl]L3:cet!\"><field name=\"VARIABLE\" id=\"eM/48Ssum:a6p4bz,NG,\" variabletype=\"\">proximity difference</field><value name=\"VALUE\"><shadow id=\"M}U5D]zY`OP^RFu%n=xL\" type=\"text\"><field name=\"TEXT\">0</field></shadow><block type=\"operator_subtract\" id=\"/*F|ehoIGSxrwCSXqpd;\"><value name=\"NUM1\"><shadow id=\"|#QHG^#rGM4=KKuL^JO9\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconProximity\" id=\"wYM$za.n%-tZ3tOdl^4~\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"|OkZlE/~:V9RO^bej|dW\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"m$2v6E{G^X*a-bgg2C=6\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"^!c2|{p:v6I^01ZREm?O\"><field name=\"NUM\">70</field></shadow></value></block></value><next><block type=\"control_if_else\" id=\"~Sp/||txaaN%AADx7]hj\"><value name=\"CONDITION\"><block type=\"operator_and\" id=\"CipuF7j,vj_9vmfb~@-t\"><value name=\"OPERAND1\"><block type=\"operator_equals\" id=\"u6no9Q8`1|NZ^gbDdhta\"><value name=\"OPERAND1\"><shadow id=\"V%Ue+iKEtB*]96qN1%~U\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"data_variable\" id=\"B}ndeR=N}p`]I8Tx{IrH\"><field name=\"VARIABLE\" id=\"#H.NURlS?!]}Z#=vaX*F\" variabletype=\"\">heading difference</field></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"_*z:rn~fe/Ke9@:xCjeN\"><field name=\"TEXT\">0</field></shadow></value></block></value><value name=\"OPERAND2\"><block type=\"operator_equals\" id=\"J@MrFOWMl{M_-5ONu!3H\"><value name=\"OPERAND1\"><shadow id=\".yLXpF%Gnd}mgNM_y6o*\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"data_variable\" id=\"~g6kBB-QWV|Cf1Qch+6V\"><field name=\"VARIABLE\" id=\"eM/48Ssum:a6p4bz,NG,\" variabletype=\"\">proximity difference</field></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"382tMwlpXvF*y[O90V65\"><field name=\"TEXT\">0</field></shadow></value></block></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3move_stopMove\" id=\"|Vc?c:L;kf,F2(xC]jee\"><next><block type=\"ev3display_setStatusLight\" id=\"INjkNw@46Eoju8Qu@j.7\"><field name=\"OPTION\">5</field><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"Ab-G=zes2pW(z`l~*v|s\"><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"2AaIXqJ2y(*rHEMNier7\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"^=3u~d]jHn=v66-sfZ01\"><field name=\"NUM\">3</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"?H{Bpmvn[kgPrq!Fizy@\"><field name=\"NUM\">100</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"(N@gkCAKtb]txh$z1W5=\"><field name=\"SOUND\">Laughing 2</field></block></next></block></next></block></next></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3move_startDualSpeed\" id=\"#~wsY2P3~49r_2l_}geO\"><value name=\"LEFT_SPEED\"><shadow id=\"i5MJZVo8{MLEBnZx|0Ng\" type=\"math_number\"><field name=\"NUM\">50</field></shadow><block type=\"operator_add\" id=\"B2kI,b,h{}0wl58GM;T|\"><value name=\"NUM1\"><shadow id=\"u~F=5*?@E~*lzua]4DJ,\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"operator_multiply\" id=\"327{Y*nq@p$L577:CU}*\"><value name=\"NUM1\"><shadow id=\"qK78z)@o%@o9MX%+hQJ~\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"data_variable\" id=\"(Ap4oKaN.`=gL)D2Cy:c\"><field name=\"VARIABLE\" id=\"eM/48Ssum:a6p4bz,NG,\" variabletype=\"\">proximity difference</field></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"[(TKY)^+Tf%~aHXsmGj]\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"NUM2\"><shadow id=\"B,}4i,;p1qjLn@vZ7pa^\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"operator_multiply\" id=\"4hEVjW^MBx*4ht6@IE4]\"><value name=\"NUM1\"><shadow id=\"QgUv0yvi/DLalHX#oKd^\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"data_variable\" id=\"SdDy*nP^vH?xF}@Fj6ek\"><field name=\"VARIABLE\" id=\"#H.NURlS?!]}Z#=vaX*F\" variabletype=\"\">heading difference</field></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"Q4!3X#ufmuyG/:8#hMB7\"><field name=\"NUM\">4</field></shadow></value></block></value></block></value><value name=\"RIGHT_SPEED\"><shadow id=\"I[jOue]@J:#.X~c=Pko8\" type=\"math_number\"><field name=\"NUM\">50</field></shadow><block type=\"operator_subtract\" id=\",rPs3|p)LODLt3rgM5NO\"><value name=\"NUM1\"><shadow id=\"z%,CKeL*KYk@7,lh`b9J\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"operator_multiply\" id=\"hBun2}hnv{qY11k$w2D=\"><value name=\"NUM1\"><shadow id=\"ZuX4GQ.h#cg)V,fI-Cx`\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"data_variable\" id=\"tMS_R8M?1y)@#eG,})4j\"><field name=\"VARIABLE\" id=\"eM/48Ssum:a6p4bz,NG,\" variabletype=\"\">proximity difference</field></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"/acA8i=5h%V9ynm(iyg;\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"NUM2\"><shadow id=\"-%q?/f%JK%EMxnTX#i8;\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"operator_multiply\" id=\"$K0ozopC`|0yR?P4w6jI\"><value name=\"NUM1\"><shadow id=\"rVKG}c|z^Wg90(Zg(;TG\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"data_variable\" id=\"Q?s^]%yV^sW3m9,7{|46\"><field name=\"VARIABLE\" id=\"#H.NURlS?!]}Z#=vaX*F\" variabletype=\"\">heading difference</field></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"fV,Q6Utkp42LmS{2e_kK\"><field name=\"NUM\">4</field></shadow></value></block></value></block></value></block></statement></block></next></block></next></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3move_stopMove\" id=\"Z)*svtR[)(:%bHi(Kq4x\"></block></statement></block></next></block></statement></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "¡Misión cumplida!",
+      "description": "<p>EV3RSTORM debería hacer lo que se muestra en el vídeo cuando se ejecuta el programa.<br><br><strong>¡Has completado todas las misiones EV3RSTORM!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/3-6.mp4"
+        }
+      },
+      "hints": [
+        {
+          "Image": "/images/missions/3-6-3-hint-channel.png",
+          "Text": "Si EV3RSTORM no encuentra al Wheeler, asegúrate de que la baliza de infrarrojos remota esté en el “Canal 1”, encendida y no demasiado alejada de EV3RSTORM."
+        }
+      ]
+    }
+  ]
+}

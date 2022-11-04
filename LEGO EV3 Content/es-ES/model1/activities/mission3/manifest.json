@@ -1,0 +1,106 @@
+{
+  "id": "mission3",
+  "title": "Llévatelos",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorStart",
+    "ev3move_movementSpeed",
+    "control_repeat",
+    "ev3move_move",
+    "ev3sound_playSoundUntilDone",
+    "control_wait",
+    "ev3move_steer",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Este es tu objetivo.",
+      "description": "<p>En esta misión moverás dos neumáticos con la zarpa de agarre y los colocarás dentro de los recuadros de la plataforma de misión.<br><br>Crea TRACK3R 03.</p>",
+      "image": "/images/missions/1-3-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model1/31313_1_3.mp4",
+                "video_hd_download": "/buildinginstructions/model1/31313_1_3.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "¡Pruébalo!",
+      "description": "<p>Coloca TRACK3R en su posición inicial sobre la plataforma de misión y coloca un neumático en cada uno de los dos círculos tal como se muestra en la imagen.<br><br>Descarga y ejecuta el programa.</p>",
+      "image": "/images/missions/1-3-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Este bloque fija la velocidad de conducción.",
+      "hints": [
+        {
+          "Text": "<h3>Descarga y ejecución mediante Bluetooth.</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Pulsa en el icono de conexión y sigue las instrucciones en pantalla.<br />2. Descarga y ejecuta el programa."
+        },
+        {
+          "Text": "<h3>Descarga y ejecución mediante USB.</h3>"
+        },
+        {
+          "Image": "/images/missions/1-3-2-hint-usb-connect.png",
+          "Text": "1. Conecta tu ladrillo EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Descarga el programa a tu ladrillo EV3."
+        },
+        {
+          "Image": "/images/missions/1-3-2-hint-run.png",
+          "Text": "3. Ejecuta el programa desde tu ladrillo EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"PEXmeAjYPSfz-uHJkRpo\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorStart\" id=\"%uey^j6vN5(;6yM6FFg{\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"X4X.JPF@uy6M6Y/NmGoA\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3move_movementSpeed\" id=\"?=HAm_gos=uqcBLU91Yn\"><comment id=\"nB2z,k(d9c~-WZ84MM)A\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"236\" minimized=\"false\">Este bloque fija la velocidad de conducción.</comment><value name=\"SPEED\"><shadow type=\"math_number\" id=\"{eGB0bbcorIseG+RVe~n\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"control_repeat\" id=\",V!._b9NWU(_q[t?tOa*\"><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"m^3a@!oIT@Ie2)I.Q[w~\"><field name=\"NUM\">2</field></shadow></value><statement name=\"SUBSTACK\"><block type=\"ev3move_move\" id=\"%CU$xoRs9;wRnxdpy^;|\"><field name=\"DIRECTION\">forward</field><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"^;8}hxxNk*D|.165q1JY\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"ev3motor_motorStart\" id=\"{S=[qP#pKI:sTXxJ8os.\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"5{kT+)5u55~o)MZUOd6G\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"Qz]Ng5L}T{C/bLG!0,{]\"><field name=\"SOUND\">Airbrake</field><next><block type=\"control_wait\" id=\"^*zN8b86F(v+cFhPL$sd\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"R}c`JoRYG]^XEvn0MM|q\"><field name=\"NUM\">0.5</field></shadow></value><next><block type=\"ev3move_steer\" id=\"bcHIKVpaAe$,z/V~u#)b\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"M5m/?,O]Sk@Sp3n[uQ*E\"><field name=\"field_ev3move_rotation-wheel\">35</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"1q3vg:#y04Fg+p|~FV3)\"><field name=\"NUM\">3</field></shadow></value><next><block type=\"ev3motor_motorStart\" id=\"i~t#Ugn)I8_,i9Agmas-\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"V[dZ^zB3rBwX3=bW=^[r\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\",j*l}ZhT_l{P8Gf,@1R.\"><field name=\"SOUND\">Air release</field><next><block type=\"control_wait\" id=\"1:e)|6(X+D#n-,+S6TuK\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"*(f;Z?c4Ni?WzUmvv(KO\"><field name=\"NUM\">0.5</field></shadow></value><next><block type=\"ev3move_steer\" id=\"RJJcmmT6u,c#kC77XM*=\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"E))~P@XCq#1Vn~7jXtPu\"><field name=\"field_ev3move_rotation-wheel\">35</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"tpQ|)}3~1w+4Jh,?mF4U\"><field name=\"NUM\">-3</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><next><block type=\"ev3move_move\" id=\"^e?*1EQ5?(.^Ws]^U6f9\"><field name=\"DIRECTION\">back</field><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"K{h6icU23J)VdiP?epnt\"><field name=\"NUM\">4</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"7ru49($Gmol7{G-r~iKI\"><field name=\"SOUND\">Cheering</field><next><block type=\"ev3control_stop\" id=\",#$aBDs=UKFir,fu~5hn\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "¡Misión cumplida!",
+      "description": "<p>TRACK3R debería hacer lo que se muestra en el video cuando se ejecuta el programa.<br><br><strong>¡Has completado la misión!<strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/1-3.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Comienza la siguiente misión"
+      },
+      "doneAction": {
+        "startNext": "mission4",
+        "startTitle": "TRACK3R 04"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

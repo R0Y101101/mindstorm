@@ -1,0 +1,105 @@
+{
+  "id": "mission1",
+  "title": "Blanda med precision",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3display_displayImage",
+    "ev3move_movementSpeed",
+    "ev3move_move",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3sound_playSoundUntilDone",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Det här är ditt mål.",
+      "description": "<p>I det här uppdraget ska du använda den dubbelbladiga blandaren för att flytta ett däck från uppdragsplattan.<br><br>Bygg TRACK3R 01.</p>",
+      "image": "/images/missions/1-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model1/31313_1_1.mp4",
+                "video_hd_download": "/buildinginstructions/model1/31313_1_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Prova!",
+      "description": "<p>Placera TRACK3R vid startpositionen på uppdragsplattan och placera ett däck i cirkeln, som på bilden.<br><br>Ladda ner och kör programmet.</p>",
+      "image": "/images/missions/1-1-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Det här blocket anger den dubbelbladiga blandarens hastighet.",
+      "hints": [
+        {
+          "Text": "<h3>Ladda ner och kör via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Tryck på anslutningsikonen och följ instruktionerna på skärmen.<br />2. Ladda ner och kör programmet."
+        },
+        {
+          "Text": "<h3>Ladda ner och kör via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/1-1-2-hint-usb-connect.png",
+          "Text": "1. Anslut EV3-enheten."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Ladda ner programmet till EV3-enheten."
+        },
+        {
+          "Image": "/images/missions/1-1-2-hint-run.png",
+          "Text": "3. Kör programmet från EV3-enheten."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"|DN/T/*V.StNqu-$L%^f\" x=\"-130\" y=\"120\"><next><block type=\"ev3display_displayImage\" id=\"u_qM=wK4`~ADa3u=|1ba\"><field name=\"IMAGE\">Pinch left</field><next><block type=\"ev3move_movementSpeed\" id=\"aEnw]75Cpv!$J63u;SH~\"><value name=\"SPEED\"><shadow type=\"math_number\" id=\"#D,L^xm##BtSV0K[:-0b\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"ev3move_move\" id=\"c+x$}),Z)[a[lfo73%__\"><field name=\"DIRECTION\">forward</field><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"bA{B9pxl]#e-F2ByHGb~\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"ev3motor_motorSetSpeed\" id=\"e,,4hn$~r)kUZGKgcmff\"><comment id=\")Hftpd[IpejFUKpG]O7~\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"348\" minimized=\"false\">Det här blocket anger den dubbelbladiga blandarens hastighet.</comment><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"kq#0#;9%s@D~-wfk3YYT\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"QZoL4[LQ+46rG@xL.+H7\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"xc2J1W}wPU7sCW#^Nq0X\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"kc:`o`;Xx!?dvcZ0]w#%\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"`tl5/kdyGO0A%}.krL%{\"><field name=\"NUM\">3</field></shadow></value><next><block type=\"ev3move_move\" id=\"!;kz9njr7EKojeI5R=T}\"><field name=\"DIRECTION\">back</field><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"SCgN-Tfl^=[=3BM7G_(!\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"[zW(,-+P9[j5(q!V8vlF\"><field name=\"SOUND\">Fanfare</field><next><block type=\"ev3control_stop\" id=\"H~:(W4tyN1:*J*MQ[(Tb\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Uppdraget slutfört!",
+      "description": "<p>TRACK3R ska göra som videoklippet visar när programmet körs.<br><br><strong>Du har slutfört det här uppdraget!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/1-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Starta nästa uppdrag"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "TRACK3R 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

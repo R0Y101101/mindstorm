@@ -1,0 +1,31 @@
+[
+  {
+    "type": "banner",
+    "title": "TRACK3R",
+    "description": "EV3와 친숙해지는 차원에서, 이 다목적 로봇을 조립하고 프로그래밍하세요",
+    "link": {
+      "path": "/content/start/",
+      "title": "시작"
+    },
+    "background": "#f5f5f5",
+    "image": {
+      "image": "/images/lobby-banner-primary.png",
+      "color": "#f5f5f5"
+    }
+  },
+  {
+    "type": "recentprojects"
+  },
+  {
+    "type": "cards",
+    "cards": [
+      {
+        "title": "EV3 로봇 조립",
+        "description": "다섯 개의 멋진 로봇 TRACK3R, R3PTAR, SPIK3R, GRIPP3R, EV3RSTORM를 조립하세요. R3PTAR를 뱀처럼 미끄러져가게 하고, SPIK3R에게 벌레를 잡게 하고, GRIPP3R을 보내 물체를 집어들고, EV3RSTORM을 이용해 수색과 파괴 작전을 펼치는 등 다양한 프로그램을 만들 수 있습니다.",
+        "image": "/images/lobby-banner-secondary.png",
+        "background": "#fff",
+        "link": "/content/core-models/"
+      }
+    ]
+  }
+]

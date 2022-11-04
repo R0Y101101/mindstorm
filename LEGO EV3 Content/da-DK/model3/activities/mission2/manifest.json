@@ -1,0 +1,108 @@
+{
+  "id": "mission2",
+  "title": "Vågn op!",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3move_movementSpeed",
+    "control_forever",
+    "ev3display_displayImage",
+    "ev3display_setStatusLight",
+    "event_broadcast",
+    "ev3sensors_waitEV3TouchSensorTouch",
+    "ev3control_stopOtherStacks",
+    "ev3sound_playSoundUntilDone",
+    "ev3move_steer",
+    "event_whenbroadcastreceived"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Her er dit mål.",
+      "description": "<p>I denne mission skal du trykke på tryksensoren for at vække EV3RSTORM eller sætte den i dvale igen.<br><br>Byg EV3RSTORM 02.</p>",
+      "image": "/images/missions/3-2-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model3/31313_3_2.mp4",
+                "video_hd_download": "/buildinginstructions/model3/31313_3_2.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Lad os prøve det!",
+      "description": "<p>Placer EV3RSTORM på en jævn overflade, og download og kør derefter programmet.</p>",
+      "image": "/images/missions/3-2-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Denne stabel gentager snorkelyden.",
+      "hints": [
+        {
+          "Text": "<h3>Download og kør via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Tryk på ikonet Tilslut, og følg vejledningen på skærmen.<br />2. Download og kør programmet."
+        },
+        {
+          "Text": "<h3>Download og kør via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/3-2-2-hint-usb-connect.png",
+          "Text": "1. Tilslut din EV3-klods."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Download programmet til EV3-klodsen."
+        },
+        {
+          "Image": "/images/missions/3-2-2-hint-run.png",
+          "Text": "3. Kør programmet fra EV3-klodsen."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables><variable type=\"broadcast_msg\" id=\"yv4Q@e^*cVrsdtJ(}W=a\" islocal=\"false\" iscloud=\"false\">snore</variable></variables><block type=\"ev3events_whenProgramStarts\" id=\"RB~Or-$}i^MP$`1T[ap$\" x=\"-130\" y=\"120\"><next><block type=\"ev3move_movementSpeed\" id=\"4mRkY_?.[C7;/@7/BR,h\"><value name=\"SPEED\"><shadow type=\"math_number\" id=\"jMia_ACEB)h|PG9ndT@Z\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"control_forever\" id=\"+Do_M2#coZ#6|t$%y*c;\"><statement name=\"SUBSTACK\"><block type=\"ev3display_displayImage\" id=\"RJ_.YIB=N/azu;Zve.Ha\"><field name=\"IMAGE\">Sleeping</field><next><block type=\"ev3display_setStatusLight\" id=\"68s6,):Eo5MEMc68OX@(\"><field name=\"OPTION\">3</field><next><block type=\"event_broadcast\" id=\"KA2%i*9}4$OF-{^(BZI8\"><value name=\"BROADCAST_INPUT\"><shadow type=\"event_broadcast_menu\" id=\"Ji_j=@]zH8h*+aqBQ7n6\"><field name=\"BROADCAST_OPTION\" id=\"yv4Q@e^*cVrsdtJ(}W=a\" variabletype=\"broadcast_msg\">snore</field></shadow></value><next><block type=\"ev3sensors_waitEV3TouchSensorTouch\" id=\"]y4JZ^V1-I[:,QLLc1LO\"><field name=\"EVENT\">1</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"1q73KlLXI]bQWHCHs/{T\"><field name=\"inputPort\">1</field></shadow></value><next><block type=\"ev3control_stopOtherStacks\" id=\"^I1Jg#Dt0$*enHILH{]_\"><next><block type=\"ev3display_displayImage\" id=\"Brpx!qbKxX.3)#uR50VY\"><field name=\"IMAGE\">Winking</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"Z2X5dsuWN6%2^bIGqWlD\"><field name=\"SOUND\">Activate</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"/mK@#f,(lVOxx{~dbIRW\"><field name=\"SOUND\">EV3</field><next><block type=\"ev3display_displayImage\" id=\"Kc3e?%Q?B~eis#J%b8LC\"><field name=\"IMAGE\">Neutral</field><next><block type=\"ev3display_setStatusLight\" id=\"GU66}T|FY?.3=2dCSo=n\"><field name=\"OPTION\">4</field><next><block type=\"ev3move_steer\" id=\"hCWDPi*YSC?[0^q[?S-N\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"lCA/A%{Ex`mSp544;ING\"><field name=\"field_ev3move_rotation-wheel\">100</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"b_/#Xt^zh^ni=qYw]u1P\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3move_steer\" id=\"Z]S`}2QfBU92,.NgOv/j\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"KU[$ihsS7/jqX,T$1^lQ\"><field name=\"field_ev3move_rotation-wheel\">-100</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"{9T,y@0om1/QaSU4wb!0\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3sensors_waitEV3TouchSensorTouch\" id=\"Prink@TfZBX/Q{2D43AE\"><field name=\"EVENT\">1</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"X=GL5vfM@e[$~9mJF~o9\"><field name=\"inputPort\">1</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"z$yv#m(sQ}H`eQc%aF1m\"><field name=\"IMAGE\">Tired middle</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"lP7h{WLD,N+$3bo(wee-\"><field name=\"SOUND\">Goodbye</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></next></block></next></block><block type=\"event_whenbroadcastreceived\" id=\"W*~q4MAa^P:2]n*aP@w5\" x=\"530\" y=\"120\"><field name=\"BROADCAST_OPTION\" id=\"yv4Q@e^*cVrsdtJ(}W=a\" variabletype=\"broadcast_msg\">snore</field><comment id=\"/86wR_twU(?P2K[o!$7d\" pinned=\"true\" h=\"200\" w=\"200\" x=\"1260\" y=\"127\" minimized=\"false\">Denne stabel gentager snorkelyden.</comment><next><block type=\"control_forever\" id=\"CGNWj6@==vo{6t`edrT#\"><statement name=\"SUBSTACK\"><block type=\"ev3sound_playSoundUntilDone\" id=\"oGmp[xuQewF^@L#%Q(|E\"><field name=\"SOUND\">Snoring</field></block></statement></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Missionen fuldført!",
+      "description": "<p>EV3RSTORM bør gøre det, der er vist i videoen, når du kører programmet.<br><br>Tryk på tryksensoren for at vække EV3RSTORM eller sætte den i dvale igen.<br><br><strong>Du har gennemført denne mission!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/3-2.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Start den næste mission"
+      },
+      "doneAction": {
+        "startNext": "mission3",
+        "startTitle": "EV3RSTORM 03"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

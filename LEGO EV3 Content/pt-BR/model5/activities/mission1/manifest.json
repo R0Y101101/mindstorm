@@ -1,0 +1,103 @@
+{
+  "id": "mission1",
+  "title": "Agarrando",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3sound_playSound",
+    "control_wait",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Here’s your objective.",
+      "description": "<p>Nesta missão, você praticará o uso das pinças de agarrar.<br><br>Construa o GRIPP3R 01.</p>",
+      "image": "/images/missions/5-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model5/31313_5_1.mp4",
+                "video_hd_download": "/buildinginstructions/model5/31313_5_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Vamos experimentar!",
+      "description": "<p>Coloque o Grasping Grippers em uma superfície lisa, faça o download e execute o programa.</p>",
+      "image": "/images/missions/5-1-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Este bloco define a velocidade com que as pinças de agarrar se abrem e fecham.",
+      "hints": [
+        {
+          "Text": "<h3>Baixar e executar via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Pressione o ícone conectar e siga as instruções na tela.<br />2. Baixe e execute o programa."
+        },
+        {
+          "Text": "<h3>Baixar e executar via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/5-1-2-hint-usb-connect.png",
+          "Text": "1. Conecte seu Bloco EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Baixe o programa para o seu Bloco EV3."
+        },
+        {
+          "Image": "/images/missions/5-1-2-hint-run.png",
+          "Text": "3. Execute o programa a partir do seu Bloco EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"|-`=3Er9i8*c8`p-[y5?\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"5Hy[LNc|8X[XtMp4TsCZ\"><comment id=\"#q:~?1K-R;WOYJJlZE;_\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"180\" minimized=\"false\">Este bloco define a velocidade com que as pinças de agarrar se abrem e fecham.</comment><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"VW+Bp14`%2=bJZc2RUY?\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"q(eP(x4[An:!9O*0McfO\"><field name=\"NUM\">50</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"5Lev*HPnw!Wqs0OpL{P(\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"72ST#rzy{2(sFMPm.Vp+\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Jir0z~F/G2S:7.#{-ksW\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3sound_playSound\" id=\"e0V9=i1OkY]T`=3MDXp_\"><field name=\"SOUND\">Airbrake</field><next><block type=\"ev3motor_motorTurnFor\" id=\"Kz49q0xXlrsfdkZ+:EUB\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"0}uA;VwH=V-nF5.nS,j[\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"9=;x~F?3^rENgla!svb5\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"control_wait\" id=\"-z3#G5z$%s+WM|1We1p-\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"hYL1=8k5W|j)@HPMY8lW\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3sound_playSound\" id=\"XO;bkuZ|cNZ|ZD4fs*fn\"><field name=\"SOUND\">Air release</field><next><block type=\"ev3motor_motorTurnFor\" id=\"gH[1lTx]VVzrPPT(Co2p\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"/SYl.P/%?WN-g7A^Y;M$\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Kz8azvY`tM_(Q}+B;+k)\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3control_stop\" id=\"}J8VciiBMqOrsq_F#vD|\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Missão cumprida!",
+      "description": "<p>As pinças de agarrar devem fazer o que é mostrado no vídeo ao executar o programa.<br><br><strong>Você completou esta missão!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/5-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Inicie a próxima missão"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "GRIPP3R 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

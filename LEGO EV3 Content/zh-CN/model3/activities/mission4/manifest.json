@@ -1,0 +1,112 @@
+{
+  "id": "mission4",
+  "title": "一见即攻击",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "control_forever",
+    "control_if_else",
+    "ev3sensors_isEV3InfraredSensorProximity",
+    "ev3move_stopMove",
+    "ev3display_setStatusLight",
+    "ev3sound_playSoundUntilDone",
+    "ev3motor_motorStart",
+    "ev3move_moveDistanceAtSpeed",
+    "ev3motor_motorStop",
+    "operator_lt",
+    "operator_mod",
+    "sensing_timer",
+    "ev3move_startDualSpeed"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "这是你的目标。",
+      "description": "<p>在此任务中，需要在物体距离过近时使用旋转三刃刀进行攻击。<br><br>搭建 EV3RSTORM 04。</p>",
+      "image": "/images/missions/3-4-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model3/31313_3_4.mp4",
+                "video_hd_download": "/buildinginstructions/model3/31313_3_4.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "我们一起试试看吧！",
+      "description": "<p>将 EV3RSTORM 放置在光滑表面上，然后下载并运行该程序。</p>",
+      "image": "/images/missions/3-4-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "此模块能够指定 EV3RSTORM 对物体做出反应的距离。",
+      "hints": [
+        {
+          "Text": "<h3>通过蓝牙下载并运行</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 点击连接图标并按照屏幕上的说明进行操作。<br />2. 下载并运行该程序。"
+        },
+        {
+          "Text": "<h3>通过 USB 下载并运行</h3>"
+        },
+        {
+          "Image": "/images/missions/3-4-2-hint-usb-connect.png",
+          "Text": "1. 连接 EV3 程序块。"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. 将程序下载至 EV3 程序块。"
+        },
+        {
+          "Image": "/images/missions/3-4-2-hint-run.png",
+          "Text": "3. 从 EV3 程序块运行该程序。"
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"UMT3n_Xk2MGCb12z3H3u\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"{{A4#NoF$iZBTi[7SW]r\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"[r#TJn7.`Vj1|9:`!b//\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"R?6J9.L]W??#MARKlYpu\"><field name=\"NUM\">100</field></shadow></value><next><block type=\"control_forever\" id=\"eS$OD$Zop*,1}Zxtf|F%\"><statement name=\"SUBSTACK\"><block type=\"control_if_else\" id=\"|2;T|-Gmhmw]/XK#wk1s\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredSensorProximity\" id=\"qjC8e[K7#mgG``eX-R3*\"><field name=\"COMPARATOR\">4</field><comment id=\"hFN,~mJ$P2I(jjBJ)y/P\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"284\" minimized=\"false\">此模块能够指定 EV3RSTORM 对物体做出反应的距离。</comment><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"o1szemKI,q#*N%X@5Hdp\"><field name=\"inputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"dF@w]d76wy4Jlx-U8*S@\"><field name=\"NUM\">25</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3move_stopMove\" id=\"IJ+u`V6]ak!d#;1ee{LM\"><next><block type=\"ev3display_setStatusLight\" id=\"*zZEjCa7.AaP~~(1b+;6\"><field name=\"OPTION\">5</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"kt_f~%A?2`bSi%utG1V~\"><field name=\"SOUND\">Object</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"B;_UYfY,KSvOhEGXrw}F\"><field name=\"SOUND\">Detected</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"2yFr*}A8AJYnn3iFuw`s\"><field name=\"SOUND\">Error alarm</field><next><block type=\"ev3motor_motorStart\" id=\"`88p@EA0ezPGK5rK/_zn\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"kY?$gS8CvIK;1knTmh$|\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3move_moveDistanceAtSpeed\" id=\"+(DFG`gc#F37B6bq;oTv\"><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\",lJC8?#N40G^!3z?NNzw\"><field name=\"NUM\">1</field></shadow></value><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"iy.5gTO5tI[tWAK^~I,i\"><field name=\"NUM\">100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"iFuFhwT%nMD^,4OR2q[^\"><field name=\"NUM\">80</field></shadow></value><next><block type=\"ev3motor_motorStart\" id=\"C=[F@TeW--9]}9]5D7w8\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"8%0Wm)Dp6v[6x-hfc]s7\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3move_moveDistanceAtSpeed\" id=\"Bk)j)iycF8r2],/);l#{\"><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"]ER4KAqsU2ctFp:yQRBD\"><field name=\"NUM\">1</field></shadow></value><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"hH^tkc9irdUZ_NO!3CAB\"><field name=\"NUM\">-100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"McMV12D2q/cuD-Dxa|Y?\"><field name=\"NUM\">-80</field></shadow></value><next><block type=\"ev3motor_motorStop\" id=\"2oCP][+T0:R;$s@NEVn#\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"$^CvgTejP_bGShvtPnK#\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3move_moveDistanceAtSpeed\" id=\"(%z:eYM#vqjf(-4.rF_5\"><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"om%5UWi-8hFwJSiwNq=z\"><field name=\"NUM\">2</field></shadow></value><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"+VVzKf8wNO,W%(TNyku%\"><field name=\"NUM\">100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"GuDWbU?mysr4am5b6bVO\"><field name=\"NUM\">-100</field></shadow></value><next><block type=\"ev3move_moveDistanceAtSpeed\" id=\"e0gv@~`fQppB0*@+*bLb\"><field name=\"UNIT\">rotations</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"M*Yr_=f|,!q!4QU[Fpxe\"><field name=\"NUM\">1</field></shadow></value><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"g6{Z{):Gy!66eqTW?x,q\"><field name=\"NUM\">0</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"2dWG;sfo#mq%1:ja(6i[\"><field name=\"NUM\">100</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3display_setStatusLight\" id=\"S$muUFcepZP%I^}wyi!Z\"><field name=\"OPTION\">4</field><next><block type=\"control_if_else\" id=\"Vr.2ka;LU^-$4a8JM8#X\"><value name=\"CONDITION\"><block type=\"operator_lt\" id=\"?|U-s/~bziThFjri7Kk#\"><value name=\"OPERAND1\"><shadow id=\"Qno%u.VXiO;D2Bw/w82l\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"operator_mod\" id=\"U^fM@6w9BHPlObr*Q|K@\"><value name=\"NUM1\"><shadow id=\"TzZCW3`_TU(KAKbas.r5\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"sensing_timer\" id=\"91jH~#5q5AB,~4ZSz@:q\"></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\".YtReKBYhQEG+0AjtQp+\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"@_@23)Mk#6jcFa,_CI`,\"><field name=\"TEXT\">1.5</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3move_startDualSpeed\" id=\"{XK,(dl0Uwju(Q|I.9!`\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"J@ifeiR.r[4sov4B|=~+\"><field name=\"NUM\">50</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"|`ndf`w]z772tPCa`/U(\"><field name=\"NUM\">100</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3move_startDualSpeed\" id=\"wEQFbA$U40-3=X`*!d4%\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"GfE0+htjAtBnuMWVr5?@\"><field name=\"NUM\">100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"0.p9Tmw`a::^3`k3c+zk\"><field name=\"NUM\">50</field></shadow></value></block></statement></block></next></block></statement></block></statement></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "任务完成！",
+      "description": "<p>运行程序时 EV3RSTORM 应按照视频中的演示进行操作。<br><br>在红外传感器前移动物体，以使 EV3RSTORM 使用旋转三刃刀进行攻击。<br><br><strong>你已完成这项任务！</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/3-4.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "开始下一项任务"
+      },
+      "doneAction": {
+        "startNext": "mission5",
+        "startTitle": "EV3RSTORM 05"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

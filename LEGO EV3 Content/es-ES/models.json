@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "Robot rastreador multiusos de resolución de problemas",
+      "description": "TRACK3R es muy fácil de construir y controlar y cuenta con muchas herramientas. Puedes utilizar la trituradora de dos brazos, la potente bazuca, la zarpa de agarre y el martillo pesado para completar distintas misiones sobre la plataforma de misión.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "Tritura con precisión",
+          "description": "En esta misión utilizarás la trituradora de dos brazos para retirar un neumático de la plataforma de misión.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "Hazlo volar por los aires",
+          "description": "En esta misión harás volar neumáticos con la potente bazuca.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "Llévatelos",
+          "description": "En esta misión moverás dos neumáticos con la zarpa de agarre y los colocarás dentro de los recuadros de la plataforma de misión.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "Sistema táctico de defensa",
+          "description": "En esta misión crearás un sistema táctico de defensa utilizando el martillo pesado para proteger a TRACK3R ante emboscadas en la retaguardia.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "Contrarreloj",
+          "description": "En esta misión, controlarás a TRACK3R con la baliza de infrarrojos remota para pasar por todos los controles de la plataforma de misión ¡antes de que el tiempo se agote!",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "Robot escorpión rápido, ágil y muy inteligente",
+      "description": "SPIK3R es un complejo robot que se arrastra y gira en busca de presas. Puede atacar con sus zarpas trituradoras o disparar con su aguijón relámpago.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "Aguijón relámpago",
+          "description": "En esta misión, dispararás una pelota con el aguijón relámpago.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "Maniobras de arrastre",
+          "description": "En esta misión, realizarás una maniobra de arrastre y un ataque de largo alcance.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "¡Tritúralo!",
+          "description": "En esta misión, añadirás las zarpas trituradoras y realizarás un ataque a corta distancia.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "Al acecho",
+          "description": "En esta misión harás que SPIK3R se arrastre en su posición y aceche hasta que detecte algo que atacar.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "Atrapa al insecto",
+          "description": "En esta misión, cazarás al insecto y lo liquidarás con un disparo de largo alcance antes de dar el golpe final con las zarpas trituradoras.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "Robot humanoide inteligente",
+      "description": "EV3RSTORM circula sobre patines con orugas y puede atacar con su triple espada giratoria o con su potente bazuca. Puede detectar objetos, seguir la baliza de infrarrojos remota, así como recibir órdenes de forma remota.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "Conducir y girar",
+          "description": "En esta misión, conducirás a EV3RSTORM y harás que gire.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "¡Actívalo!",
+          "description": "En esta misión, presionarás el sensor de contacto para activar EV3RSTORM o ponerlo de nuevo en reposo.",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "Huyendo de las sombras",
+          "description": "En esta misión, harás un uso inteligente del sensor de contacto para que EV3RSTORM permanezca fuera de la oscuridad y ataque con la triple espada giratoria usando el sensor.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "Ataca en el acto",
+          "description": "En esta misión, atacarás con la triple espada giratoria cuando algo se acerque demasiado.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "Control y voladura",
+          "description": "En esta misión controlarás EV3RSTORM de forma remota con la baliza de infrarrojos remota y dispararás con la potente bazuca mediante los sensores de contacto y de color.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "Buscar y destruir",
+          "description": "En esta misión, buscarás a Wheeler mediante el sensor de infrarrojos para apuntar y disparar con la potente bazuca.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "Robot serpiente superveloz",
+      "description": "R3PTAR es un robot de gran altura, longitud y potencia. Se mueve como una verdadera serpiente y puede atacar con sus temibles colmillos al detectar algo.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "Repta como una serpiente",
+          "description": "En esta misión, reptarás como una verdadera serpiente.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "El cascabel de R3PTAR",
+          "description": "En esta misión, harás que R3PTAR agite su cascabel y espere hasta detectar algo que atacar con sus temibles colmillos.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "La caza",
+          "description": "En esta misión, dejarás que R3PTAR repte libremente y ataque con sus temibles colmillos al detectar algo.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "Tomando el control",
+          "description": "En esta misión, utilizarás la baliza de infrarrojos remota para controlar a R3PTAR de forma remota.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "Forzudo robot todoterreno",
+      "description": "GRIPP3R es un forzudo robot que puede levantar y transportar objetos pesados gracias a sus zarpas de agarre. ¡Contrólalo de forma remota para que haga lo que tú quieras!",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "Agárralo",
+          "description": "En esta misión, practicarás el uso de las zarpas de agarre.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "Paseo por la pila de neumáticos",
+          "description": "En esta misión conducirás, recogerás la pila de neumáticos, darás la vuelta y la dejarás de nuevo en su sitio.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "¡Recógelo!",
+          "description": "En esta misión, utilizarás el sensor de infrarrojos para mostrar a GRIPP3R qué objetos quieres que recoja o deje en su sitio.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "¡A su servicio!",
+          "description": "En esta misión, utilizarás la baliza de infrarrojos remota para controlar a GRIPP3R de forma remota y que así transporte objetos como desees.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

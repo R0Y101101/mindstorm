@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "Probleemoplossende multifunctionele Trackerbot",
+      "description": "TRACK3R is eenvoudig te maken, goed te besturen en heeft veel tools. Gebruik de Tweebladige blender, Zware bazooka, Grijpklauw en Zware hamer om verschillende missies op het Missieplatform te voltooien.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "Verwijder het met precisie",
+          "description": "In deze missie gebruik je de Tweebladige blender om een band te verwijderen van het Missieplatform.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "Wegknallen",
+          "description": "In deze missie knal je banden weg met de Zware bazooka.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "Haal ze weg",
+          "description": "In deze missie verplaats je twee banden met de Grijpklauw en plaats je deze in de vierkanten op het Missieplatform.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "Tactisch verdedigingssysteem",
+          "description": "In deze missie maak je met behulp van de Zware hamer een Tactisch verdedigingssysteem om TRACK3R te beschermen tegen aanvallen van achteren.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "Tegen de klok",
+          "description": "In deze missie bestuur je TRACK3R met het Infraroodbaken om alle controlepunten op het Missieplatform te passeren voor de tijd verstreken is!",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "Snelle, wendbare en zeer slimme Scorpionbot",
+      "description": "SPIK3R is een complexe robot die kruipt en draait om naar doelen te zoeken. Hij kan aanvallen met zijn Kraakklauwen of schieten met zijn Bliksemsnelle staart.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "Bliksemsnelle staart",
+          "description": "In deze missie schiet je een bal weg met de Bliksemsnelle staart.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "Kruipbewegingen",
+          "description": "In deze missie voer je een kruipbeweging en een langeafstandsaanval uit.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "Kraken!",
+          "description": "In deze missie voeg je de Kraakklauwen toe en voer je een korte afstandsaanval uit.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "Wachten…",
+          "description": "In deze missie kruipt SPIK3R ter plaatse rond en wacht hij tot hij iets detecteert om aan te vallen.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "Het insect vangen",
+          "description": "In deze missie jaag je op het insect en schakel je het uit met een langeafstandsschot voordat je dichterbij gaat en de klus afmaakt met je Kraakklauwen.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "Intelligente, mensachtige Smartbot",
+      "description": "EV3RSTORM verplaatst zich op skates en kan aanvallen met zijn Roterende driebladszwaard of Zware bazooka. Hij kan objecten detecteren, het Externe infraroodbaken volgen en op afstand opdrachten ontvangen.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "Rijden en draaien",
+          "description": "In deze missie rijd en draai je met EV3RSTORM.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "Activeren!",
+          "description": "In deze missie druk je op de Tastsensor om EV3RSTORM te activeren of opnieuw in slaap te brengen.",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "Vermijd het donker",
+          "description": "In deze missie gebruik je de Kleursensor om ervoor te zorgen dat EV3RSTORM het donker vermijdt en aanvalt met het Roterende driebladszwaard door de Tastsensor te gebruiken.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "Meteen aanvallen",
+          "description": "In deze missie val je aan met het Roterende driebladszwaard zodra iets te dichtbij komt.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "Besturen en afknallen",
+          "description": "In deze missie bestuur je EV3RSTORM op afstand met het Extern infraroodbaken en schiet je met de Zware bazooka met behulp van de Tastsensor en de Kleursensor.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "Zoeken en vernietigen",
+          "description": "In deze missie ga je op zoek naar Wheeler. Hierbij gebruik je de Infraroodsensor om de Zware bazooka te richten en ermee te schieten.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "Supersnelle Snakebot",
+      "description": "R3PTAR is een grote, lange en krachtige robot. Hij beweegt als een echte slang en kan aanvallen met zijn Gevaarlijke giftanden als hij iets waarneemt.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "Glijden als een slang",
+          "description": "In deze missie maak je een glijbeweging, net als een echte slang.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "R3PTAR laten ratelen",
+          "description": "In deze missie laat je R3PTAR ratelen en wachten tot hij iets detecteert dat hij kan aanvallen met zijn Gevaarlijke giftanden.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "Jagen",
+          "description": "In deze missie laat je R3PTAR zelf rondglijden en aanvallen met zijn Gevaarlijke giftanden als hij iets detecteert.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "Op afstand bedienen",
+          "description": "In deze missie gebruik je het Externe Infraroodbaken om R3PTAR op afstand te besturen.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "Supersterke Musclebot voor alle terreinen",
+      "description": "GRIPP3R is een sterke robot die zware dingen kan optillen en dragen met zijn Sterke grijpers. Bedien hem op afstand en laat hem naar wens dingen oprapen!",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "Grijpen",
+          "description": "In deze missie ga je oefenen met de Sterke grijpers.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "De bandenstapel verplaatsen",
+          "description": "In deze missie rijd je rond, til je de Bandenstapel op, draai je je om en zet je de stapel weer neer.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "Raap dat op!",
+          "description": "In deze missie gebruik je de Infraroodsensor om GRIPP3R te tonen welke objecten hij moet oprapen of neerzetten.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "Tot jouw dienst!",
+          "description": "In deze missie gebruik je het Externe infraroodbaken om GRIPP3R op afstand te besturen zodat je naar wens dingen kunt verplaatsen.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

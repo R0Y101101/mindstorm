@@ -1,0 +1,31 @@
+[
+  {
+    "type": "banner",
+    "title": "TRACK3R",
+    "description": "Construye y programa este robot multiusos para familiarizarte con EV3",
+    "link": {
+      "path": "/content/start/",
+      "title": "Iniciar"
+    },
+    "background": "#f5f5f5",
+    "image": {
+      "image": "/images/lobby-banner-primary.png",
+      "color": "#f5f5f5"
+    }
+  },
+  {
+    "type": "recentprojects"
+  },
+  {
+    "type": "cards",
+    "cards": [
+      {
+        "title": "Construye robots EV3",
+        "description": "Construye cinco robots geniales: TRACK3R, R3PTAR, SPIK3R, GRIPP3R y EV3RSTORM. Puedes programar a R3PTAR para que se deslice como serpiente, a SPIK3R para que atrape un bicho, a GRIPP3R para que agarre un objeto, a EV3RSTORM para que busque y destruya, y muchísimo más.",
+        "image": "/images/lobby-banner-secondary.png",
+        "background": "#fff",
+        "link": "/content/core-models/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "문제 해결사 다목적 트래커봇",
+      "description": "TRACK3R은 쉽게 만들고 명령을 내릴 수 있으며, 수많은 도구를 갖추고 있어요. 양날 분쇄기, 초강력 바주카포, 집게, 무시무시한 해머를 사용하여 미션 패드에서 다양한 미션을 완수하세요.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "정밀도가 중요해요",
+          "description": "이번 미션에서는 양날 분쇄기를 사용하여 미션 패드에서 타이어를 치워버릴 거예요.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "날려버려요",
+          "description": "이번 미션에서는 초강력 바주카포로 타이어를 날려버릴 거예요.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "옮겨보아요",
+          "description": "이번 미션에서는 집게를 사용하여 타이어 두 개를 옮긴 다음 미션 패드의 사각형 안에 내려놓을 거예요.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "전략 방어 시스템",
+          "description": "이번 미션에서는 무시무시한 해머를 사용하여 전략 방어 시스템을 만들 거예요. 후방의 매복 공격으로부터 TRACK3R을 보호하세요.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "Time Trial",
+          "description": "이번 미션에서는 원격 적외선 비콘을 이용해 TRACK3R에게 명령을 내릴 거예요. 제한 시간 안에 미션 패드의 모든 체크포인트를 통과해야 해요!",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "빠르고 민첩하며 매우 영리한 전갈봇",
+      "description": "SPIK3R은 기어가기와 회전 동작으로 목표를 찾아내는 정교한 로봇이에요. 집게로 공격을 하거나 번개처럼 날카로운 꼬리로 공을 발사할 수 있어요.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "번개처럼 날카로운 꼬리",
+          "description": "이번 미션에서는 번개처럼 날카로운 꼬리로 공을 발사할 거예요.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "기어가기 조작",
+          "description": "이번 미션에서는 기어가기 조작을 실시하고 원거리 공격을 시도할 거예요.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "으깨버려요!",
+          "description": "이번 미션에서는 집게를 추가하고 근접 공격을 감행할 거예요.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "기다리세요...",
+          "description": "이번 미션에서는 SPIK3R이 기어서 돌아다니다가 공격할 물체가 감지될 때까지 기다리게 만들 거에요.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "벌레 잡기",
+          "description": "이번 미션에서는 벌레를 추격하여 원거리 공격으로 타격을 가한 후, 벌레에게 다가가 집게로 집어 옮겨야 일을 끝낼 수 있어요.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "지능형 휴머노이드 스마트봇",
+      "description": "EV3RSTORM은 궤도 스케이트를 타고 움직이다가 3날 회전 블레이드 또는 초강력 바주카포로 공격을 펼치는 게 특기예요. 또한 물체를 감지하고 원격 적외선 비콘을 따라 움직이고, 원격으로 명령을 수신할 수도 있어요.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "구동 및 회전",
+          "description": "이번 미션에서는 EV3RSTORM을 구동하고 회전할 거예요.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "활성화하기!",
+          "description": "이번 미션에서는 터치 센서를 눌러 EV3RSTORM을 활성화하거나 다시 휴면 상태로 바꿔볼 거예요.",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "어둠 밖으로 나오기",
+          "description": "이번 미션에서는 컬러 센서를 교묘히 사용하여 EV3RSTORM이 어두운 곳을 피해다니다가 터치 센서를 이용해 3날 회전 블레이드로 공격을 가하게 만들 거예요.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "눈에 띄는 대로 공격",
+          "description": "이번 미션에서는 무엇이든 가까이 다가오기만 하면 3날 회전 블레이드로 공격을 가하는 작전을 펼쳐볼 거예요.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "명령과 발사",
+          "description": "이번 미션에서는 원격 적외선 비콘으로 EV3RSTORM을 제어하며, 터치 센서와 컬러 센서를 이용해 초강력 바주카포를 발사하는 작전을 펼쳐볼 거예요.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "수색과 파괴",
+          "description": "이번 미션에서는 적외선 센서를 사용하여 휠러를 탐색하고 초강력 바주카포를 조준하여 발사할 거예요.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "초고속 스네이크봇",
+      "description": "R3PTAR는 길고 높고 강력한 로봇이에요. 진짜 뱀처럼 이동하다가 뭔가가 감지되는 순간 가공할 송곳니로 공격을 가해요.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "뱀처럼 스르륵 움직이기",
+          "description": "이번 미션에서는 진짜 뱀처럼 미끄러져 움직이는 동작을 구현해볼 거예요.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "방울뱀 R3PTAR",
+          "description": "이번 미션에서는 R3PTAR이 꼬리를 흔들며 기다리다가 뭔가를 감지하는 순간 가공할 송곳니로 공격하게 만들어볼 거예요.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "사냥하기",
+          "description": "이번 미션에서는 R3PTAR이 미끄러져 돌아다니다가 뭔가를 발견하는 순간 가공할 송곳니로 공격하게 만들어볼 거예요.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "제어하기",
+          "description": "이번 미션에서는 원격 적외선 비콘을 사용하여 원격으로 R3PTAR을 제어할 거예요.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "초강력 전지형 머슬봇",
+      "description": "GRIPP3R은 강력한 집게로 무거운 물건을 들어 올려 옮길 수 있는 강력한 로봇이에요. 원격으로 조종하면서 원하는 물건을 집어 올리세요!",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "물건 잡기",
+          "description": "이번 미션에서는 강력한 집게를 사용하는 방법을 연습할 거예요.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "타이어 더미 이리저리 움직이기",
+          "description": "이번 미션에서는 이동하고, 타이어 더미를 집어들고, 방향을 바꾸고, 다시 내려놓는 동작을 구현해볼 거예요.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "집어 들기!",
+          "description": "이번 미션에서는 적외선 센서를 사용하여 GRIPP3R에게 어떤 물건을 집어들거나 내려놓을 것인지를 보여줄 거예요.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "배송 서비스!",
+          "description": "이번 미션에서는 원격 적외선 비콘을 사용하여 GRIPP3R을 원격으로 제어하여 원하는 대로 물건을 옮겨볼 거예요.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

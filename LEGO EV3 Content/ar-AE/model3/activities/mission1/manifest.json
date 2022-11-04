@@ -1,0 +1,102 @@
+{
+  "id": "mission1",
+  "title": "القيادة والانعطاف",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3move_movementSpeed",
+    "ev3display_displayImage",
+    "ev3move_steer",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "ها هو هدفك.",
+      "description": "<p>في هذه المهمة، ستقود EV3RSTORM وتجعله ينعطف.<br><br>ابنِ EV3RSTORM 01.</p>",
+      "image": "/images/missions/3-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model3/31313_3_1.mp4",
+                "video_hd_download": "/buildinginstructions/model3/31313_3_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "لنجرب!",
+      "description": "<p>ضع EV3RSTORM على سطح أملس، ثم قم بتنزيل البرنامج وتشغيله.</p>",
+      "image": "/images/missions/3-1-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "يحدد هذا القالب سرعة القيادة.",
+      "hints": [
+        {
+          "Text": "<h3>تنزيل وتشغيل عبر Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. اضغط على أيقونة الاتصال واتبع التعليمات الظاهرة على الشاشة.<br />2. قم بتنزيل البرنامج وتشغيله."
+        },
+        {
+          "Text": "<h3>تنزيل وتشغيله عبر USB</h3>"
+        },
+        {
+          "Image": "/images/missions/3-1-2-hint-usb-connect.png",
+          "Text": "1. وصل وحدة بناء EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. قم بتنزيل البرنامج على وحدة بناء EV3."
+        },
+        {
+          "Image": "/images/missions/3-1-2-hint-run.png",
+          "Text": "3. قم بتشغيل البرنامج من وحدة بناء EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"8~zLAzKNUkDR?y]lTgGK\" x=\"-130\" y=\"120\"><next><block type=\"ev3move_movementSpeed\" id=\"eJqgvkBI!3Dt}AE_Aln=\"><comment id=\"{Zi3dfW-@a1Tj99SrAKO\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"180\" minimized=\"false\">يحدد هذا القالب سرعة القيادة.</comment><value name=\"SPEED\"><shadow type=\"math_number\" id=\"]4b5Q(T1B-!6om6*piju\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"d79VU3HhLQwu::4Z?E@{\"><field name=\"IMAGE\">Neutral</field><next><block type=\"ev3move_steer\" id=\"1@ZXW*~M9S!EWTyKIo=:\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"^[Pu~(^Z5a(n6|R#(Ubr\"><field name=\"field_ev3move_rotation-wheel\">0</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"n(O:g-]eo9uj*oNG@Cmp\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"l%RFL|[55Q4+},E.10LJ\"><field name=\"IMAGE\">Middle left</field><next><block type=\"ev3move_steer\" id=\"BMJv_.XK`+UrtVFZ*`M@\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"(=$=N#N9,nc|*!-MRcIf\"><field name=\"field_ev3move_rotation-wheel\">50</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Tt.bcDwZ)M7p8kNqv7(?\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"YmOMe8f=vA#;usSrRs?;\"><field name=\"IMAGE\">Neutral</field><next><block type=\"ev3move_steer\" id=\"F*tr%Y8%!!uI1#/xce|:\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\")epXNRHJGA|}ei6p]COa\"><field name=\"field_ev3move_rotation-wheel\">0</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"*)?fV~{Jolcd3oJAteMT\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"E8D2.i.Iw/V7JX,.w0^L\"><field name=\"IMAGE\">Middle right</field><next><block type=\"ev3move_steer\" id=\"_o-e1Ky}(YjSJmVg^@cU\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"thWpuu@dTojJBELiA9iw\"><field name=\"field_ev3move_rotation-wheel\">-50</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"V}g^tbp%2qI1Rm.5F#bn\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3control_stop\" id=\"R=Z%30k!-=R-RajtZX4R\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "اكتملت المهمة!",
+      "description": "<p>ينبغي أن يؤدي EV3RSTORM ما هو موضح في الفيديو عند تشغيل البرنامج.<br><br>إذا لم ينعطف EV3RSTORM في الاتجاه نفسه الذي تنظر إليه العينين، فتأكد من توصيل المحركات كبيرة الحجم بالمنافذ الصحيحة في EV3.<br><br><strong>لقد أكملت هذه المهمة!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/3-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "بدء المهمة التالية"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "EV3RSTORM 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

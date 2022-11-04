@@ -1,0 +1,31 @@
+[
+  {
+    "type": "banner",
+    "title": "TRACK3R",
+    "description": "EV3に親しむために、この多目的ロボットを組み立ててプログラミングしましょう。",
+    "link": {
+      "path": "/content/start/",
+      "title": "開始"
+    },
+    "background": "#f5f5f5",
+    "image": {
+      "image": "/images/lobby-banner-primary.png",
+      "color": "#f5f5f5"
+    }
+  },
+  {
+    "type": "recentprojects"
+  },
+  {
+    "type": "cards",
+    "cards": [
+      {
+        "title": "EV3 ロボットを組み立てる",
+        "description": "TRACK3R、R3PTAR、SPIK3R、GRIPP3R、EV3RSTORMの５体のかっこいいロボットを組み立てよう。R3PTARを蛇のようにニョロニョロ進ませたり、SPIK3Rに虫を捕まえさせたり、GRIPP3Rにモノをつかませたり、EV3RSTORMが物を見つけだして壊したりするようにしたり、他にも様々なプログラミングができます。",
+        "image": "/images/lobby-banner-secondary.png",
+        "background": "#fff",
+        "link": "/content/core-models/"
+      }
+    ]
+  }
+]

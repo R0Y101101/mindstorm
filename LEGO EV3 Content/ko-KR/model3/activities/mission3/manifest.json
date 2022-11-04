@@ -1,0 +1,110 @@
+{
+  "id": "mission3",
+  "title": "어둠 밖으로 나오기",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "control_forever",
+    "control_if_else",
+    "ev3sensors_isEV3ColorSensorAmbient",
+    "ev3display_displayImage",
+    "ev3move_moveDistanceAtSpeed",
+    "operator_lt",
+    "operator_mod",
+    "sensing_timer",
+    "ev3move_startDualSpeed",
+    "ev3events_whenEV3TouchSensorPressed",
+    "ev3sound_playSoundUntilDone",
+    "ev3motor_motorTurnForSpeed"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "목표를 설명할게요!",
+      "description": "<p>이번 미션에서는 집게를 추가하고 근접 공격을 감행할 거예요.<br><br>EV3RSTORM 03을 조립하세요.</p>",
+      "image": "/images/missions/3-3-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model3/31313_3_3.mp4",
+                "video_hd_download": "/buildinginstructions/model3/31313_3_3.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "자, 해보자고요!",
+      "description": "<p>EV3RSTORM을 매끄러운 표면 위에 놓은 후에 프로그램을 다운로드하고 실행하세요.</p>",
+      "image": "/images/missions/3-3-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "이 블록은 얼마나 어두워져야 EV3RSTORM이 몸을 돌릴 것인지를 지정합니다.",
+      "hints": [
+        {
+          "Text": "<h3>다운로드하고 블루투스를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 연결 아이콘을 누르고 화면의 지침을 따르세요.<br />2. 프로그램을 다운로드하고 실행하세요."
+        },
+        {
+          "Text": "<h3>다운로드하고 USB를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/3-3-2-hint-usb-connect.png",
+          "Text": "1. EV3 브릭을 연결하세요."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. 프로그램을 EV3 브릭에 다운로드하세요."
+        },
+        {
+          "Image": "/images/missions/3-3-2-hint-run.png",
+          "Text": "3. EV3 브릭에서 프로그램을 실행하세요."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"UMT3n_Xk2MGCb12z3H3u\" x=\"-130\" y=\"120\"><next><block type=\"control_forever\" id=\"eS$OD$Zop*,1}Zxtf|F%\"><statement name=\"SUBSTACK\"><block type=\"control_if_else\" id=\"|2;T|-Gmhmw]/XK#wk1s\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3ColorSensorAmbient\" id=\"CU?+I.t+L4d6hPwErKua\"><field name=\"COMPARATOR\">4</field><comment id=\"XP}ond*_ly2}YO(!H0E?\" pinned=\"true\" h=\"200\" w=\"200\" x=\"800\" y=\"228\" minimized=\"false\">이 블록은 얼마나 어두워져야 EV3RSTORM이 몸을 돌릴 것인지를 지정합니다.</comment><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"0L)0L}0_FW=?/RQPRY)A\"><field name=\"inputPort\">3</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"|lW~8kN@i6GHy@oDn]D9\"><field name=\"NUM\">15</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3display_displayImage\" id=\"Xp9P}[kE);?aMm.{xS8Y\"><field name=\"IMAGE\">Middle left</field><next><block type=\"ev3move_moveDistanceAtSpeed\" id=\"+(DFG`gc#F37B6bq;oTv\"><field name=\"UNIT\">seconds</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"v=7-Y+11TSI5w{9_5dl#\"><field name=\"NUM\">1.5</field></shadow></value><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"pT+dN*]-UmCZeftOHUKY\"><field name=\"NUM\">-80</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"N1q?o^x?gEU:VdVoqi3a\"><field name=\"NUM\">-100</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"Jt278.DbTFv:pRTATNEm\"><field name=\"IMAGE\">Middle right</field><next><block type=\"ev3move_moveDistanceAtSpeed\" id=\"(%z:eYM#vqjf(-4.rF_5\"><field name=\"UNIT\">seconds</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"xdWY4Tleu9q/l!dQrl-O\"><field name=\"NUM\">1.5</field></shadow></value><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"?S~L%X5JbQ`E8zWd?gG0\"><field name=\"NUM\">-100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"UyY6Ik{=X=!qN6w@wp[.\"><field name=\"NUM\">100</field></shadow></value></block></next></block></next></block></next></block></statement><statement name=\"SUBSTACK2\"><block type=\"control_if_else\" id=\"Vr.2ka;LU^-$4a8JM8#X\"><value name=\"CONDITION\"><block type=\"operator_lt\" id=\"?|U-s/~bziThFjri7Kk#\"><value name=\"OPERAND1\"><shadow id=\"YkA)u@_(0nXqbOd.+fqJ\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"operator_mod\" id=\"U^fM@6w9BHPlObr*Q|K@\"><value name=\"NUM1\"><shadow id=\"3]f-eJD)UC]@|]kl/Yxo\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"sensing_timer\" id=\"91jH~#5q5AB,~4ZSz@:q\"></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"kN8c%~do+^V(vpdndYZ}\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"e3e*=;JPS6ox}+EJVpBN\"><field name=\"TEXT\">1.5</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3move_startDualSpeed\" id=\"{XK,(dl0Uwju(Q|I.9!`\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"ZyWGMqi4=+Ka]+9h#Kmp\"><field name=\"NUM\">50</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"k#QwB1UvxEu-61!?Cg6P\"><field name=\"NUM\">100</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3move_startDualSpeed\" id=\"wEQFbA$U40-3=X`*!d4%\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\".bNbf6eXx|76cQ3T#)uV\"><field name=\"NUM\">100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"g;dZNh*tZt6:M`LXST,~\"><field name=\"NUM\">50</field></shadow></value></block></statement><next><block type=\"ev3display_displayImage\" id=\"*Mr/xmQe^K:u96b.wTfr\"><field name=\"IMAGE\">Awake</field></block></next></block></statement></block></statement></block></next></block><block type=\"ev3events_whenEV3TouchSensorPressed\" id=\"81vim2__67z]$([@7n}H\" x=\"-130\" y=\"960\"><field name=\"EVENT\">1</field><value name=\"PORT\"><shadow type=\"ev3events_menu_inputPort\" id=\"i~H@W|6I;z1%rnP6(uav\"><field name=\"inputPort\">1</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"kt_f~%A?2`bSi%utG1V~\"><field name=\"SOUND\">Laughing 1</field><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"+WrI9$is8t^}x;;X/_eY\"><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\".eldYXrd.yq8Z(C_;gB6\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"I-HA:FKK=-*Lr,tR]8sY\"><field name=\"NUM\">6</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"YwExU*cV^g]:w=:@HChZ\"><field name=\"NUM\">100</field></shadow></value></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "임무 완료!",
+      "description": "<p>프로그램을 실행함과 동시에 EV3RSTORM이 비디오에서 보았던 동작을 그대로 수행해야 해요.<br><br>터치 센서를 눌러 3날 회전 블레이드를 활성화하세요.<br><br><strong>임무를 완수했어요!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/3-3.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "다음 미션 시작"
+      },
+      "doneAction": {
+        "startNext": "mission4",
+        "startTitle": "EV3RSTORM 04"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

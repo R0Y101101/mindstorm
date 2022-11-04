@@ -1,0 +1,103 @@
+{
+  "id": "mission1",
+  "title": "Cola de Relámpago",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3motor_motorTurnForSpeed",
+    "ev3sound_playSoundUntilDone",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Este es tu objetivo.",
+      "description": "<p>En esta misión dispararás una bola con la Cola de Relámpago.<br><br>Construye el robot SPIK3R 01.</p>",
+      "image": "/images/missions/2-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model2/31313_2_1.mp4",
+                "video_hd_download": "/buildinginstructions/model2/31313_2_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "¡Vamos a intentarlo!",
+      "description": "<p>Coloca la Cola de Relámpago sobre una superficie lisa; después, descarga y ejecuta el programa.</p>",
+      "image": "/images/missions/2-1-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Este ladrillo especifica qué sonido se reproduce.",
+      "hints": [
+        {
+          "Text": "<h3>Descárgalo y ejecútalo mediante Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Presiona el icono Conectar y sigue las instrucciones que aparecen en la pantalla.<br />2. Descarga y ejecuta el programa."
+        },
+        {
+          "Text": "<h3>Descárgalo y ejecútalo mediante el cable USB</h3>"
+        },
+        {
+          "Image": "/images/missions/2-1-2-hint-usb-connect.png",
+          "Text": "1. Conecta tu EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Descarga el programa en tu Ladrillo EV3."
+        },
+        {
+          "Image": "/images/missions/2-1-2-hint-run.png",
+          "Text": "3. Ejecuta el programa desde tu Ladrillo EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"-6qB1*#M91@?{izS7Zc^\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"u%a[IkwgmUr`QE29H4;V\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"3+n!m17XL~^N/T5}Af?i\"><field name=\"outputPort\">4</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"HzoqdmuR,3B|[BgM%Qkh\"><field name=\"NUM\">40</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"/AKp)4jq.R,S%dJdyS~x\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"lOKnDKGF.E0M:R|%QZq%\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"?;hE]wdH(e1a%IL%eKEE\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"TGWF9Vd1[Exq(Yxuw}=m\"><field name=\"UNIT\">degrees</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Cdp]D@/J=,_`M{fN[VNU\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"KG8KUuQvp;B3Rk5Njg,I\"><field name=\"NUM\">220</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"Q|Mtv^j+d]z|GOyT%%2L\"><field name=\"NUM\">-75</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"aqCY=_7TZ5@bimHsa.7y\"><field name=\"SOUND\">Blip 3</field><comment id=\"v@oHY/.skztQum-Z[]:J\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"348\" minimized=\"false\">Este ladrillo especifica qué sonido se reproduce.</comment><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"Cy_N/wP#zLikm7D$#Ov9\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"dFZg1Aap2HvTfrVM:^QK\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Bw({Y-!a!p{{!g*D*2EC\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"%IR@@830?H0!n[j{W7*_\"><field name=\"NUM\">-100</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"W)Xq:F[R-R.OR%Ju$B|l\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"1TrG.GIgrYRehT2hiwac\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"|RO*e-OYm)4E,iG05!nN\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3control_stop\" id=\"JT|:fXfX;5nM@Bo?DVH}\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "¡Misión cumplida!",
+      "description": "<p>SPIK3R deberá hacer lo que se muestra en el video cuando ejecute el programa.<br><br><strong>¡Has completado esta misión!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/2-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Iniciar la siguiente misión"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "SPIK3R 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

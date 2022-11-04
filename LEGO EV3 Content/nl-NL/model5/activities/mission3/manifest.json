@@ -1,0 +1,109 @@
+{
+  "id": "mission3",
+  "title": "Raap <em>dat</em> op!",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3move_movementSpeed",
+    "ev3move_startSteer",
+    "ev3sensors_waitEV3InfraredSensorProximity",
+    "ev3move_stopMove",
+    "ev3sound_playSound",
+    "ev3move_steer",
+    "ev3motor_motorStart",
+    "ev3sound_playSoundUntilDone",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Dit is je doel.",
+      "description": "<p>In deze missie voeg je de Kraakklauwen toe en voer je een korte-afstandsaanval uit.<br><br>Bouw GRIPP3R 03.</p>",
+      "image": "/images/missions/5-3-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model5/31313_5_3.mp4",
+                "video_hd_download": "/buildinginstructions/model5/31313_5_3.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Probeer het maar uit!",
+      "description": "<p>Plaats GRIPP3R op een vlakke ondergrond en download en start het programma.</p>",
+      "image": "/images/missions/5-3-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Dit blok geeft aan op welke nabijheid GRIPP3R op je hand reageert.",
+      "hints": [
+        {
+          "Text": "<h3>Downloaden en uitvoeren via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Druk op het pictogram voor aansluiten en volg de instructies op het scherm.<br />2. Download het programma en voer het uit"
+        },
+        {
+          "Text": "<h3>Downloaden en uitvoeren via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/5-3-2-hint-usb-connect.png",
+          "Text": "1. Sluit je EV3-steen aan."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Download het programma naar je EV3-steen."
+        },
+        {
+          "Image": "/images/missions/5-3-2-hint-run.png",
+          "Text": "3. Voer het programma uit vanaf je EV3-steen."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"|-`=3Er9i8*c8`p-[y5?\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"RLP7*so.m?8ITj97U,6[\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"s3vNdXppjY3S1q]/VT}4\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"^BX{)O52-0.ua#4ZtI2?\"><field name=\"NUM\">50</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"5Lev*HPnw!Wqs0OpL{P(\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"72ST#rzy{2(sFMPm.Vp+\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"8Jbcks0%#5xRFW=j7w~e\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3move_movementSpeed\" id=\"7uRRHwG0NR:,]IvkaQi:\"><value name=\"SPEED\"><shadow type=\"math_number\" id=\"xrdXG9xogIDR:G@.prpH\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"ev3move_startSteer\" id=\"5C1|`=J|Il[.^p6-8Jy?\"><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"kCHz35)T|e8C{(rwMTbA\"><field name=\"field_ev3move_rotation-wheel\">0</field></shadow></value><next><block type=\"ev3sensors_waitEV3InfraredSensorProximity\" id=\"^I?akZ3@$48rS*Ugw_LE\"><field name=\"EVENT\">4</field><comment id=\"ug_YBu~K(/UqP^ilY_?)\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"404\" minimized=\"false\">Dit blok geeft aan op welke nabijheid GRIPP3R op je hand reageert.</comment><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"5~/ZjH/X~mE@c7%vo,w0\"><field name=\"inputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"PB=TR+!,LW?QO.C_G)K4\"><field name=\"NUM\">25</field></shadow></value><next><block type=\"ev3move_stopMove\" id=\"%PZF:W:`9~D+Ln!PhKiF\"><next><block type=\"ev3sound_playSound\" id=\"uM86ewm-r#E2J^LU)m,h\"><field name=\"SOUND\">Airbrake</field><next><block type=\"ev3motor_motorTurnFor\" id=\"zs@6l;x]ES.7h%.$KU9D\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"*;`:sF3nqN?M[[@)H*ja\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"0Sb/0w~%J4DMT2kwTIhB\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3move_steer\" id=\"CLQZdQxW96$|NOxMYl95\"><field name=\"UNIT\">degrees</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"Q*oBNS*(6jP}WeZcguyd\"><field name=\"field_ev3move_rotation-wheel\">100</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"ciU?D*v3Ke-JYW#E(Nu6\"><field name=\"NUM\">850</field></shadow></value><next><block type=\"ev3move_startSteer\" id=\"DhZ*,/qQAyG,!uoN=udt\"><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"Q*9?d1p_!H9P0DLpx9_%\"><field name=\"field_ev3move_rotation-wheel\">0</field></shadow></value><next><block type=\"ev3sensors_waitEV3InfraredSensorProximity\" id=\"59e5HANFq|i6lfj{MPiT\"><field name=\"EVENT\">4</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"ywk{{tK6_}3Mn]?C|M6W\"><field name=\"inputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\";7c;dw)QJZI[WJXeM::2\"><field name=\"NUM\">25</field></shadow></value><next><block type=\"ev3move_stopMove\" id=\"IQJ]p$J*4%4bdnXeXT6[\"><next><block type=\"ev3motor_motorStart\" id=\"cp5=H4TUa-B.{*,hc^+U\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Ec%/]c*$xzNgWerJGwRM\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"#MS4;,4}E!A5x#}w=QMX\"><field name=\"SOUND\">Air release</field><next><block type=\"ev3control_stop\" id=\"}J8VciiBMqOrsq_F#vD|\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Missie volbracht!",
+      "description": "<p>Wanneer je het programma start, moet GRIPP3R de handelingen uitvoeren die je in de video te zien krijgt.<br><br>Beweeg je hand voor de Infraroodsensor als je wilt dat GRIPP3R iets opraapt of neerzet.<br><br><strong>Je hebt deze missie voltooid!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/5-3.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Start de volgende missie"
+      },
+      "doneAction": {
+        "startNext": "mission4",
+        "startTitle": "GRIPP3R 04"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

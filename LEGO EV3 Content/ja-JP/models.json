@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "問題解決多目的トラッカーボット",
+      "description": "TRACK3Rは、作るのも命令するのも簡単です。バイブレード・ブレンダー、バズーカ、グリップ・クロウ、強力ハンマーを使って、ミッションパッドでさまざまなミッションを完了してください。",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "正確に混ぜよう",
+          "description": "このミッションでは、バイブレード・ブレンダーを使ってミッションパッドからタイヤを取り除きます。",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "吹き飛ばそう",
+          "description": "このミッションでは、バズーカでタイヤを吹き飛ばします。",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "片付ける",
+          "description": "このミッションでは、グリップ・クロウでタイヤ２本を動かして、ミッションパッドのスクエア内に置きます。",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "戦術的防衛システム",
+          "description": "このミッションでは、TRACK3Rが後方から攻撃されるのを防ぐための、強力ハンマーを使った戦術的防衛システムを作ります。",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "タイムトライアル",
+          "description": "このミッションでは、時間切れになる前にミッションパッドのすべてのチェックポイントを通過するように赤外線ビーコンで TRACK3Rに命令を出します！",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "速くて、すばしこっくて、とても賢いサソリボット",
+      "description": "SPIK3Rはほふく前進し、旋回し、ターゲットを探す複雑なロボットです。強力クロウで攻撃したり、光るしっぽで撃ったりできます。",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "光るしっぽ",
+          "description": "このミッションでは、光るしっぽでボールを撃ちます。",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "ほふく前進作戦",
+          "description": "このミッションでは、ほふく前進作戦を実施して長距離の攻撃をおこないます。",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "破壊しよう！",
+          "description": "このミッションでは、強力クロウを追加して、近距離で攻撃します。",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "その時を待つ…",
+          "description": "このミッションでは、SPIK3Rが攻撃する対象を見つけるまで、SPIK3Rをほふく前進させます。",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "虫をつかまえる",
+          "description": "このミッションでは、強力クロウでの作業を終了する前に、虫をつかまえて長距離ショットで排除します。",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "インテリジェント・ヒューマノイド・スマートボット",
+      "description": "EV3RSTORMはスケートで動き回り、回転トライ・ブレードやバズーカで攻撃出来ます。また、ものを見つけたり、遠隔赤外線ビーコンに従ったり、リモート命令を受け取ることも出来ます。",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "操縦と方向転換",
+          "description": "このミッションでは、EV3RSTORMを操縦し、方向転換します。",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "始動！",
+          "description": "このミッションでは、タッチセンサーを押してEV3RSTORMを始動したり、眠っている状態に戻したりします。",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "暗闇をよけよう",
+          "description": "このミッションでは、カラーセンサーを活用してEV3RSTORM が暗闇に近づかないようにし、タッチセンサーを使って回転トライ・ブレードで攻撃します。",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "至近距離の対象物への攻撃",
+          "description": "このミッションでは、何かが至近距離に近づいたときに回転トライ・ブレードで攻撃します。",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "命令と攻撃",
+          "description": "このミッションでは、遠隔赤外線ビーコンでEV3RSTORMをリモート操作して、タッチセンサーとカラーセンサーを使ってバズーカで撃ちます。",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "探索と破壊",
+          "description": "このミッションでは、赤外線センサーを使って車を探し、バズーカで狙って撃ちます。",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "高速へびボット",
+      "description": "R3PTARは背が高く、長く、強力なロボットです。本物の蛇のように動き、何かを見つけたら、毒のキバで相手を攻撃できます。",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "蛇のようにニョロニョロ進む",
+          "description": "このミッションでは、本当の蛇のようにニョロニョロと動かします。",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "R3PTARに音を出させよう",
+          "description": "このミッションでは、毒のキバで攻撃する対象物を見つけるまで、R3PTARが音をたてて進むようにします。",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "追う",
+          "description": "このミッションでは、R3PTARを蛇のようにはって進ませて、何かを見つけた時に毒のキバで攻撃するようにします。",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "制御する",
+          "description": "このミッションでは、遠隔赤外線ビーコンを使用してR3PTARを遠隔操作します。",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "超強力オールテレイン筋肉ボット",
+      "description": "GRIPP3Rは、パワフルなグリッパーで重量物を持ち上げて運ぶことができる強力なロボットです。リモート操作して、希望のものを持ちあげましょう！",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "つかむ",
+          "description": "このミッションでは、グリッパーを使った練習をします。",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "山積みのタイヤを移動しよう",
+          "description": "このミッションでは、運転して、山積みのタイヤを拾い、方向を変えて拾ったタイヤをまた下に置きます。",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "それを拾って!",
+          "description": "このミッションでは、赤外線センサーを使って、拾ったり置いてほしい物をGRIPP3Rに教えます。",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "なんなりと！",
+          "description": "このミッションでは、遠隔赤外線ビーコンを使ってGRIPP3Rをリモート操作して、希望の場所に物を運ばせます。",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

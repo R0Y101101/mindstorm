@@ -1,0 +1,31 @@
+[
+  {
+    "type": "banner",
+    "title": "TRACK3R",
+    "description": "Build and program this multi-purpose robot to get familiar with EV3",
+    "link": {
+      "path": "/content/start/",
+      "title": "Start"
+    },
+    "background": "#f5f5f5",
+    "image": {
+      "image": "/images/lobby-banner-primary.png",
+      "color": "#f5f5f5"
+    }
+  },
+  {
+    "type": "recentprojects"
+  },
+  {
+    "type": "cards",
+    "cards": [
+      {
+        "title": "Build EV3 Robots",
+        "description": "Build five cool robots: TRACK3R, R3PTAR, SPIK3R, GRIPP3R, and EV3RSTORM. You can program R3PTAR to slither like a snake, SPIK3R to catch a bug, GRIPP3R to grab an object, EV3RSTORM to search and destroy, and so much more.",
+        "image": "/images/lobby-banner-secondary.png",
+        "background": "#fff",
+        "link": "/content/core-models/"
+      }
+    ]
+  }
+]

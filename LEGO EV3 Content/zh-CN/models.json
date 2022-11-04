@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "解决问题的多功能跟踪机器人",
+      "description": "TRACK3R 易于搭建和指挥，并拥有很多工具。可使用双翼搅拌机、爆破火箭炮、夹爪和重锤在任务板上完成不同的任务。",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "精确搅拌",
+          "description": "在此任务中，需要使用双翼搅拌机从任务板上移除轮胎。",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "炸开轮胎",
+          "description": "在此任务中，需要使用爆破火箭炮炸开轮胎。",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "取走物体",
+          "description": "在此任务中，需要使用夹爪移动两个轮胎并将它们放置在任务板上的正方形内。",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "战术防御系统",
+          "description": "在此任务中，需要使用重锤创建战术防御系统，以便 TRACK3R 抵御来自后方的伏击。",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "计时赛",
+          "description": "在此任务中，需要使用远程红外信标命令 TRACK3R 在时间耗尽之前通过任务板上的所有检查点！",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "快速、敏捷、灵巧的蝎子机器人",
+      "description": "SPIK3R 是一个复杂的机器人，能够通过爬行和转向搜索目标，还能够使用其破碎爪或闪电尾进行攻击。",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "闪电尾",
+          "description": "在此任务中，需要使用闪电尾击球",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "爬行动作",
+          "description": "在此任务中，需要完成爬行动作并进行远程攻击。",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "粉碎物体！",
+          "description": "在在此任务中，需要添加破碎爪并进行近程攻击。",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "等待……",
+          "description": "在此任务中，需要使 SPIK3R 在原地爬行，并持续等待直到检测到要攻击的物体。",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "捕捉臭虫",
+          "description": "在此任务中，需要先搜寻臭虫并通过远程射击逼它出现，然后移动上前使用破碎爪完成工作。",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "类人智能机器人",
+      "description": "EV3RSTORM 能够借助跟踪滑板移动，使用旋转三刃刀或爆破火箭炮进行攻击；还能够检测物体、跟踪远程红外信标，并远程接收命令。",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "行驶和转向",
+          "description": "在此任务中，你将驱动 EV3RSTORM 并使其转向。",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "启动！",
+          "description": "在此任务中，你将按压触动传感器以启动 EV3RSTORM 或使其恢复睡眠状态。",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "远离黑暗",
+          "description": "在此任务中，需要巧妙使用颜色传感器，以便 EV3RSTORM 远离黑暗，并通过触动传感器使用旋转三刃刀进行攻击。",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "一见即攻击",
+          "description": "在此任务中，需要在物体距离过近时使用旋转三刃刀进行攻击。",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "命令并爆破",
+          "description": "在此任务中，需要使用远程红外信标远程控制 EV3RSTORM，还需要通过触动传感器和颜色传感器，使用爆破火箭炮进行射击。",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "搜索并摧毁",
+          "description": "在此任务中，需要通过红外传感器搜索小轮车，从而使用爆破火箭炮进行瞄准和射击。",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "超快类蛇机器人",
+      "description": "R3PTAR 是一个高大、修长而强大的机器人，能够像真正的蛇一样移动，并在检测到物体时会使用恐怖毒牙进行攻击。",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "像蛇一样滑行",
+          "description": "在此任务中，需要像真正的蛇一样进行滑行移动。",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "让 R3PTAR 嘶嘶作响",
+          "description": "在此任务中，需要让 R3PTAR 嘶嘶作响，等到检测到物体时使用恐怖毒牙进行攻击。",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "捕猎",
+          "description": "在此任务中，需要使 R3PTAR 四处滑行，并在检测到物体时使用恐怖毒牙进行攻击。",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "进行控制",
+          "description": "在此任务中，你将使用远程红外信标对 R3PTAR 进行远程控制。",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "超强的全地形肌肉机器人",
+      "description": "GRIPP3R 是一个强大的机器人，能够提升并搬运沉重的物体及其抓钳。对它进行远程控制，使其拿起你需要的物体！",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "夹取物体",
+          "description": "在此任务中，你将需要练习使用抓钳。",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "围绕轮胎堆移动",
+          "description": "在此任务中，需要直线行驶、拾取轮胎堆掉头，并再次放下轮胎堆。",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "拾起物体！",
+          "description": "在此任务中，需要使用红外传感器向 GRIPP3R 指出你希望它拿起或放下的物体。",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "听候吩咐！",
+          "description": "在此任务中，需要使用远程红外信标远程控制 GRIPP3R，以便你随意搬运物体。",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "mission2",
+  "title": "Skallrande R3PTAR",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "control_forever",
+    "ev3motor_motorTurnForSpeed",
+    "ev3sensors_waitEV3InfraredSensorProximity",
+    "ev3sound_setVolumeTo",
+    "ev3sound_playSound",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorSetStopAction",
+    "ev3motor_motorTurnFor",
+    "ev3sound_playSoundUntilDone",
+    "control_wait"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Det här är ditt mål.",
+      "description": "<p>I det här uppdraget ska du få R3PTAR att skallra och avvakta tills den upptäcker något att hugga med sin skräckinjagande huggtänder.<br><br>Bygg R3PTAR 02.</p>",
+      "image": "/images/missions/4-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model4/31313_4_2.mp4",
+                "video_hd_download": "/buildinginstructions/model4/31313_4_2.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Prova!",
+      "description": "<p>Placera R3PTAR på en slät yta och ladda sedan ner och kör programmet.</p>",
+      "image": "/images/missions/4-2-2.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Det här blocket anger vid vilken närhet R3PTAR ska anfalla.",
+      "hints": [
+        {
+          "Text": "<h3>Ladda ner och kör via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Tryck på anslutningsikonen och följ instruktionerna på skärmen.<br />2. Ladda ner och kör programmet."
+        },
+        {
+          "Text": "<h3>Ladda ner och kör via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/4-2-2-hint-usb-connect.png",
+          "Text": "1. Anslut EV3-enheten."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Ladda ner programmet till EV3-enheten."
+        },
+        {
+          "Image": "/images/missions/4-2-2-hint-run.png",
+          "Text": "3. Kör programmet från EV3-enheten."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"jL3KxDi0PMVYJc1PLPHd\" x=\"-130\" y=\"120\"><next><block type=\"control_forever\" id=\"ZMNGDd~RO1LsqH4p{NH8\"><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorTurnForSpeed\" id=\"7qq~(owYRRwu{:_@Y5(J\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"hd5IZc(BL~}jd+gHiw7#\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"rpIPQ}E`wOBn?bRABfm,\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"Ip[-?=snla02uSlT{79V\"><field name=\"NUM\">-30</field></shadow></value><next><block type=\"ev3sensors_waitEV3InfraredSensorProximity\" id=\"T).MzNVW|w//gB+z{msB\"><field name=\"EVENT\">4</field><comment id=\"9kL{Ru#*2/929]~UNV29\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"282\" minimized=\"false\">Det här blocket anger vid vilken närhet R3PTAR ska anfalla.</comment><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"^Gs-_j:Vl9%6c{PSCGVL\"><field name=\"inputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"6EJHa5.BhheCdv{E~E(c\"><field name=\"NUM\">30</field></shadow></value><next><block type=\"ev3sound_setVolumeTo\" id=\"L^po9bfRpA+@k1}VOqpZ\"><value name=\"VOLUME\"><shadow type=\"math_number\" id=\"jM?41[i=?tUH5(Yy}7MY\"><field name=\"NUM\">100</field></shadow></value><next><block type=\"ev3sound_playSound\" id=\"gg2$o:6}U-W]?ZC|ryOV\"><field name=\"SOUND\">Snake hiss</field><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"e!Nay`^1TE?*tdeC^KD]\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"l,5]+Bqmk-a^jMP/jzWO\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"YdWRYg8HDT]]pcTMMG_5\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"4)llL=(VVam0onC+]aSu\"><field name=\"NUM\">100</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block></next></block><block type=\"ev3events_whenProgramStarts\" id=\"VBY@K`f%}W+mC_)I$`GO\" x=\"-130\" y=\"600\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"pU{H{#DOd#wt$Z1C9+4F\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"2~vp]iM9~r@Wqht~XJ,M\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"LxE0L(!x]]o.zF@0U%MO\"><field name=\"NUM\">10</field></shadow></value><next><block type=\"ev3motor_motorSetStopAction\" id=\"bWo5!fqJ:=)Sc.%~,2]C\"><field name=\"OPTION\">0</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Jm(NMEVu;FfIcGgr!@35\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"control_forever\" id=\"VRfYsr_f2J!-@)^_y0H5\"><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorTurnFor\" id=\"J~^A56vYes.#/6XGFl82\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"3_|tR$HW`Nx)_@m}B)JA\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"20@cycT`@yxkbRk3D{(p\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3sound_setVolumeTo\" id=\",Kn;NIP.7XRU!^d7^M_E\"><value name=\"VOLUME\"><shadow type=\"math_number\" id=\"?]sO?ZkT#3X~v5ra6d_C\"><field name=\"NUM\">50</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"h?P/GF6?7nuF][k+!t,6\"><field name=\"SOUND\">Snake rattle</field><next><block type=\"ev3motor_motorTurnFor\" id=\"}}}gsWfkCG1Y_5vHG^4I\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"|W4qrmx@PDc@JH[vUSzE\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"AJb[0nOTE,udHk*vMYV`\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"control_wait\" id=\"A6NIcI$@d@zyJF3qj(%j\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"W8wVMRrUg8djEASN{Xs)\"><field name=\"NUM\">1</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Uppdraget slutfört!",
+      "description": "<p>R3PTAR ska göra som videoklippet visar när programmet körs.<br><br>För något framför IR-sensorn så att R3PTAR anfaller.<br><br><strong>Du har slutfört det här uppdraget!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/4-2.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Starta nästa uppdrag"
+      },
+      "doneAction": {
+        "startNext": "mission3",
+        "startTitle": "R3PTAR 03"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

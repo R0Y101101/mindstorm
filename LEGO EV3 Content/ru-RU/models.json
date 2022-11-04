@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "Многофункциональный Следящий робот для решения различных задач",
+      "description": "Робот TRACK3R прост в сборке и управлении и оснащён множеством инструментов. Для выполнения различных заданий на поле для миссий вы можете использовать измельчитель с двойным лезвием, базуку, захватную клешню и тяжелый молот.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "Измельчайте с точностью",
+          "description": "В этой миссии вы будете использовать измельчитель с двойным лезвием для удаления шины с поля для миссий.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "Взорвем это",
+          "description": "В этой миссии вы будете взрывать шины с помощью базуки.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "Уберите их",
+          "description": "В этой миссии вы будете перемещать две шины с помощью захватной клешни и складывать их внутри квадратов на поле для миссий.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "Тактическая система обороны",
+          "description": "В этой миссии вы соберете Тактическую систему обороны, использующую Тяжёлый молот для защиты TRACK3R от нападения сзади.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "«Гонки на время»",
+          "description": "В этой миссии вы будете управлять TRACK3R с помощью Удалённого инфракрасного маяка, чтобы успеть пройти все контрольные точки на поле для миссий до того, как истечёт время!",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "Быстрый, ловкий и очень умный робот-скорпион",
+      "description": "SPIK3R — сложный робот, который ползает и разворачивается в поисках целей. Он может атаковать клешнями-дробилками или стрелять хвостом-молнией.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "Хвост-молния",
+          "description": "В этой миссии вы будете стрелять шариком из хвоста-молнии.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "Манёвры при ползании",
+          "description": "В этой миссии ваш робот будет ползать, выполнять манёвры и атаковать с дальней дистанции.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "Раздробите!",
+          "description": "В этой миссии вы установите на робота клешни-дробилки и будете атаковать с ближней дистанции.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "Подождите…",
+          "description": "В этой миссии SPIK3R будет перемещаться по полю для миссий, пока не обнаружит объект для атаки.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "Поймайте жука",
+          "description": "В этой миссии вы будете охотиться на жука и атаковать, стреляя с дальней дистанции, прежде чем приблизиться к нему, чтобы закрепить победу с помощью клешней-дробилок.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "Интеллектуальный робот-гуманоид",
+      "description": "EV3RSTORM двигается на платформе с колёсиками и может атаковать вращающимися тройными лезвиями или базукой. Он может обнаруживать объекты, следовать за Удалённым инфракрасным маяком и выполнять команды, отправляемые дистанционно.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "Вождение и выполнение поворотов",
+          "description": "В этой миссии вы будете управлять роботом EV3RSTORM.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "Активируйте его!",
+          "description": "В этой миссии вы будете использовать Датчик касания, чтобы активировать EV3RSTORM или переключить его в режим сна.",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "Избегайте темноты",
+          "description": "В этой миссии вы будете использовать Датчик цвета нестандартным образом для того, чтобы EV3RSTORM избегал тёмных участков и атаковал вращающимся тройным лезвием, используя Датчик касания.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "Моментальная атака",
+          "description": "В этой миссии вы будете атаковать объект вращающимися тройными лезвиями, если он находится слишком близко.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "Приказывайте и взрывайте",
+          "description": "В этой миссии вы будете управлять EV3RSTORM с помощью Удалённого инфракрасного маяка и стрелять из базуки с использованием Датчиков касания и цвета.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "Поиск и уничтожение",
+          "description": "В этой миссии вы будете искать машинку при помощи Инфракрасного датчика, чтобы прицелиться и выстрелить в неё из базуки.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "Супербыстрый робот-змея",
+      "description": "R3PTAR — высокий, длинный и мощный робот. Он двигается, как настоящая змея и может атаковать своими Жуткими зубами, когда обнаруживает какой-либо объект.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "Ползти, как змея",
+          "description": "В этой миссии ваш робот будет воспроизводить движения настоящей змеи.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "Гремучий R3PTAR",
+          "description": "В этой миссии вы передадите R3PTAR команду трещать и ждать, пока он не обнаружит объект для атаки с помощью своих Жутких зубов.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "Охота",
+          "description": "В этой миссии вы передадите команду R3PTAR ползать по полю для миссий и при обнаружении каких-либо объектов атаковать их своими Жуткими зубами.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "Принимайте управление",
+          "description": "В этой миссии вы будете использовать Удалённый инфракрасный маяк для управления R3PTAR.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "Суперсильный робот-внедорожник",
+      "description": "GRIPP3R — мощный робот, который может поднимать и переносить тяжёлые предметы с помощью своих Мощных захватов. Управляйте им дистанционно, чтобы перемещать предметы!",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "Хватай его",
+          "description": "В этой миссии вы будете тренироваться использовать Мощные захваты.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "Движение вокруг башни из шин",
+          "description": "В этой миссии вы будете ездить, поднимать башню из шин, разворачиваться и снова ставить её на место.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "Поднимите это!",
+          "description": "В этой миссии вы будете использовать Инфракрасный датчик, чтобы показывать GRIPP3R, какие объекты вы хотите поднять или поставить.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "К вашим услугам!",
+          "description": "В этой миссии вы будете использовать Удалённый инфракрасный маяк для дистанционного управления GRIPP3R и перемещения предметов.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

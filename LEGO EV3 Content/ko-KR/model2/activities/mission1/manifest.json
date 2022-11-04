@@ -1,0 +1,103 @@
+{
+  "id": "mission1",
+  "title": "번개처럼 날카로운 꼬리",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3motor_motorTurnForSpeed",
+    "ev3sound_playSoundUntilDone",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "목표를 설명할게요!",
+      "description": "<p>이번 미션에서는 번개처럼 날카로운 꼬리로 공을 발사할 거예요.<br><br>SPIK3R 01을 조립하세요.</p>",
+      "image": "/images/missions/2-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model2/31313_2_1.mp4",
+                "video_hd_download": "/buildinginstructions/model2/31313_2_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "자, 해보자고요!",
+      "description": "<p>번개처럼 날카로운 꼬리를 매끄러운 표면 위에 놓은 후에 프로그램을 다운로드하고 실행하세요.</p>",
+      "image": "/images/missions/2-1-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "이 블록은 어느 사운드를 재생할 것인지를 지정합니다.",
+      "hints": [
+        {
+          "Text": "<h3>다운로드하고 블루투스를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 연결 아이콘을 누르고 화면의 지침을 따르세요.<br />2. 프로그램을 다운로드하고 실행하세요."
+        },
+        {
+          "Text": "<h3>다운로드하고 USB를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/2-1-2-hint-usb-connect.png",
+          "Text": "1. EV3 브릭을 연결하세요."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. 프로그램을 EV3 브릭에 다운로드하세요."
+        },
+        {
+          "Image": "/images/missions/2-1-2-hint-run.png",
+          "Text": "3. EV3 브릭에서 프로그램을 실행하세요."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"-6qB1*#M91@?{izS7Zc^\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"u%a[IkwgmUr`QE29H4;V\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"3+n!m17XL~^N/T5}Af?i\"><field name=\"outputPort\">4</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"HzoqdmuR,3B|[BgM%Qkh\"><field name=\"NUM\">40</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"/AKp)4jq.R,S%dJdyS~x\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"lOKnDKGF.E0M:R|%QZq%\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"?;hE]wdH(e1a%IL%eKEE\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"TGWF9Vd1[Exq(Yxuw}=m\"><field name=\"UNIT\">degrees</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Cdp]D@/J=,_`M{fN[VNU\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"KG8KUuQvp;B3Rk5Njg,I\"><field name=\"NUM\">220</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"Q|Mtv^j+d]z|GOyT%%2L\"><field name=\"NUM\">-75</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"aqCY=_7TZ5@bimHsa.7y\"><field name=\"SOUND\">Blip 3</field><comment id=\"v@oHY/.skztQum-Z[]:J\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"348\" minimized=\"false\">이 블록은 어느 사운드를 재생할 것인지를 지정합니다.</comment><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"Cy_N/wP#zLikm7D$#Ov9\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"dFZg1Aap2HvTfrVM:^QK\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Bw({Y-!a!p{{!g*D*2EC\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"%IR@@830?H0!n[j{W7*_\"><field name=\"NUM\">-100</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"W)Xq:F[R-R.OR%Ju$B|l\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"1TrG.GIgrYRehT2hiwac\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"|RO*e-OYm)4E,iG05!nN\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3control_stop\" id=\"JT|:fXfX;5nM@Bo?DVH}\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "임무 완료!",
+      "description": "<p>프로그램을 실행함과 동시에 SPIK3R이 비디오에서 보았던 동작을 그대로 수행해야 해요.<br><br><strong>임무를 완수했어요!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/2-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "다음 미션 시작"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "SPIK3R 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

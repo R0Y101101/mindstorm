@@ -1,0 +1,253 @@
+{
+  "id": "mainlobby",
+  "units": [
+    {
+      "id": "model1",
+      "title": "TRACK3R",
+      "subtitle": "Problem-Solving Multi-Purpose Trackerbot",
+      "description": "TRACK3R is easy to create & command and has a lot of tools. Use the Bi-blade Blender, Blasting Bazooka, Gripping Claw, and Heavy Hammer to complete different missions on the Mission Pad.",
+      "image": "/images/lobby/1-TRACK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/1-TRACK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/1-TRACK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "TRACK3R 01",
+          "subtitle": "Blend It with Precision",
+          "description": "In this mission, you’ll use the Bi-blade Blender to remove a tire from the Mission Pad.",
+          "image": "/images/lobby/1-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "TRACK3R 02",
+          "subtitle": "Blast It Away",
+          "description": "In this mission, you’ll blast away tires with the Blasting Bazooka.",
+          "image": "/images/lobby/1-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "TRACK3R 03",
+          "subtitle": "Take Them Away",
+          "description": "In this mission, you’ll move two tires with the Gripping Claw and place them inside the squares on the Mission Pad.",
+          "image": "/images/lobby/1-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "TRACK3R 04",
+          "subtitle": "Tactical Defense System",
+          "description": "In this mission, you’ll create a Tactical Defense System using the Heavy Hammer to protect TRACK3R from ambushes from behind.",
+          "image": "/images/lobby/1-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "TRACK3R 05",
+          "subtitle": "Time Trial",
+          "description": "In this mission, you’ll command TRACK3R with the Remote Infrared Beacon to pass through all the checkpoints on the Mission Pad before the time runs out!",
+          "image": "/images/lobby/1-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model2",
+      "title": "SPIK3R",
+      "subtitle": "Fast, Agile, and Very Clever Scorpionbot",
+      "description": "SPIK3R is a complex robot that crawls and turns to search for targets. It can attack with its Crushing Claws or shoot with its Lightning Tail.",
+      "image": "/images/lobby/2-SPIK3R_MODEL.png",
+      "headerVideo": "/videos/lobby/2-SPIK3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/2-SPIK3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "SPIK3R 01",
+          "subtitle": "Lightning Tail",
+          "description": "In this mission, you’ll shoot a ball with the Lightning Tail.",
+          "image": "/images/lobby/2-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "SPIK3R 02",
+          "subtitle": "Crawling Maneuvers",
+          "description": "In this mission, you’ll make a crawling maneuver and perform a long-range attack.",
+          "image": "/images/lobby/2-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "SPIK3R 03",
+          "subtitle": "Crush It!",
+          "description": "In this mission, you’ll add the Crushing Claws and perform a close-range attack.",
+          "image": "/images/lobby/2-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "SPIK3R 04",
+          "subtitle": "Wait for It…",
+          "description": "In this mission, you’ll make SPIK3R crawl around in place and wait until it detects something to attack.",
+          "image": "/images/lobby/2-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "SPIK3R 05",
+          "subtitle": "Catch That Bug",
+          "description": "In this mission, you’ll hunt the Bug and take it out with a long-range shot before moving in to finish the job with the Crushing Claws.",
+          "image": "/images/lobby/2-5-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "title": "EV3RSTORM",
+      "subtitle": "Intelligent Humanoid Smartbot",
+      "description": "EV3RSTORM moves around on tracked skates and can attack with his Spinning Tri-blade or Blasting Bazooka. He can detect objects, follow the Remote Infrared Beacon, and receive commands remotely.",
+      "image": "/images/lobby/3-EV3RSTORM_MODEL.png",
+      "headerVideo": "/videos/lobby/3-EV3RSTORM_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/3-EV3RSTORM_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "EV3RSTORM 01",
+          "subtitle": "Driving and Turning",
+          "description": "In this mission, you’ll drive and turn EV3RSTORM.",
+          "image": "/images/lobby/3-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "EV3RSTORM 02",
+          "subtitle": "Activate!",
+          "description": "In this mission, you’ll press the Touch Sensor to activate EV3RSTORM or put him back to sleep.",
+          "image": "/images/lobby/3-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "EV3RSTORM 03",
+          "subtitle": "Stay Out of the Dark",
+          "description": "In this mission, you’ll make clever use of the Color Sensor so EV3RSTORM stays out of the dark and attacks with the Spinning Tri-blade using the Touch Sensor.",
+          "image": "/images/lobby/3-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "EV3RSTORM 04",
+          "subtitle": "Attack on Sight",
+          "description": "In this mission, you’ll attack with the Spinning Tri-blade when something comes too close.",
+          "image": "/images/lobby/3-4-mission-tile.png"
+        },
+        {
+          "id": "mission5",
+          "title": "EV3RSTORM 05",
+          "subtitle": "Command and Blast",
+          "description": "In this mission, you’ll control EV3RSTORM remotely with the Remote Infrared Beacon and shoot with the Blasting Bazooka using the Touch Sensor and the Color Sensor.",
+          "image": "/images/lobby/3-5-mission-tile.png"
+        },
+        {
+          "id": "mission6",
+          "title": "EV3RSTORM 06",
+          "subtitle": "Search and Destroy",
+          "description": "In this mission, you’ll search for Wheeler using the Infrared Sensor to aim and shoot with the Blasting Bazooka.",
+          "image": "/images/lobby/3-6-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model4",
+      "title": "R3PTAR",
+      "subtitle": "Super-Fast Snakebot",
+      "description": "R3PTAR is a tall, long, and powerful robot. It moves like a real snake and can strike with its Fearsome Fangs when it detects something.",
+      "image": "/images/lobby/4-R3PTAR_MODEL.png",
+      "headerVideo": "/videos/lobby/4-R3PTAR_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/4-R3PTAR_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "R3PTAR 01",
+          "subtitle": "Slither like a Snake",
+          "description": "In this mission, you’ll make a slithering movement like a real snake.",
+          "image": "/images/lobby/4-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "R3PTAR 02",
+          "subtitle": "Rattling R3PTAR",
+          "description": "In this mission, you’ll make R3PTAR rattle and wait until it detects something to strike with its Fearsome Fangs.",
+          "image": "/images/lobby/4-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "R3PTAR 03",
+          "subtitle": "Hunting",
+          "description": "In this mission, you’ll enable R3PTAR to slither around by itself and strike with its Fearsome Fangs when it detects something.",
+          "image": "/images/lobby/4-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "R3PTAR 04",
+          "subtitle": "Take Control",
+          "description": "In this mission, you’ll use the Remote Infrared Beacon to control R3PTAR remotely.",
+          "image": "/images/lobby/4-4-mission-tile.png"
+        }
+      ]
+    },
+    {
+      "id": "model5",
+      "title": "GRIPP3R",
+      "subtitle": "Super-Strong All-Terrain Musclebot",
+      "description": "GRIPP3R is a strong robot that can lift and carry heavy things with its Grasping Grippers. Control it remotely to make it pick up what you want!",
+      "image": "/images/lobby/5-GRIPP3R_MODEL.png",
+      "headerVideo": "/videos/lobby/5-GRIPP3R_FULL.mp4",
+      "video": {
+        "urls": {
+          "video_hd_download": "/videos/lobby/5-GRIPP3R_ProjectVideo.mp4"
+        }
+      },
+      "background": "#fcfcfc",
+      "activities": [
+        {
+          "id": "mission1",
+          "title": "GRIPP3R 01",
+          "subtitle": "Grasping It",
+          "description": "In this mission, you’ll practice using the Grasping Grippers.",
+          "image": "/images/lobby/5-1-mission-tile.png"
+        },
+        {
+          "id": "mission2",
+          "title": "GRIPP3R 02",
+          "subtitle": "Moving Around the Tire Stack",
+          "description": "In this mission, you’ll drive, pick up the Tire Stack, turn around, and put it down again.",
+          "image": "/images/lobby/5-2-mission-tile.png"
+        },
+        {
+          "id": "mission3",
+          "title": "GRIPP3R 03",
+          "subtitle": "Pick That Up!",
+          "description": "In this mission, you’ll use the Infrared Sensor to show GRIPP3R what objects you want it to pick up or put down.",
+          "image": "/images/lobby/5-3-mission-tile.png"
+        },
+        {
+          "id": "mission4",
+          "title": "GRIPP3R 04",
+          "subtitle": "At Your Service!",
+          "description": "In this mission, you’ll use the Remote Infrared Beacon to control GRIPP3R remotely so you can carry around things as you please.",
+          "image": "/images/lobby/5-4-mission-tile.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "type": "banner",
+    "title": "TRACK3R",
+    "description": "搭建此多功能机器人并对其编程，熟悉 EV3 机器人",
+    "link": {
+      "path": "/content/start/",
+      "title": "开始"
+    },
+    "background": "#f5f5f5",
+    "image": {
+      "image": "/images/lobby-banner-primary.png",
+      "color": "#f5f5f5"
+    }
+  },
+  {
+    "type": "recentprojects"
+  },
+  {
+    "type": "cards",
+    "cards": [
+      {
+        "title": "搭建 EV3 机器人",
+        "description": "搭建五台酷炫机器人：TRACK3R、R3PTAR、SPIK3R、GRIPP3R 和 EV3RSTORM。对它们进行编程，使 R3PTAR 像蛇一样滑行、SPIK3R 可捕捉臭虫、GRIPP3R 可抓取物体、EV3RSTORM 能搜索并摧毁等。",
+        "image": "/images/lobby-banner-secondary.png",
+        "background": "#fff",
+        "link": "/content/core-models/"
+      }
+    ]
+  }
+]

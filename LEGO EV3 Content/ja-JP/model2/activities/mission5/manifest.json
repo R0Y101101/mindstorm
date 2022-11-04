@@ -1,0 +1,105 @@
+{
+  "id": "mission5",
+  "title": "虫をつかまえる",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3motor_motorStartSpeed",
+    "ev3sound_playSoundUntilDone",
+    "control_wait_until",
+    "ev3sensors_isEV3InfraredBeaconActiveAnd",
+    "ev3motor_motorStop",
+    "control_repeat",
+    "ev3motor_motorTurnForSpeed",
+    "control_wait",
+    "ev3motor_motorStart",
+    "ev3sound_playSound",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "学習目標は、次の通りです。",
+      "description": "<p>このミッションでは、強力クロウでの作業を終了する前に、虫をつかまえて長距離ショットで排除します。<br><br>SPIK3R 05を組み立てる</p>",
+      "image": "/images/missions/2-5-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model2/31313_2_5.mp4",
+                "video_hd_download": "/buildinginstructions/model2/31313_2_5.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "やってみましょう！",
+      "description": "<p>SPIK3Rと虫を表面が滑らかな場所に置きます。それから、遠隔赤外線ビーコンのビーコン モードボタンを押してください。<br><br>プログラムをダウンロードして実行します。</p>",
+      "image": "/images/missions/2-5-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "このブロックは、SPIK3Rがどの方位に向かって虫を撃つかを指定します。",
+      "hints": [
+        {
+          "Text": "<h3>Bluetoothからダウンロードして実行</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 接続アイコンを押し、画面上の指示に従います。<br />2．プログラムをダウンロードして実行します。"
+        },
+        {
+          "Text": "<h3>USBからダウンロードして実行</h3>"
+        },
+        {
+          "Image": "/images/missions/2-5-2-hint-usb-connect.png",
+          "Text": "1．EV3 ブロックを接続します。"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2．プログラムを EV3 ブロックにダウンロードします。"
+        },
+        {
+          "Image": "/images/missions/2-5-2-hint-run.png",
+          "Text": "3．EV3 ブロックからプログラムを実行します。"
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"OBS5)HF)NlRJ]VUhxuYi\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"Rw][CiWTxaUXvLH(H5k#\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"VLpR}xI([k=kX!J,E;UT\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"5*+8oXu]?X%kpcY8Y+XW\"><field name=\"NUM\">50</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"G_}papswSx{:`o0SdQG]\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"f!qEc0h+;e0@%G)G,qBF\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"^;:rE;n{[wcn_3D{qQrf\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"8)BM|RP!#@yu8O3m{v!:\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"[lDy@hpP90!jgujydbTO\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"lo?+:+y?~V?reyI9H0?]\"><field name=\"NUM\">0.3</field></shadow></value><next><block type=\"ev3motor_motorSetSpeed\" id=\"w%J~wwRw@k`R13BCc:yO\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\")hJkSI3[4*=URuc|ewj=\"><field name=\"outputPort\">4</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"FOGY)BX=WfQP-QTe{_!_\"><field name=\"NUM\">40</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"ZB1W-K3Ho:2v{=HN{vCD\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"^nftB}8Buu3vw-NS9{?A\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"f,0yyCR|8*ZDqfL(kBmt\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3motor_motorStartSpeed\" id=\"h1VS/s]K8@!31-,N3[uU\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"EM[uZ/VXg5hfHHaFK{3Z\"><field name=\"outputPort\">2</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"O74z9-DyiI6Ex!TDC46Y\"><field name=\"NUM\">-50</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"$zrf(c;P8N(uY?y%D2J$\"><field name=\"SOUND\">Blip 2</field><next><block type=\"control_wait_until\" id=\"csEDnC[uO{O]c*S|bW3:\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconActiveAnd\" id=\"*4-**hEXF!;OZo[43(oK\"><field name=\"OPTION\">proximity</field><field name=\"COMPARATOR\">4</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"*P@bp;UrbS|byE!lZOZb\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"lfj}fVHeJUMgpk|vLdX^\"><field name=\"irChannel\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"]1#7z#rlO*a`BHX:~6Zi\"><field name=\"NUM\">30</field></shadow></value></block></value><next><block type=\"control_wait_until\" id=\"O70j4j(kDC)%_!44yEP*\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconActiveAnd\" id=\"SMcky-3_;Uo(l)cc4u#I\"><field name=\"OPTION\">heading</field><field name=\"COMPARATOR\">2</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"{~n3;+K5J.iP=8$l=*6N\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"s;|ZFCJt!^TK)E$NuCZU\"><field name=\"irChannel\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"{VXKX5!%=vI.Wh/*lq}h\"><field name=\"NUM\">5</field></shadow></value></block></value><next><block type=\"ev3motor_motorStartSpeed\" id=\"ZRB,1bn#oXCseLm,cd4}\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"IccV{I2XH-iR^,+@E+[,\"><field name=\"outputPort\">2</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"3],UAA=6,H;75R30|Tu2\"><field name=\"NUM\">-20</field></shadow></value><next><block type=\"control_wait_until\" id=\"H-AyNB:,uIT)}xgw?I9$\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconActiveAnd\" id=\"|hmr.IZ5,X;[2MTMA0sP\"><field name=\"OPTION\">heading</field><field name=\"COMPARATOR\">4</field><comment id=\"H4RGZu1!@`[wQOBwHbuv\" pinned=\"true\" h=\"200\" w=\"200\" x=\"800\" y=\"740\" minimized=\"false\">このブロックは、SPIK3Rがどの方位に向かって虫を撃つかを指定します。</comment><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"rcGD`yADN2igf(#FvEgR\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"a.(rVCkvZkIi0XHE7CFM\"><field name=\"irChannel\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"u-|-qQfd0K;K%R1?,LbC\"><field name=\"NUM\">3</field></shadow></value></block></value><next><block type=\"ev3motor_motorStop\" id=\"@+l5vjB5bnWk1Bnr[s|Y\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"za:J~XSt[wA6SmVB*su-\"><field name=\"outputPort\">2</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"5l#37k7VJb6hF#C{KP.P\"><field name=\"SOUND\">Blip 4</field><next><block type=\"control_repeat\" id=\"(3]i3gk0+b1x(%|=G0fQ\"><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"UT@`c)P{M;B@`%gVU~N#\"><field name=\"NUM\">3</field></shadow></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorTurnFor\" id=\"0]JuhXx0rT%Ju]Nt[zvp\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">degrees</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"=txJa?C6)1CpR;h+b:?7\"><field name=\"outputPort\">2</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\",M03cG+Dp.C**l9p9Dkc\"><field name=\"NUM\">10</field></shadow></value><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"w)]LM-4hJ9i%Z[4WFY@,\"><field name=\"UNIT\">degrees</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"t)H5gDZpGsfk9)V*q.Gs\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"E,.-_!{ePUhN|/vPwC(Z\"><field name=\"NUM\">220</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"mgHU{?Jv(vBd]Yik2B!C\"><field name=\"NUM\">-75</field></shadow></value><next><block type=\"control_wait\" id=\"mu$UBw[1XV(c!n#|t1,T\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"PS|N[q|VcTE`dFTc=zm=\"><field name=\"NUM\">0.1</field></shadow></value><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"SSvj,xy5n^~K].g?T@-9\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"8dsi(Uu?O:hPqFCmCg#]\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"SlbqW]L}H0JZr8a28.Rv\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"%wpqtNf;KG|9pDlK~g5h\"><field name=\"NUM\">-100</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"zlXUm(8Og2a=-$]@V~=i\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"VXjGmLln8TJ++?`UHq-K\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"0xa_9mgfUYsP7KpNowmm\"><field name=\"NUM\">1</field></shadow></value></block></next></block></next></block></next></block></next></block></statement><next><block type=\"ev3motor_motorStart\" id=\"|nvOgh.P+jW6]:Vm_E73\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"PhR+,F^hTcN)9,H1]/j}\"><field name=\"outputPort\">2</field></shadow></value><next><block type=\"ev3sound_playSound\" id=\"xTTJ!;mJ9$PoJjjhTe|+\"><field name=\"SOUND\">Blip 1</field><next><block type=\"ev3motor_motorSetSpeed\" id=\"Um?N3rwCm=HK%,GE=n[h\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"*WX3GPuh(#_].L#sc^]{\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"{%sGc5w]~7F%@vSZlTT@\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"control_repeat\" id=\"3VvnjA*Q-[fd0L[env*g\"><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"z{{xAV2W*UD)wOa,uifW\"><field name=\"NUM\">5</field></shadow></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorTurnFor\" id=\"^b6N)_7B-WWH@O/+1lZK\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"zw35H=QuBkIv~xkaWl~4\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"vk/mP`wuMb-TQ,b_|p2V\"><field name=\"NUM\">0.2</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"}huK7(Vu:/VPc+`:ej3$\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"]g:pUn7Y6p^QCLj)6_%b\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"5Kwh4=u#djSSOA-*B)(?\"><field name=\"NUM\">0.2</field></shadow></value></block></next></block></statement><next><block type=\"ev3sound_playSoundUntilDone\" id=\"swl)#?0{DQ$XGGZKu734\"><field name=\"SOUND\">Blip 3</field><next><block type=\"ev3motor_motorTurnFor\" id=\"5Znn{A?inmg=jGIh23P`\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\".Em#a`Q@FHoZA~M*bdIA\"><field name=\"outputPort\">2</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"bXY^)4cqE6WJwRzGZl8Y\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"Blw;:_j_oz)*C0Qx6}tm\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"#6kPnu6G^5Z$`Mw)X6cU\"><field name=\"outputPort\">2</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"v6m=Vy|/`.+-xJAM(x|%\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"ev3control_stop\" id=\"%@N33L@L+svAsqs;_V2L\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "ミッション完了！",
+      "description": "<p>SPIK3Rは、プログラムを実行したときにビデオで示されている通りに動く必要があります。<br><br><strong>これでTRACK3Rのすべてのミッションが完了しました！</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/2-5.mp4"
+        }
+      },
+      "hints": [
+        {
+          "Image": "/images/missions/2-5-3-hint-channel.png",
+          "Text": "SPIK3Rが虫を見つけない場合、遠隔赤外線ビーコンが「チャンネル1」に設定され、オンになっていて、SPIK3Rからあまり遠く離れていないことを確認します。"
+        }
+      ]
+    }
+  ]
+}

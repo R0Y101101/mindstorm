@@ -1,0 +1,109 @@
+{
+  "id": "mission4",
+  "title": "Taktiskt försvarssystem",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3move_movementSpeed",
+    "ev3motor_motorTurnForSpeed",
+    "control_forever",
+    "ev3motor_motorSetStopAction",
+    "control_if_else",
+    "ev3sensors_isEV3InfraredSensorProximity",
+    "ev3display_displayImage",
+    "ev3move_steer",
+    "ev3sound_playSoundUntilDone",
+    "ev3move_startSteer",
+    "control_wait"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Det här är ditt mål.",
+      "description": "<p>I det här uppdraget ska du med hjälp av den tunga hammaren skapa ett taktiskt försvarssystem för att skydda TRACK3R från anfall bakifrån.<br><br>Bygg TRACK3R 04.</p>",
+      "image": "/images/missions/1-4-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model1/31313_1_4.mp4",
+                "video_hd_download": "/buildinginstructions/model1/31313_1_4.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Prova!",
+      "description": "<p>Placera TRACK3R på en slät yta och ladda sedan ner och kör programmet.</p>",
+      "image": "/images/missions/1-4-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Det här blocket anger vid vilken närhet TRACK3R ska reagera på föremål.",
+      "hints": [
+        {
+          "Text": "<h3>Ladda ner och kör via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Tryck på anslutningsikonen och följ instruktionerna på skärmen.<br />2. Ladda ner och kör programmet."
+        },
+        {
+          "Text": "<h3>Ladda ner och kör via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/1-4-2-hint-usb-connect.png",
+          "Text": "1. Anslut EV3-enheten."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Ladda ner programmet till EV3-enheten."
+        },
+        {
+          "Image": "/images/missions/1-4-2-hint-run.png",
+          "Text": "3. Kör programmet från EV3-enheten."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"HCv4vZhgjYja9iT80Bja\" x=\"-130\" y=\"120\"><next><block type=\"ev3move_movementSpeed\" id=\"MR6i}v^4qfc]y8KT{$TX\"><value name=\"SPEED\"><shadow type=\"math_number\" id=\"hI(P6W+K=.:V_wj%zHPv\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"J8@Utfnz5.^/d-1bTV2m\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"c!!J}hrex`NfZ^|285e[\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"fw/!NMTC18ju/.@XBu6*\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"E5Dp2E+|Zp~.+Sj0%XET\"><field name=\"NUM\">-20</field></shadow></value><next><block type=\"control_forever\" id=\"r6`VWzxeP^By.~@FD!QN\"><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorSetStopAction\" id=\"P|I4e[ntnb;]XTt1WAoM\"><field name=\"OPTION\">1</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"CrjXG+$*.^B#iU^s;l1:\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"control_if_else\" id=\"4nyN|dYa4Cx]!;q!!dJa\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredSensorProximity\" id=\"Rp^T^nuVgX|@TU-Q623}\"><field name=\"COMPARATOR\">4</field><comment id=\"f8.x#JkI1HOPsM:oRs`5\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"396\" minimized=\"false\">Det här blocket anger vid vilken närhet TRACK3R ska reagera på föremål.</comment><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"$E/EH9v1)(fPJBEyH.j3\"><field name=\"inputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Et,N.qvJ1#kJQu4!+,.%\"><field name=\"NUM\">25</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3display_displayImage\" id=\"FB3FUXE2i+qcghJ.Eq+8\"><field name=\"IMAGE\">Pinch right</field><next><block type=\"ev3move_steer\" id=\"-J@ZV,J5P(I?+2HKSC^T\"><field name=\"UNIT\">degrees</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"}I+C=yXksE5stx*iWFCn\"><field name=\"field_ev3move_rotation-wheel\">-100</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"2aIBkt0+w(Y)t[KBO?D5\"><field name=\"NUM\">1000</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"6Y6@3n=DH#:-uw.VB{|;\"><field name=\"IMAGE\">Angry</field><next><block type=\"ev3motor_motorTurnForSpeed\" id=\".|LU9d^z~D,*VfTnQ2be\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"0L2mbYB/21j?!(1naRK@\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"tnJ(@ZRlF{YL/[)Zl^SB\"><field name=\"NUM\">0.3</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"sU:A%tERQ5)aZ%BeTTbK\"><field name=\"NUM\">100</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"m;s5;m]vWKg/DKM`6/~-\"><field name=\"SOUND\">Laughing 2</field><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"wTuBn|4~B]da?4B]xJEv\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"G2xe+y-ab0$~]jdcVzxv\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"(SAB=.yHv87}hM4nSCE=\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"M}4mOxoK1}o1!K=^G4{y\"><field name=\"NUM\">-20</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3display_displayImage\" id=\"?#SisL#25lEf3RxbW8dn\"><field name=\"IMAGE\">Crazy 1</field><next><block type=\"ev3move_startSteer\" id=\"{0lCWYz2raOs_#+4=}Zu\"><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"lFiFCCcCe.#sI9Sj[(Ms\"><field name=\"field_ev3move_rotation-wheel\">0</field></shadow></value><next><block type=\"ev3motor_motorTurnForSpeed\" id=\".p/p+/AGl5lAgtT6hS=g\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"L`8q;+.M*i`9b1*8`{bJ\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"6cRGhW#SV}dz:a^t/?),\"><field name=\"NUM\">0.1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\")#4h[Yat*#gDh~-D%~n;\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"control_wait\" id=\"ne3T;jl3[{0,~Oa*bjJr\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"::X3=N7Y-G3]3+WeCD^;\"><field name=\"NUM\">0.1</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"_KsuW}GQaYtqptaE*zqH\"><field name=\"IMAGE\">Crazy 2</field><next><block type=\"ev3move_startSteer\" id=\"QGd`w3oX6^`(d51}nM$q\"><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"p2pY4!ut`bR[{]!D[Uuu\"><field name=\"field_ev3move_rotation-wheel\">50</field></shadow></value><next><block type=\"ev3motor_motorSetStopAction\" id=\".HqE4(j!RZs?/7^tcw9]\"><field name=\"OPTION\">0</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"r?#zofepgAcl{wR*Z41v\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"_IbVwnI6!{#GlI)LT;a^\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"mPB2fR)2@i1M5?wlQRg4\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"cW^k)kbX126AhE93GX,^\"><field name=\"NUM\">0.2</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"3:pl9vvLSnZ-jKij@A#H\"><field name=\"NUM\">-10</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></next></block></statement></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Uppdraget slutfört!",
+      "description": "<p>TRACK3R ska göra som videoklippet visar när programmet körs.<br><br>För något framför IR-sensorn så att TRACK3R vänder sig om och anfaller.<br><br><strong>Du har slutfört det här uppdraget!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/1-4.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Starta nästa uppdrag"
+      },
+      "doneAction": {
+        "startNext": "mission5",
+        "startTitle": "TRACK3R 05"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

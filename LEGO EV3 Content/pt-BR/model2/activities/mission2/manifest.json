@@ -1,0 +1,103 @@
+{
+  "id": "mission2",
+  "title": "Manobras rastejantes",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3sound_playSoundUntilDone",
+    "ev3motor_motorTurnForSpeed",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Aqui está o seu objetivo.",
+      "description": "<p>Nesta missão, você fará uma manobra de rastreamento e realizará um ataque de longo alcance.<br><br>Construa o SPIK3R 02.</p>",
+      "image": "/images/missions/2-2-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model2/31313_2_2.mp4",
+                "video_hd_download": "/buildinginstructions/model2/31313_2_2.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Vamos experimentar!",
+      "description": "<p>Coloque o SPIK3R em uma superfície lisa, depois baixe e execute o programa.</p>",
+      "image": "/images/missions/2-2-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "Este bloco controla o quão longe o SPIK3R rasteja.",
+      "hints": [
+        {
+          "Text": "<h3>Baixar e executar via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Pressione o ícone conectar e siga as instruções na tela.<br />2. Baixe e execute o programa."
+        },
+        {
+          "Text": "<h3>Baixar e executar via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/2-2-2-hint-usb-connect.png",
+          "Text": "1. Conecte seu Bloco EV3."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Baixe o programa para o seu Bloco EV3."
+        },
+        {
+          "Image": "/images/missions/2-2-2-hint-run.png",
+          "Text": "3. Execute o programa a partir do seu Bloco EV3."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"OBS5)HF)NlRJ]VUhxuYi\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"jg|VcwL+poBiV05?^;-]\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"(L`I4pT`1)D?!(gN~UCz\"><field name=\"outputPort\">4</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"g+|F-1]I:IVMMlEOt{J?\"><field name=\"NUM\">40</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"i/D24JV:/=:MyTUP$45{\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"-P;6#V,JjHu;hX|szGlA\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"OqiH7LGt5,XQ#?YZ6XS|\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3motor_motorSetSpeed\" id=\"(s1TI7Xcm[gMEW~YlSei\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"War[5oOd5G_mq6zOzPH,\"><field name=\"outputPort\">2</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"AtmtSY^:s}![Zci20`)W\"><field name=\"NUM\">100</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"Blw;:_j_oz)*C0Qx6}tm\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">rotations</field><comment id=\"sE=fRQsN$!z3wcd|#n^K\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"348\" minimized=\"false\">Este bloco controla o quão longe o SPIK3R rasteja.</comment><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"#6kPnu6G^5Z$`Mw)X6cU\"><field name=\"outputPort\">2</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"{k@wW38k%WnSH?x?^(f;\"><field name=\"NUM\">3</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"VwxW@KqQ[#GilG.__s!%\"><field name=\"SOUND\">Blip 2</field><next><block type=\"ev3motor_motorTurnFor\" id=\"0]JuhXx0rT%Ju]Nt[zvp\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"=txJa?C6)1CpR;h+b:?7\"><field name=\"outputPort\">2</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"^)R,#!V8Qns@nG}k]iIk\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"hOn:lW@Z0g%c@l!DS4Hp\"><field name=\"SOUND\">Blip 4</field><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"ChiWl[:3SDgA+|BB-W}b\"><field name=\"UNIT\">degrees</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"+IEbLUc;m@.wK^kd93Y.\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"ET`yr|zVYCss/WKWn9j(\"><field name=\"NUM\">220</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"b,_=I/kNso18iSSe3Cxe\"><field name=\"NUM\">-75</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"JsxC/C$nK!Yl.^;L`7Jz\"><field name=\"SOUND\">Blip 3</field><next><block type=\"ev3motor_motorTurnForSpeed\" id=\"$g-McS=n,wj%%.Vr+`UL\"><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"rNG2@!aG{(t;3J/0i35i\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"koMJKjfvscD[y|qRp~X~\"><field name=\"NUM\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\")j@l2_]hz7x~uv/ykpS(\"><field name=\"NUM\">-100</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"ye^oeowE$2yi5*6#INTt\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"~H^cmQGK[nQ_-+jb?kMc\"><field name=\"outputPort\">4</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"F={9?LUN.CoV~nQE)k7)\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3control_stop\" id=\"%@N33L@L+svAsqs;_V2L\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Missão cumprida!",
+      "description": "<p>O SPIK3R deve fazer o que é mostrado no vídeo ao executar o programa.<br><br><strong>Você completou esta missão!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/2-2.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Inicie a próxima missão"
+      },
+      "doneAction": {
+        "startNext": "mission3",
+        "startTitle": "SPIK3R 03"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "mission5",
+  "title": "命令と攻撃",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3display_displayImage",
+    "ev3motor_motorSetSpeed",
+    "control_forever",
+    "ev3sensors_waitEV3TouchSensorTouch",
+    "control_if_else",
+    "ev3sensors_isEV3ColorSensorAmbient",
+    "ev3sound_playSoundUntilDone",
+    "ev3motor_motorTurnFor",
+    "ev3events_whenCondition",
+    "operator_equals",
+    "ev3sensors_getEV3InfraredBeaconButtons",
+    "ev3move_stopMove",
+    "control_repeat_until",
+    "operator_not",
+    "operator_lt",
+    "operator_mod",
+    "sensing_timer",
+    "ev3move_startDualSpeed"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "学習目標は、次の通りです。",
+      "description": "<p>このミッションでは、赤外線ビーコンでEV3RSTORMをリモート操作して、タッチセンサーとカラーセンサーを使ってバズーカで撃ちます。<br><br>EV3RSTORM 05を組み立てる</p>",
+      "image": "/images/missions/3-5-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model3/31313_3_5.mp4",
+                "video_hd_download": "/buildinginstructions/model3/31313_3_5.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "やってみましょう！",
+      "description": "<p>EV3RSTORMを表面が滑らかな場所に置き、プログラムをダウンロードして実行してください。</p>",
+      "image": "/images/missions/3-5-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "このブロックは、EV3RSTORMを遠隔赤外線ビーコンで制御している際の運転速度を設定します。",
+      "hints": [
+        {
+          "Text": "<h3>Bluetoothからダウンロードして実行</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 接続アイコンを押し、画面上の指示に従います。<br />2．プログラムをダウンロードして実行します。"
+        },
+        {
+          "Text": "<h3>USBからダウンロードして実行</h3>"
+        },
+        {
+          "Image": "/images/missions/3-5-2-hint-usb-connect.png",
+          "Text": "1．EV3 ブロックを接続します。"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2．プログラムを EV3 ブロックにダウンロードします。"
+        },
+        {
+          "Image": "/images/missions/3-5-2-hint-run.png",
+          "Text": "3．EV3 ブロックからプログラムを実行します。"
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"UMT3n_Xk2MGCb12z3H3u\" x=\"-130\" y=\"120\"><next><block type=\"ev3display_displayImage\" id=\"8FLd.)o/)l^UHT)Z]d]%\"><field name=\"IMAGE\">Target</field><next><block type=\"ev3motor_motorSetSpeed\" id=\"{{A4#NoF$iZBTi[7SW]r\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"[r#TJn7.`Vj1|9:`!b//\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"_9Tr9GzVLv,|p|0q84h]\"><field name=\"NUM\">100</field></shadow></value><next><block type=\"control_forever\" id=\"eS$OD$Zop*,1}Zxtf|F%\"><statement name=\"SUBSTACK\"><block type=\"ev3sensors_waitEV3TouchSensorTouch\" id=\");eM:oyrhlRr0N~w)72q\"><field name=\"EVENT\">1</field><comment id=\"k+=9g7.+Md{1Lq?wLd|l\" pinned=\"true\" h=\"200\" w=\"200\" x=\"480\" y=\"146\" minimized=\"false\">このブロックは、EV3RSTORMを遠隔赤外線ビーコンで制御している際の運転速度を設定します。</comment><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"3q0Cc@6q@(md7DBg|uby\"><field name=\"inputPort\">1</field></shadow></value><next><block type=\"control_if_else\" id=\"|2;T|-Gmhmw]/XK#wk1s\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3ColorSensorAmbient\" id=\"|iypzRlS[Eu+HYrlm+F(\"><field name=\"COMPARATOR\">4</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"3wb{;eSjH,1v(JKck/zN\"><field name=\"inputPort\">3</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\")%IK|~rfP)f/2V5p4q8/\"><field name=\"NUM\">15</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3sound_playSoundUntilDone\" id=\"2yFr*}A8AJYnn3iFuw`s\"><field name=\"SOUND\">Up</field><next><block type=\"ev3motor_motorTurnFor\" id=\"sga$iAWWq:9m18MT$xx)\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Qysh5}qJv@KPIpci2L9,\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"BTx+h~24ui{`,t_ZdNWU\"><field name=\"NUM\">3</field></shadow></value></block></next></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3sound_playSoundUntilDone\" id=\"B;_UYfY,KSvOhEGXrw}F\"><field name=\"SOUND\">Down</field><next><block type=\"ev3motor_motorTurnFor\" id=\"?,+9)Syu?!V!!(zus/aQ\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">rotations</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"ABZ@c/PU;lku0v5JC{zX\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"=NteXx`O)uA/:F.O)t?5\"><field name=\"NUM\">3</field></shadow></value></block></next></block></statement></block></next></block></statement></block></next></block></next></block></next></block><block type=\"ev3events_whenCondition\" id=\"(RLmhWHVwBl40{jD/oPn\" x=\"730\" y=\"120\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"xjOlp8FJ]_WF8Ti+m8D)\"><value name=\"OPERAND1\"><shadow id=\"w93qbfa}H*#1oAbyUTMB\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"pBP`/,-9,HCPgB(:QdMo\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"2/Rnj@[Pa7EN.Nn=_Q:R\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"h7PVS%~LOx-+Vw0wt_A5\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"CoTwT!8bQ`6bx/.df[xC\"><field name=\"TEXT\">0</field></shadow></value></block></value><next><block type=\"ev3move_stopMove\" id=\"bdtN$N6$rmUdF$dtNyKL\"></block></next></block><block type=\"ev3events_whenCondition\" id=\"As).eo!Rn[`9KQ:$?:1$\" x=\"1460\" y=\"120\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"w(g8Y0ak[-zPL5Os?b)n\"><value name=\"OPERAND1\"><shadow id=\"=y*6T8AX/;wg/Rq#b)~b\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"@9f-0[0!`ivhu^Wlw%O1\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"6Vbs*|w-Cn:m4klX`uiP\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"*ZhZY_u^Vs@`n`eAIQ+!\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"|;kpq[o8dz69F|7Qf@jb\"><field name=\"TEXT\">5</field></shadow></value></block></value><next><block type=\"control_repeat_until\" id=\"C~zI!HH,!G:#Ib0V#:=i\"><value name=\"CONDITION\"><block type=\"operator_not\" id=\"wTEC[*O:vl[ZHE.|-35^\"><value name=\"OPERAND\"><block type=\"operator_equals\" id=\"Z3jGKJJ$(YJmFMk,2LvR\"><value name=\"OPERAND1\"><shadow id=\"rXvP{irgL;nawmQ1jhS;\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"tr)6k}k@ScNp5d,:}CUB\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"kVuVv)g@9B~L@vq4X?V]\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"wL-;kdyB$6S*NubwOkIg\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"+rRY9@d#etaB9`_%?{XF\"><field name=\"TEXT\">5</field></shadow></value></block></value></block></value><statement name=\"SUBSTACK\"><block type=\"control_if_else\" id=\"nW[DvLFVN|Vw}rgW#[p0\"><value name=\"CONDITION\"><block type=\"operator_lt\" id=\"vH+!6}D.5YKp0m{~Uj~z\"><value name=\"OPERAND1\"><shadow id=\"R5jb4kEjY_(UCCWtGG!n\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"operator_mod\" id=\"U^fM@6w9BHPlObr*Q|K@\"><value name=\"NUM1\"><shadow id=\"x(VI58UF85773|pQQc(_\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"sensing_timer\" id=\"91jH~#5q5AB,~4ZSz@:q\"></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"PjG+f-V#HBt-Az9ET?rH\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"q?RpH3k+6idVo`@}Bz1M\"><field name=\"TEXT\">1.5</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3move_startDualSpeed\" id=\"{XK,(dl0Uwju(Q|I.9!`\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"EvSa3xk;f-_k;P#ZVoa}\"><field name=\"NUM\">50</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"a-Bz?cKV6a|I@29nrC.q\"><field name=\"NUM\">100</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3move_startDualSpeed\" id=\"wEQFbA$U40-3=X`*!d4%\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"2yRFs.Z|sZb/VDE:K(%(\"><field name=\"NUM\">100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"_2oBc])zn|=VUYTJwYjM\"><field name=\"NUM\">50</field></shadow></value></block></statement></block></statement></block></next></block><block type=\"ev3events_whenCondition\" id=\"u;@~`N%YJ]{0Z;(ExI#?\" x=\"730\" y=\"310\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"@X~/574tHeJi2[7!rih-\"><value name=\"OPERAND1\"><shadow id=\"1SObHPS^y*ECjU.~l?cB\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"9SX}wQL(kP2KLRoT=7[l\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"YodVj^/*gBAQ{]R=`7LP\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"t=yc:W5_L(6E!y1Rfv^D\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"avoGQfFcvwj~k{Uwl/^D\"><field name=\"TEXT\">1</field></shadow></value></block></value><next><block type=\"ev3move_startDualSpeed\" id=\"^Q5QdwZ]Lys4u#g![C/,\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"QG:V6JC4H(PfLAjeiiRt\"><field name=\"NUM\">100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"=po|5S#cHf3.#A-?yP+U\"><field name=\"NUM\">0</field></shadow></value></block></next></block><block type=\"ev3events_whenCondition\" id=\"YK,2-daMSEMw-I@F(nDs\" x=\"730\" y=\"490\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"C4sYLfG1HR3B2.v(MjvW\"><value name=\"OPERAND1\"><shadow id=\"1{)Mp%R4~iL0vF+Y|RPz\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"H{g-9hibX)K`MFjsJ1WD\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"5i)804cKlNI|[W:ktojD\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"AQ7[*N[aQpP[L:F,OxoJ\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"rIKInDDwzTt}IHoQ((D^\"><field name=\"TEXT\">2</field></shadow></value></block></value><next><block type=\"ev3move_startDualSpeed\" id=\"hda}/ioVWCQ-o#?I*r#p\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"0H.PB/+utkDvCi|+69ju\"><field name=\"NUM\">-100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"oR?%94*lMXE}Il%%u:D(\"><field name=\"NUM\">0</field></shadow></value></block></next></block><block type=\"ev3events_whenCondition\" id=\"NcieMU4+GXY3Gcbm{RSc\" x=\"1460\" y=\"600\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"HQPckRS,n/wIG1Ir%3eW\"><value name=\"OPERAND1\"><shadow id=\"6UL-qfE0|]0vv%]g;de8\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"C^v}7JJW^DaE-e-5}e89\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"1~q!:!obT1z7Eh;hap[6\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"z7%[w]/*x0|U[F-|1k1_\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"y_Gqb`7(c(j:Yq/FzD(e\"><field name=\"TEXT\">6</field></shadow></value></block></value><next><block type=\"ev3move_startDualSpeed\" id=\"3BQo{u2A=y@+`_BzUK3M\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"aR,-ZVB!N/yPpGj{a*Bk\"><field name=\"NUM\">100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"8~97StRa5GWtW5wg#ut8\"><field name=\"NUM\">-100</field></shadow></value></block></next></block><block type=\"ev3events_whenCondition\" id=\"P|d1r3lh8:dE2l/DS.X1\" x=\"730\" y=\"680\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"_W5s=Iu!t;!:t+rPlMTd\"><value name=\"OPERAND1\"><shadow id=\"C64m%GdHz@Ir5n?e93){\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"9{hoSe?J$]5,RRu03(d8\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"D+uxD?X~Xjio73QGAUm/\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"U]DqwgTkg@6Cd?{5GY-@\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"5zaXFq*H8]vKUpNc|q%U\"><field name=\"TEXT\">3</field></shadow></value></block></value><next><block type=\"ev3move_startDualSpeed\" id=\"jf4:o9,^^!1kB;n(W|!H\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"ScgUPbn^A!R_C.Kgor44\"><field name=\"NUM\">0</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"gY.IEWqHvvwt}0r}tztK\"><field name=\"NUM\">100</field></shadow></value></block></next></block><block type=\"ev3events_whenCondition\" id=\"TaykkU{F*fraNgk5DTZa\" x=\"1460\" y=\"790\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"=U7;5eQ:$3Yz~Vvv?uQ[\"><value name=\"OPERAND1\"><shadow id=\"egGWAD(NKd}*_nkCkn[8\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"#Pf{1T,bz:a;S5jx,OM5\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"(k3^,q5sjBga%@I$`Gw[\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"/LtAe,8#mbiQ|JotACxZ\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"sT#,xp33sRRG!W+DzuO.\"><field name=\"TEXT\">7</field></shadow></value></block></value><next><block type=\"ev3move_startDualSpeed\" id=\"izAj%?1vWY/(jC`;!xnp\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"%6K:BP;by|%|?Bb-]Xqt\"><field name=\"NUM\">-100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"EbxmJsU}MZ*EA78VqBLD\"><field name=\"NUM\">100</field></shadow></value></block></next></block><block type=\"ev3events_whenCondition\" id=\"j];ir3RtMr1:yy%oEZ_L\" x=\"730\" y=\"870\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"2{+xdqUi33ytj!kGZ%P7\"><value name=\"OPERAND1\"><shadow id=\"`#x@QVF7.8NuR;6.Z1y-\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"-5bd0+6W8Hnk*C*}w@TN\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"T!/z-Wx:i{RPnA%~REj?\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"$Ow,Tx?8F!wQ4BTf]Qch\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"8lm8Wy+r*;pRXp%A%)9z\"><field name=\"TEXT\">4</field></shadow></value></block></value><next><block type=\"ev3move_startDualSpeed\" id=\"_BmghAoxL9[Zpnq7egVv\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"UT2yM{LN)i~Yvi;A)G1V\"><field name=\"NUM\">0</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"rO6@__WeFkP.|XR~LIp3\"><field name=\"NUM\">-100</field></shadow></value></block></next></block><block type=\"ev3events_whenCondition\" id=\"Ze!z~0+Af]qJg)-L5;A=\" x=\"1460\" y=\"970\"><value name=\"CONDITION\"><block type=\"operator_equals\" id=\"-hs*T`c~k6tuQp7dBT1q\"><value name=\"OPERAND1\"><shadow id=\"h?g9F#[-RA}G[IM{Y~bm\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"l{.;f=VR$f0|=y|BleKJ\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"rT-Mwh{vAt!oZ.i~zs]Q\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"K:?=Uz7MfvD.W)y@)83I\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"!9ier(79,Ye4UQ1G(l47\"><field name=\"TEXT\">8</field></shadow></value></block></value><next><block type=\"control_repeat_until\" id=\"uLZI/m:zR%`C;ajg.5++\"><value name=\"CONDITION\"><block type=\"operator_not\" id=\"1:6]F$gKd=%H*Sstvtsy\"><value name=\"OPERAND\"><block type=\"operator_equals\" id=\"[ZLzJY8C$/E6#nwQ,{YT\"><value name=\"OPERAND1\"><shadow id=\"cHl,:+;a^NPv(Ani`Iu/\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"ev3sensors_getEV3InfraredBeaconButtons\" id=\"W#H?lU*NG(4S5inBOTM4\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"c}|?@8!GAb{iYwcArt)q\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"R-hZJl90L{efh~,?A!Hv\"><field name=\"irChannel\">1</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"H(U!CDG!#-m}:#/^^+5:\"><field name=\"TEXT\">8</field></shadow></value></block></value></block></value><statement name=\"SUBSTACK\"><block type=\"control_if_else\" id=\"((j[F^)-Z49Jv40)Dk7@\"><value name=\"CONDITION\"><block type=\"operator_lt\" id=\"g]NmU,cT9/(zX_F]Hn[G\"><value name=\"OPERAND1\"><shadow id=\"#!kr1r4Wp;gcplR}tKYo\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"operator_mod\" id=\"=n(i[^sn6V;Qrp3.$-xS\"><value name=\"NUM1\"><shadow id=\"U,!MD4`61tXHsU6ln3XJ\" type=\"math_number\"><field name=\"NUM\"></field></shadow><block type=\"sensing_timer\" id=\"X25-R6tHL`R`UP-7^)88\"></block></value><value name=\"NUM2\"><shadow type=\"math_number\" id=\"Gy*?K/R,lBOf-#ZS,z`+\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"%7U#UX]F)2xcRvuX4l++\"><field name=\"TEXT\">1.5</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3move_startDualSpeed\" id=\"bv=PQfn+iYN!V{DNQuL^\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"bW|E,C5OrH!WALs7BnT@\"><field name=\"NUM\">-50</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"SPCDl1+^5YZ#Yg{0s2Vs\"><field name=\"NUM\">-100</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3move_startDualSpeed\" id=\"KE)K-vVKa+jUN=([!#})\"><value name=\"LEFT_SPEED\"><shadow type=\"math_number\" id=\"5/YL=atFnwHx%Fx6oLQT\"><field name=\"NUM\">-100</field></shadow></value><value name=\"RIGHT_SPEED\"><shadow type=\"math_number\" id=\"!L##NTDQi#_B::ES3UF)\"><field name=\"NUM\">-50</field></shadow></value></block></statement></block></statement></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "ミッション完了！",
+      "description": "<p>EV3RSTORMは、プログラムを実行したときにビデオで示されている通りに動く必要があります。<br><br>「チャンネル1」の遠隔赤外線ビーコンを使ってEV3RSTORM を制御し、タッチセンサーとカラーセンサーを使ってバズーカで攻撃します。<br><br><strong>これでこのミッションは完了です！</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/3-5.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "次のミッションを開始する"
+      },
+      "hints": [
+        {
+          "Image": "/images/missions/0-0-3-hint-channel.png",
+          "Text": "EV3RSTORMが遠隔赤外線ビーコンに反応しない場合は、チャンネルセレクターが「1」に設定されていることを確認します。"
+        }
+      ],
+      "doneAction": {
+        "startNext": "mission6",
+        "startTitle": "EV3RSTORM 06"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

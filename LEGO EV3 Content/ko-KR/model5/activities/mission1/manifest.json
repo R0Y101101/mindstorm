@@ -1,0 +1,103 @@
+{
+  "id": "mission1",
+  "title": "물건 잡기",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorTurnFor",
+    "ev3sound_playSound",
+    "control_wait",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Here’s your objective.",
+      "description": "<p>이번 미션에서는 강력한 집게를 사용하는 방법을 연습할 거예요.<br><br>GRIPP3R 01을 조립하세요.</p>",
+      "image": "/images/missions/5-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model5/31313_5_1.mp4",
+                "video_hd_download": "/buildinginstructions/model5/31313_5_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "자, 해보자고요!",
+      "description": "<p>강력한 집게를 매끄러운 표면 위에 놓은 후에 프로그램을 다운로드하고 실행하세요.</p>",
+      "image": "/images/missions/5-1-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "이 블록은 강력한 집게가 열리고 닫히는 속도를 설정합니다.",
+      "hints": [
+        {
+          "Text": "<h3>다운로드하고 블루투스를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 연결 아이콘을 누르고 화면의 지침을 따르세요.<br />2. 프로그램을 다운로드하고 실행하세요."
+        },
+        {
+          "Text": "<h3>다운로드하고 USB를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/5-1-2-hint-usb-connect.png",
+          "Text": "1. EV3 브릭을 연결하세요."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. 프로그램을 EV3 브릭에 다운로드하세요."
+        },
+        {
+          "Image": "/images/missions/5-1-2-hint-run.png",
+          "Text": "3. EV3 브릭에서 프로그램을 실행하세요."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"|-`=3Er9i8*c8`p-[y5?\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorSetSpeed\" id=\"5Hy[LNc|8X[XtMp4TsCZ\"><comment id=\"#q:~?1K-R;WOYJJlZE;_\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"180\" minimized=\"false\">이 블록은 강력한 집게가 열리고 닫히는 속도를 설정합니다.</comment><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"VW+Bp14`%2=bJZc2RUY?\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"q(eP(x4[An:!9O*0McfO\"><field name=\"NUM\">50</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"5Lev*HPnw!Wqs0OpL{P(\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"72ST#rzy{2(sFMPm.Vp+\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Jir0z~F/G2S:7.#{-ksW\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3sound_playSound\" id=\"e0V9=i1OkY]T`=3MDXp_\"><field name=\"SOUND\">Airbrake</field><next><block type=\"ev3motor_motorTurnFor\" id=\"Kz49q0xXlrsfdkZ+:EUB\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"0}uA;VwH=V-nF5.nS,j[\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"9=;x~F?3^rENgla!svb5\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"control_wait\" id=\"-z3#G5z$%s+WM|1We1p-\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"hYL1=8k5W|j)@HPMY8lW\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3sound_playSound\" id=\"XO;bkuZ|cNZ|ZD4fs*fn\"><field name=\"SOUND\">Air release</field><next><block type=\"ev3motor_motorTurnFor\" id=\"gH[1lTx]VVzrPPT(Co2p\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"/SYl.P/%?WN-g7A^Y;M$\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Kz8azvY`tM_(Q}+B;+k)\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3control_stop\" id=\"}J8VciiBMqOrsq_F#vD|\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "임무 완료!",
+      "description": "<p>프로그램을 실행함과 동시에 강력한 집게가 비디오에서 보았던 동작을 그대로 수행해야 해요.<br><br><strong>임무를 완수했어요!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/5-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "다음 미션 시작"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "GRIPP3R 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "mission5",
+  "title": "计时赛",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3display_displayImage",
+    "control_wait_until",
+    "operator_not",
+    "ev3sensors_isEV3InfraredBeaconButtonPressed",
+    "sensing_resettimer",
+    "event_broadcast",
+    "ev3sensors_waitEV3ColorSensorColor",
+    "ev3sound_playSoundUntilDone",
+    "ev3control_stopOtherStacks",
+    "ev3motor_motorStop",
+    "control_if_else",
+    "operator_gt",
+    "sensing_timer",
+    "ev3sensors_waitEV3BrickButton",
+    "ev3control_stop",
+    "event_whenbroadcastreceived",
+    "control_forever",
+    "control_wait",
+    "ev3motor_motorStart",
+    "ev3display_setStatusLight",
+    "ev3display_displayTextWithFont",
+    "operator_join",
+    "variables"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "这是你的目标。",
+      "description": "<p>在此任务中，需要使用远程红外信标命令 TRACK3R 在时间耗尽之前通过任务板上的所有检查点！<br><br>搭建 TRACK3R 05。</p>",
+      "image": "/images/missions/1-5-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model1/31313_1_5.mp4",
+                "video_hd_download": "/buildinginstructions/model1/31313_1_5.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "我们一起试试看吧！",
+      "description": "<p>将 TRACK3R 放置在任务板的开始位置，并分别在四个彩色圆圈内放置一个轮胎，如图所示。<br><br>下载并运行该程序。</p>",
+      "image": "/images/missions/1-5-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "此模块能够设置计时赛的时间限制（默认为 60 秒）。",
+      "hints": [
+        {
+          "Text": "<h3>通过蓝牙下载并运行</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 点击连接图标并按照屏幕上的说明进行操作。<br />2. 下载并运行该程序。"
+        },
+        {
+          "Text": "<h3>通过 USB 下载并运行</h3>"
+        },
+        {
+          "Image": "/images/missions/1-5-2-hint-usb-connect.png",
+          "Text": "1. 连接 EV3 程序块。"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. 将程序下载至 EV3 程序块。"
+        },
+        {
+          "Image": "/images/missions/1-5-2-hint-run.png",
+          "Text": "3. 从 EV3 程序块运行该程序。"
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables><variable type=\"\" id=\"](N.E8]/B75{#5:LqLi/\" islocal=\"true\" iscloud=\"false\">score</variable><variable type=\"broadcast_msg\" id=\",jm:!^IVrrXpqh9S~epF\" islocal=\"false\" iscloud=\"false\">message1</variable><variable type=\"broadcast_msg\" id=\"r1TnHXo(~Bl%hfK/Tt^]\" islocal=\"false\" iscloud=\"false\">start</variable></variables><block type=\"ev3events_whenProgramStarts\" id=\"IFBN:GYHl_va6FAHSPz?\" x=\"-130\" y=\"120\"><next><block type=\"ev3display_displayImage\" id=\"4]ZoHD)o?EC;YVj7c3ij\"><field name=\"IMAGE\">IR beacon</field><next><block type=\"control_wait_until\" id=\"YwPd1w3Ak*7;yaa2#)bz\"><value name=\"CONDITION\"><block type=\"operator_not\" id=\"vLfZ`TtpWUoV7j7!.WEp\"><value name=\"OPERAND\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"D=Ez+0TF4wLAz0$4ZC9p\"><field name=\"BUTTON\">0</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"w=GV1$NYd;5dP-6$v/bp\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"K5qq;9wr-Xc99D6G|M#~\"><field name=\"irChannel\">1</field></shadow></value></block></value></block></value><next><block type=\"data_setvariableto\" id=\"ys%h]JqZ*~PS8,q2z#[i\"><field name=\"VARIABLE\" id=\"](N.E8]/B75{#5:LqLi/\" variabletype=\"\">score</field><value name=\"VALUE\"><shadow type=\"text\" id=\"b_p_~wEi]tvxLExO_;uj\"><field name=\"TEXT\">999</field></shadow></value><next><block type=\"sensing_resettimer\" id=\"JlSOQaNX_QPijUf.Z~+v\"><next><block type=\"event_broadcast\" id=\"u@z1k4dnyL|nh.{_:ZKG\"><value name=\"BROADCAST_INPUT\"><shadow type=\"event_broadcast_menu\" id=\"^,?qNlg/sDE3lbTunIT2\"><field name=\"BROADCAST_OPTION\" id=\"r1TnHXo(~Bl%hfK/Tt^]\" variabletype=\"broadcast_msg\">start</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"Mn%|HH(];3v%[)*v6%c}\"><field name=\"IMAGE\">Bar 0</field><next><block type=\"ev3sensors_waitEV3ColorSensorColor\" id=\"#!^`Wt{$nHyD^T}gR8aG\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"+1X$y4PA|w`Yx!i2@1vD\"><field name=\"inputPort\">3</field></shadow></value><value name=\"EVENT\"><shadow type=\"ev3sensors_menu_colorEvent\" id=\"(u,p+_=OSDZVbu]Bfxo5\"><field name=\"colorEvent\">4</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"]%*jw*,TE(YD/MSomJHH\"><field name=\"IMAGE\">Bar 1</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"SsBytzGlGgm2v..@YVU%\"><field name=\"SOUND\">Fanfare</field><next><block type=\"ev3sensors_waitEV3ColorSensorColor\" id=\"KmeS6Y(R^-v3$13)zCNC\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\",SKhj#jxuU/3Z{pW3fwd\"><field name=\"inputPort\">3</field></shadow></value><value name=\"EVENT\"><shadow type=\"ev3sensors_menu_colorEvent\" id=\"5i`6.e]:DskKM|!(M*!)\"><field name=\"colorEvent\">7</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"@r*NBBJ{aSsiL~==*%1-\"><field name=\"IMAGE\">Bar 2</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\";3?sE$_AG(zZMb2BBO[z\"><field name=\"SOUND\">Fanfare</field><next><block type=\"ev3sensors_waitEV3ColorSensorColor\" id=\"#eL4cVNQ+:BtIyu$Xo|,\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"piZJ((1q^=gkz]fDG4L7\"><field name=\"inputPort\">3</field></shadow></value><value name=\"EVENT\"><shadow type=\"ev3sensors_menu_colorEvent\" id=\"^N0AFq;tqX8qS81*r0y.\"><field name=\"colorEvent\">2</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"z@UU%v/]z_!9#J6D]OLL\"><field name=\"IMAGE\">Bar 3</field><next><block type=\"ev3sound_playSoundUntilDone\" id=\"ho:{1X,?h^aQ8UgK3G`x\"><field name=\"SOUND\">Fanfare</field><next><block type=\"ev3sensors_waitEV3ColorSensorColor\" id=\"s^}@gr.cH(wBgmd]=2A/\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"V7I{QkV(wWeI1o%;gtUy\"><field name=\"inputPort\">3</field></shadow></value><value name=\"EVENT\"><shadow type=\"ev3sensors_menu_colorEvent\" id=\"87ciwc^`9XlCUUBZZ@{y\"><field name=\"colorEvent\">3</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"qR~uyAeWB`^v?o+9nK^2\"><field name=\"IMAGE\">Bar 4</field><next><block type=\"ev3control_stopOtherStacks\" id=\"]{,WL)H,txupD/:?Z1*d\"><next><block type=\"ev3motor_motorStop\" id=\"4c-[tF9--}|^hgZnq142\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"S4[ir*`oGuLjzo@BbsE`\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3motor_motorStop\" id=\"*Vq;6cms56?0,dz3;T1q\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"c@;,G.~2o);0,./Ywnpn\"><field name=\"outputPort\">2</field></shadow></value><next><block type=\"ev3motor_motorStop\" id=\"]6O5W;j)OJ{#O^fy0)Lj\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"s}gvQE!C$eX};AaYdGMM\"><field name=\"outputPort\">3</field></shadow></value><next><block type=\"control_if_else\" id=\"8{A3iyf/Wv3Q?D0D$s0#\"><value name=\"CONDITION\"><block type=\"operator_gt\" id=\"Wi/+w-!W6s5^SurD%Qvn\"><comment id=\"IDO{4,|)@7;!0ki/D0*S\" pinned=\"true\" h=\"200\" w=\"200\" x=\"570\" y=\"1332\" minimized=\"false\">此模块能够设置计时赛的时间限制（默认为 60 秒）。</comment><value name=\"OPERAND1\"><shadow id=\"*df}FggcKhAU,~E](89x\" type=\"text\"><field name=\"TEXT\"></field></shadow><block type=\"sensing_timer\" id=\"TRk0#y-RUakr=aDJv71=\"></block></value><value name=\"OPERAND2\"><shadow type=\"text\" id=\"`1A}Ah%j@0J.K,nIIc8)\"><field name=\"TEXT\">60</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3sound_playSoundUntilDone\" id=\"WfV3k/EhJxq=I_NarfzF\"><field name=\"SOUND\">Crying</field></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3sound_playSoundUntilDone\" id=\"RRC8kP5TRrjsGZM4t(Tr\"><field name=\"SOUND\">Cheering</field></block></statement><next><block type=\"ev3sensors_waitEV3BrickButton\" id=\"Vg85;T,@m};Zo^DKqIJ_\"><field name=\"EVENT\">1</field><value name=\"BUTTON\"><shadow type=\"ev3sensors_menu_button\" id=\"rQaw+qfsxAVdn2i.38Y|\"><field name=\"button\">2</field></shadow></value><next><block type=\"ev3control_stop\" id=\"{6A3hseCo_1P:zP5c{_i\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block><block type=\"event_whenbroadcastreceived\" id=\"gQ5)qZ+[t-9WB1`mQZXo\" x=\"800\" y=\"120\"><field name=\"BROADCAST_OPTION\" id=\"r1TnHXo(~Bl%hfK/Tt^]\" variabletype=\"broadcast_msg\">start</field><next><block type=\"control_forever\" id=\"O,/@#nOPPO_saL!@b/lN\"><statement name=\"SUBSTACK\"><block type=\"control_wait\" id=\"cRN@F7]Eu4]#b63^9^jr\"><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"rjX5ue.AsbuCee.qD%Cj\"><field name=\"NUM\">0.06</field></shadow></value><next><block type=\"data_changevariableby\" id=\"6btmub#%`VYeMu:w!wW}\"><field name=\"VARIABLE\" id=\"](N.E8]/B75{#5:LqLi/\" variabletype=\"\">score</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"7:8O%;[K}X:eqwPTZD[7\"><field name=\"NUM\">-1</field></shadow></value></block></next></block></statement></block></next></block><block type=\"event_whenbroadcastreceived\" id=\"iyUTvy,g-#JK)HS9[Z{9\" x=\"800\" y=\"416\"><field name=\"BROADCAST_OPTION\" id=\"r1TnHXo(~Bl%hfK/Tt^]\" variabletype=\"broadcast_msg\">start</field><next><block type=\"control_forever\" id=\"U7H!:)e;9FRRQBu}Mp[-\"><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"~-B?y2W.w=A{aWCGv3CI\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"XAAu2pU~`GATk.Mdv43W\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3display_setStatusLight\" id=\"yEne,C+f6?S0ieh_4VT@\"><field name=\"OPTION\">1</field><next><block type=\"ev3sensors_waitEV3ColorSensorColor\" id=\"Qw{fa|atV#.z7p|/SnK}\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"81eJoP7eQy+DR6Bs7,o3\"><field name=\"inputPort\">3</field></shadow></value><value name=\"EVENT\"><shadow type=\"ev3sensors_menu_colorEvent\" id=\"/Q,0dQ2O{OPbdk.C@w3=\"><field name=\"colorEvent\">5</field></shadow></value><next><block type=\"data_changevariableby\" id=\"f_rx)el@)~JMqB(iY;9Z\"><field name=\"VARIABLE\" id=\"](N.E8]/B75{#5:LqLi/\" variabletype=\"\">score</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\":1C{tlfL;nUQ@w{Epg/g\"><field name=\"NUM\">-50</field></shadow></value><next><block type=\"ev3motor_motorStop\" id=\"3/DUv#@6{l}jUV7=ZQVO\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"gr+FE5$8FUU[V,R,]ehM\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"ev3sound_playSoundUntilDone\" id=\"XB]=!y2#^[]QHr%UxP~X\"><field name=\"SOUND\">Error alarm</field><next><block type=\"ev3display_setStatusLight\" id=\"E(-alblL8_M!(JgS/xh)\"><field name=\"OPTION\">2</field><next><block type=\"ev3sensors_waitEV3ColorSensorColor\" id=\"9m;T@1G4%Kt(+47d^uzZ\"><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"jOu*,FqOD|XXZK_z,?E?\"><field name=\"inputPort\">3</field></shadow></value><value name=\"EVENT\"><shadow type=\"ev3sensors_menu_colorEvent\" id=\"dT}j_-jmA,cNJV7t!EU?\"><field name=\"colorEvent\">6</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></next></block><block type=\"event_whenbroadcastreceived\" id=\"A`|bcJ6).=QPYP!f!lG@\" x=\"800\" y=\"1060\"><field name=\"BROADCAST_OPTION\" id=\"r1TnHXo(~Bl%hfK/Tt^]\" variabletype=\"broadcast_msg\">start</field><next><block type=\"control_forever\" id=\"1tza^R16TWyRLR*AzUV6\"><statement name=\"SUBSTACK\"><block type=\"control_if_else\" id=\"?}~Q@,KYA1a4%I9_HETG\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"#:Lc!y#u7:sg3,#+{*Ae\"><field name=\"BUTTON\">1,5,6,10</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"D2n1`6aGo$Wb-[%qFxHB\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"NXV]GSnm[CJ^F_$%z1D(\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"o%d]:dIEAHpUL+a5ac%q\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Kt8r+SQse^|Z:}#cIM3o\"><field name=\"outputPort\">2</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"control_if_else\" id=\"p:V^a-^56oNf1n#l|V-O\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"T[g0g[=:tV8^}QOoG/q%\"><field name=\"BUTTON\">2,7,8,10</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"`t:;lhI=wR`)L-/E`APH\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"sIa[29fZ=S[N)9eWQwj*\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"VS}t#G#3ivYxQW4}7Ozf\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"%`Sl4}+od]BuM{kM^kEw\"><field name=\"outputPort\">2</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3motor_motorStop\" id=\"))=Zo_:.e~{zL-G4AV=r\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"}%-ao(Tb^bB4f?Kn]^-r\"><field name=\"outputPort\">2</field></shadow></value></block></statement></block></statement><next><block type=\"control_if_else\" id=\"(+wbU69a}@d#nG(mSl?h\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"rZAWKxshJlthowL4_Z?T\"><field name=\"BUTTON\">3,5,7,11</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"tbS#stP~^i[.+q2-h1C~\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"kouc5XBzL6F=o:wyy7_J\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\"`VILr3||D1NvBq`(ZDeq\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"lb?v!qVU~_(Y]_W%5S@+\"><field name=\"outputPort\">3</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"control_if_else\" id=\",U]Kr/H)O|U-NJuz+2rU\"><value name=\"CONDITION\"><block type=\"ev3sensors_isEV3InfraredBeaconButtonPressed\" id=\"zVUTu^sYCEm)3]QdO8:R\"><field name=\"BUTTON\">4,6,8,11</field><value name=\"PORT\"><shadow type=\"ev3sensors_menu_inputPort\" id=\"@Wb1XwTzvMyzQWB3(]/,\"><field name=\"inputPort\">4</field></shadow></value><value name=\"CHANNEL\"><shadow type=\"ev3sensors_menu_irChannel\" id=\"DOSZ7i*%le}JAtBzd9!;\"><field name=\"irChannel\">1</field></shadow></value></block></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorStart\" id=\";OZe=rgnTo(8ga^3#_7j\"><field name=\"DIRECTION\">counterclockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"RYb*@pBPUvt;3G*[hBa`\"><field name=\"outputPort\">3</field></shadow></value></block></statement><statement name=\"SUBSTACK2\"><block type=\"ev3motor_motorStop\" id=\"R#ei*NPALF:hqls.Lp@w\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\",xw{i+i,)q[457@DIeZI\"><field name=\"outputPort\">3</field></shadow></value></block></statement></block></statement><next><block type=\"ev3display_displayTextWithFont\" id=\"o-D2;b9NS7/q6H;_z#y{\"><field name=\"OPTION\">2,0</field><value name=\"TEXT\"><shadow id=\"OYKnr{YWo:f=JBQk{Yh!\" type=\"text\"><field name=\"TEXT\">EV3</field></shadow><block type=\"operator_join\" id=\"LJnH}h9z/4v1H3T5=y!_\"><value name=\"STRING1\"><shadow type=\"text\" id=\"L.bEfGi}`OhemW,%Ut5v\"><field name=\"TEXT\">SCORE: </field></shadow></value><value name=\"STRING2\"><shadow id=\"8]aQl7_EM4C@Z(URs5)B\" type=\"text\"><field name=\"TEXT\">banana</field></shadow><block type=\"operator_join\" id=\"NR(EY[C=ASz2Fz6JqGyq\"><value name=\"STRING1\"><shadow id=\"?U?GI5yeqt|UB;u(tlMb\" type=\"text\"><field name=\"TEXT\">DSL</field></shadow><block type=\"data_variable\" id=\"l(+o8/NnnrQxf2Lg@8Pz\"><field name=\"VARIABLE\" id=\"](N.E8]/B75{#5:LqLi/\" variabletype=\"\">score</field></block></value><value name=\"STRING2\"><shadow type=\"text\" id=\"eH;p:X52*%It-jE`Mfe4\"><field name=\"TEXT\">      </field></shadow></value></block></value></block></value><value name=\"X\"><shadow type=\"math_number\" id=\"ip`)~sUYN~p2k9^uN@t5\"><field name=\"NUM\">10</field></shadow></value><value name=\"Y\"><shadow type=\"math_number\" id=\"cl1R=.Vjcj-]L0Ui^t[n\"><field name=\"NUM\">10</field></shadow></value></block></next></block></next></block></statement></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "任务完成！",
+      "description": "<p>运行程序时 TRACK3R 应按照视频中的演示进行操作。<br><br>使用“频道 1” 上的远程红外信标控制 TRACK3R，在时间用完之前从四个检查点拆下轮胎。注意避开红线！<br><br><strong>你已完成所有的 TRACK3R 任务！</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/1-5.mp4"
+        }
+      },
+      "hints": [
+        {
+          "Image": "/images/missions/0-0-3-hint-channel.png",
+          "Text": "如果 TRACK3R 对远程红外信标没有反应，请确保将频道选择器设置为 “1”。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "mission1",
+  "title": "구동 및 회전",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3move_movementSpeed",
+    "ev3display_displayImage",
+    "ev3move_steer",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "목표를 설명할게요!",
+      "description": "<p>이번 미션에서는 EV3RSTORM을 구동하고 회전할 거예요.<br><br>EV3RSTORM 01을 조립하세요.</p>",
+      "image": "/images/missions/3-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model3/31313_3_1.mp4",
+                "video_hd_download": "/buildinginstructions/model3/31313_3_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "자, 해보자고요!",
+      "description": "<p>EV3RSTORM을 매끄러운 표면 위에 놓은 후에 프로그램을 다운로드하고 실행하세요.</p>",
+      "image": "/images/missions/3-1-overlay.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "이 블록은 주행 속도를 설정합니다.",
+      "hints": [
+        {
+          "Text": "<h3>다운로드하고 블루투스를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. 연결 아이콘을 누르고 화면의 지침을 따르세요.<br />2. 프로그램을 다운로드하고 실행하세요."
+        },
+        {
+          "Text": "<h3>다운로드하고 USB를 통해 실행하세요</h3>"
+        },
+        {
+          "Image": "/images/missions/3-1-2-hint-usb-connect.png",
+          "Text": "1. EV3 브릭을 연결하세요."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. 프로그램을 EV3 브릭에 다운로드하세요."
+        },
+        {
+          "Image": "/images/missions/3-1-2-hint-run.png",
+          "Text": "3. EV3 브릭에서 프로그램을 실행하세요."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\"8~zLAzKNUkDR?y]lTgGK\" x=\"-130\" y=\"120\"><next><block type=\"ev3move_movementSpeed\" id=\"eJqgvkBI!3Dt}AE_Aln=\"><comment id=\"{Zi3dfW-@a1Tj99SrAKO\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"180\" minimized=\"false\">이 블록은 주행 속도를 설정합니다.</comment><value name=\"SPEED\"><shadow type=\"math_number\" id=\"]4b5Q(T1B-!6om6*piju\"><field name=\"NUM\">75</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"d79VU3HhLQwu::4Z?E@{\"><field name=\"IMAGE\">Neutral</field><next><block type=\"ev3move_steer\" id=\"1@ZXW*~M9S!EWTyKIo=:\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"^[Pu~(^Z5a(n6|R#(Ubr\"><field name=\"field_ev3move_rotation-wheel\">0</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"n(O:g-]eo9uj*oNG@Cmp\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"l%RFL|[55Q4+},E.10LJ\"><field name=\"IMAGE\">Middle left</field><next><block type=\"ev3move_steer\" id=\"BMJv_.XK`+UrtVFZ*`M@\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"(=$=N#N9,nc|*!-MRcIf\"><field name=\"field_ev3move_rotation-wheel\">50</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"Tt.bcDwZ)M7p8kNqv7(?\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"YmOMe8f=vA#;usSrRs?;\"><field name=\"IMAGE\">Neutral</field><next><block type=\"ev3move_steer\" id=\"F*tr%Y8%!!uI1#/xce|:\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\")epXNRHJGA|}ei6p]COa\"><field name=\"field_ev3move_rotation-wheel\">0</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"*)?fV~{Jolcd3oJAteMT\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3display_displayImage\" id=\"E8D2.i.Iw/V7JX,.w0^L\"><field name=\"IMAGE\">Middle right</field><next><block type=\"ev3move_steer\" id=\"_o-e1Ky}(YjSJmVg^@cU\"><field name=\"UNIT\">rotations</field><value name=\"STEERING\"><shadow type=\"ev3move_rotation-wheel\" id=\"thWpuu@dTojJBELiA9iw\"><field name=\"field_ev3move_rotation-wheel\">-50</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"V}g^tbp%2qI1Rm.5F#bn\"><field name=\"NUM\">5</field></shadow></value><next><block type=\"ev3control_stop\" id=\"R=Z%30k!-=R-RajtZX4R\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "임무 완료!",
+      "description": "<p>프로그램을 실행함과 동시에 EV3RSTORM이 비디오에서 보았던 동작을 그대로 수행해야 해요.<br><br>EV3RSTORM이 눈으로 보는 방향과 같은 방향으로 회전하지 않을 경우, 라지 모터가 EV3의 올바른 포트에 연결되어 있는지 확인하세요.<br><br><strong>임무를 완수했어요!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/3-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "다음 미션 시작"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "EV3RSTORM 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

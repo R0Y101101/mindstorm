@@ -1,0 +1,104 @@
+{
+  "id": "mission1",
+  "title": "Slither like a Snake",
+  "isGettingStarted": true,
+  "toolbox": [
+    "ev3events_whenProgramStarts",
+    "ev3motor_motorStart",
+    "ev3motor_motorSetSpeed",
+    "ev3motor_motorSetStopAction",
+    "control_repeat",
+    "ev3motor_motorTurnFor",
+    "ev3control_stop"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "title": "Here’s your objective.",
+      "description": "<p>In this mission, you’ll make a slithering movement like a real snake.<br><br>Build R3PTAR 01.</p>",
+      "image": "/images/missions/4-1-1.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "buildinginstruction": {
+        "isActivityBuildingInstruction": true,
+        "buildingInstructions": [
+          {
+            "videos": {
+              "urls": {
+                "video_medium_download": "/buildinginstructions/model4/31313_4_1.mp4",
+                "video_hd_download": "/buildinginstructions/model4/31313_4_1.mp4"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "step2",
+      "title": "Let’s try it out!",
+      "description": "<p>Place R3PTAR on a smooth surface, then download and run the program.</p>",
+      "image": "/images/missions/4-1-2.png",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "commentTODO": "This block controls how far R3PTAR slithers.",
+      "hints": [
+        {
+          "Text": "<h3>Download and Run via Bluetooth</h3>"
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-bt-connect.png",
+          "Text": "1. Press the connect icon and follow the on-screen instructions.<br />2. Download and run the program."
+        },
+        {
+          "Text": "<h3>Download and Run via USB</h3>"
+        },
+        {
+          "Image": "/images/missions/4-1-2-hint-usb-connect.png",
+          "Text": "1. Connect your EV3 Brick."
+        },
+        {
+          "Image": "/images/missions/0-0-2-hint-download.png",
+          "Text": "2. Download the program to your EV3 Brick."
+        },
+        {
+          "Image": "/images/missions/4-1-2-hint-run.png",
+          "Text": "3. Run the program from your EV3 Brick."
+        }
+      ],
+      "code": {
+        "add": true,
+        "alwaysAdd": true,
+        "clear": true,
+        "show": false,
+        "snippet": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables><block type=\"ev3events_whenProgramStarts\" id=\".T}}Er^?3KG_h1h2s844\" x=\"-130\" y=\"120\"><next><block type=\"ev3motor_motorStart\" id=\"F?xG?[pd];YJgdz?!#3I\"><field name=\"DIRECTION\">clockwise</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"$nqhb]lj^+xGY*p.9ojW\"><field name=\"outputPort\">2</field></shadow></value><next><block type=\"ev3motor_motorSetSpeed\" id=\"0$k/`ZUpr,W6zbv)Kg*I\"><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"r]2`H|/ZAVZ,.ZHPT|pP\"><field name=\"outputPort\">1</field></shadow></value><value name=\"SPEED\"><shadow type=\"math_number\" id=\"vU3WXh.|[xWX_ECsN#jA\"><field name=\"NUM\">10</field></shadow></value><next><block type=\"ev3motor_motorSetStopAction\" id=\"HtU|]h2*|VoJNvke!.v.\"><field name=\"OPTION\">0</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"WBATCW)TyF2`Q=54XV]7\"><field name=\"outputPort\">1</field></shadow></value><next><block type=\"control_repeat\" id=\"OekT{b$}syMKMQj_!.:B\"><comment id=\"85U@h;`gp2_%`d;9@JS6\" pinned=\"true\" h=\"200\" w=\"200\" x=\"600\" y=\"344\" minimized=\"false\">This block controls how far R3PTAR slithers.</comment><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"|Vz%?oSsmYB1]4.;V2T_\"><field name=\"NUM\">3</field></shadow></value><statement name=\"SUBSTACK\"><block type=\"ev3motor_motorTurnFor\" id=\"Wo;vyxv+D_gQ(gB{@_WB\"><field name=\"DIRECTION\">clockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"IdjeC/c0Noxdl7pun[j:\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"rMz28p.Ma{-b)uE/c,GH\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"ev3motor_motorTurnFor\" id=\"r/saQnC||vK:|vM-tp0v\"><field name=\"DIRECTION\">counterclockwise</field><field name=\"UNIT\">seconds</field><value name=\"PORT\"><shadow type=\"ev3motor_menu_outputPort\" id=\"Ga{)+FK/i7ZGa!%_/3~I\"><field name=\"outputPort\">1</field></shadow></value><value name=\"VALUE\"><shadow type=\"math_number\" id=\"VUw8fKjrX?#P01u1.pva\"><field name=\"NUM\">1</field></shadow></value></block></next></block></statement><next><block type=\"ev3control_stop\" id=\"Le;zRI.;2=M0|lRq(X+!\"><field name=\"STOP_OPTION\">program</field></block></next></block></next></block></next></block></next></block></next></block></xml>"
+      }
+    },
+    {
+      "id": "step3",
+      "title": "Mission accomplished!",
+      "description": "<p>R3PTAR should do what’s shown in the video when running the program.<br><br><strong>You’ve completed this mission!</strong></p>",
+      "hideToolbox": false,
+      "requireConnection": false,
+      "allowClickThrough": true,
+      "video": {
+        "urls": {
+          "video_medium_download": "/videos/missions/4-1.mp4"
+        }
+      },
+      "clickHighlight": {
+        "location": "next",
+        "description": "Start the next mission"
+      },
+      "doneAction": {
+        "startNext": "mission2",
+        "startTitle": "R3PTAR 02"
+      }
+    },
+    {
+      "id": "step4",
+      "allowClickThrough": true
+    }
+  ]
+}

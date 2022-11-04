@@ -1,0 +1,268 @@
+[
+  {
+    "id": "Ev3-BI-1",
+    "title": "EV3RSTORM",
+    "image": "/ev3resources/images/31313_EV3RSTORM.png",
+    "availableOffline": true,
+    "isActivityBuildingInstruction": true,
+    "buildingInstructions": [
+      {
+        "title": "EV3RSTORM 1",
+        "image": "/ev3resources/images/31313_EV3RSTORM.png",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model3/31313_3_1.mp4"
+          }
+        }
+      },
+      {
+        "title": "EV3RSTORM 2",
+        "image": "/ev3resources/images/31313_EV3RSTORM.png",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model3/31313_3_2.mp4"
+          }
+        }
+      },
+      {
+        "title": "EV3RSTORM 3",
+        "image": "/ev3resources/images/31313_EV3RSTORM.png",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model3/31313_3_3.mp4"
+          }
+        }
+      },
+      {
+        "title": "EV3RSTORM 4",
+        "image": "/ev3resources/images/31313_EV3RSTORM.png",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model3/31313_3_4.mp4"
+          }
+        }
+      },
+      {
+        "title": "EV3RSTORM 5",
+        "image": "/ev3resources/images/31313_EV3RSTORM.png",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model3/31313_3_5.mp4"
+          }
+        }
+      },
+      {
+        "title": "EV3RSTORM 6",
+        "image": "/ev3resources/images/31313_EV3RSTORM.png",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model3/31313_3_6.mp4"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Ev3-BI-2",
+    "title": "GRIPP3R",
+    "image": "/ev3resources/images/31313_FRONT_009_GRIPPER.jpg",
+    "availableOffline": true,
+    "isActivityBuildingInstruction": true,
+    "buildingInstructions": [
+      {
+        "title": "GRIPP3R 1",
+        "image": "/ev3resources/images/31313_FRONT_009_GRIPPER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model5/31313_5_1.mp4"
+          }
+        }
+      },
+      {
+        "title": "GRIPP3R 2",
+        "image": "/ev3resources/images/31313_FRONT_009_GRIPPER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model5/31313_5_2.mp4"
+          }
+        }
+      },
+      {
+        "title": "GRIPP3R 3",
+        "image": "/ev3resources/images/31313_FRONT_009_GRIPPER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model5/31313_5_3.mp4"
+          }
+        }
+      },
+      {
+        "title": "GRIPP3R 4",
+        "image": "/ev3resources/images/31313_FRONT_009_GRIPPER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model5/31313_5_4.mp4"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Ev3-BI-3",
+    "title": "R3PTAR",
+    "image": "/ev3resources/images/31313_R3PTAR.jpg",
+    "availableOffline": true,
+    "isActivityBuildingInstruction": true,
+    "buildingInstructions": [
+      {
+        "title": "R3PTAR 1",
+        "image": "/ev3resources/images/31313_R3PTAR.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model4/31313_4_1.mp4"
+          }
+        }
+      },
+      {
+        "title": "R3PTAR 2",
+        "image": "/ev3resources/images/31313_R3PTAR.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model4/31313_4_2.mp4"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Ev3-BI-4",
+    "title": "SPIK3R",
+    "image": "/ev3resources/images/31313_FRONT_010_SCORPION.jpg",
+    "availableOffline": true,
+    "isActivityBuildingInstruction": true,
+    "buildingInstructions": [
+      {
+        "title": "SPIK3R 1",
+        "image": "/ev3resources/images/31313_FRONT_010_SCORPION.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model2/31313_2_1.mp4"
+          }
+        }
+      },
+      {
+        "title": "SPIK3R 2",
+        "image": "/ev3resources/images/31313_FRONT_010_SCORPION.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model2/31313_2_2.mp4"
+          }
+        }
+      },
+      {
+        "title": "SPIK3R 3",
+        "image": "/ev3resources/images/31313_FRONT_010_SCORPION.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model2/31313_2_3.mp4"
+          }
+        }
+      },
+      {
+        "title": "SPIK3R 4",
+        "image": "/ev3resources/images/31313_FRONT_010_SCORPION.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model2/31313_2_4.mp4"
+          }
+        }
+      },
+      {
+        "title": "SPIK3R 5",
+        "image": "/ev3resources/images/31313_FRONT_010_SCORPION.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model2/31313_2_5.mp4"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Ev3-BI-5",
+    "title": "TRACK3R",
+    "image": "/ev3resources/images/31313_FRONT_008_TRACKER.jpg",
+    "availableOffline": true,
+    "isActivityBuildingInstruction": true,
+    "type": "pdf",
+    "buildingInstructions": [
+      {
+        "title": "TRACK3R 1",
+        "image": "/ev3resources/images/31313_FRONT_008_TRACKER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model1/31313_1_1.mp4"
+          }
+        }
+      },
+      {
+        "title": "TRACK3R 2",
+        "image": "/ev3resources/images/31313_FRONT_008_TRACKER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model1/31313_1_2.mp4"
+          }
+        }
+      },
+      {
+        "title": "TRACK3R 3",
+        "image": "/ev3resources/images/31313_FRONT_008_TRACKER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model1/31313_1_3.mp4"
+          }
+        }
+      },
+      {
+        "title": "TRACK3R 4",
+        "image": "/ev3resources/images/31313_FRONT_008_TRACKER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model1/31313_1_4.mp4"
+          }
+        }
+      },
+      {
+        "title": "TRACK3R 5",
+        "image": "/ev3resources/images/31313_FRONT_008_TRACKER.jpg",
+        "steps": -1,
+        "videos": {
+          "urls": {
+            "video_hd_download": "/buildinginstructions/model1/31313_1_5.mp4"
+          }
+        }
+      }
+    ]
+  }
+]
